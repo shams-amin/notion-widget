@@ -299,10 +299,24 @@ const PERIODS={month:12,quarter:4,half:2,year:1,manual:1};
 CREDITS.forEach(c=>c.per=Math.round(c.annual/PERIODS[c.cadence]));
 const ANNUAL_POTENTIAL = CREDITS.reduce((s,c)=>s+c.annual,0);
 
-/* ---------- Storage (window.storage with in-memory mirror) ---------- */
+/* ---------- Storage ----------
+   localStorage is the primary persistence layer: it's a standard browser
+   feature, so it works correctly on any real hosted page (GitHub Pages,
+   a Notion embed, anywhere). window.storage is tried too, as a bonus, for
+   the case where this exact file is opened as a Claude.ai artifact — on a
+   normal hosted page that object just won't exist and is silently skipped. */
 const mem={};
-function save(k,v,del){ try{ if(window.storage){ if(del){window.storage.delete(k).catch(()=>{});} else {window.storage.set(k,v).catch(()=>{});} } }catch(e){} }
+function save(k,v,del){
+  try{ if(del){ localStorage.removeItem(k); } else { localStorage.setItem(k,v); } }catch(e){}
+  try{ if(window.storage){ if(del){window.storage.delete(k).catch(()=>{});} else {window.storage.set(k,v).catch(()=>{});} } }catch(e){}
+}
 async function loadStore(){
+  try{
+    for(let i=0;i<localStorage.length;i++){
+      const k=localStorage.key(i);
+      if(k && k.indexOf('cc_')===0){ mem[k]=localStorage.getItem(k); }
+    }
+  }catch(e){}
   try{
     if(window.storage && window.storage.list){
       const res=await window.storage.list('cc_');
