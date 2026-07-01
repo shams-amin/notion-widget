@@ -1,56 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-07-01T08:16:52+00:00",
-  "count": 10,
+  "lastUpdated": "2026-07-01T21:27:57+00:00",
+  "count": 8,
   "bonuses": [
-    {
-      "from": "Chase Ultimate Rewards",
-      "details": "55% transfer bonus from Chase Ultimate Rewards to Marriott Bonvoy",
-      "pct": "55%",
-      "url": "https://frequentmiler.com/chase-ultimate-rewards-offering-65-transfer-bonus-to-marriott/",
-      "start": "05/16/26",
-      "end": "06/30/26"
-    },
-    {
-      "from": "Amex Membership Rewards",
-      "details": "20% transfer bonus from Amex Membership Rewards to Marriott Bonvoy",
-      "pct": "20%",
-      "url": "https://frequentmiler.com/20-transfer-bonus-to-marriott-bonvoy-from-american-express-membership-rewards/",
-      "start": "06/01/26",
-      "end": "06/30/26"
-    },
-    {
-      "from": "Rove Miles",
-      "details": "50% transfer bonus from Rove Miles to Turkish Airlines Miles & Smiles",
-      "pct": "50%",
-      "url": "https://frequentmiler.com/50-transfer-bonus-to-turkish-miles-smiles-from-rove-miles/",
-      "start": "06/01/26",
-      "end": "06/30/26"
-    },
-    {
-      "from": "Citi ThankYou Rewards",
-      "details": "30% transfer bonus from Citi ThankYou Rewards to Qatar Privilege Club Avios",
-      "pct": "30%",
-      "url": "https://frequentmiler.com/30-transfer-bonus-to-qatar-avios-from-citi-thankyou/",
-      "start": "06/01/26",
-      "end": "06/30/26"
-    },
-    {
-      "from": "Amex Membership Rewards",
-      "details": "25% transfer bonus from Amex Membership Rewards to Air France KLM Flying Blue",
-      "pct": "25%",
-      "url": "https://frequentmiler.com/get-a-25-bonus-when-transferring-amex-membership-rewards-to-air-france-klm-flying-blue/",
-      "start": "06/02/26",
-      "end": "06/30/26"
-    },
-    {
-      "from": "Marriott Bonvoy",
-      "details": "25% transfer bonus from Marriott Bonvoy to United MileagePlus",
-      "pct": "25%",
-      "url": "https://frequentmiler.com/get-a-25-bonus-when-converting-hotel-points-to-united/",
-      "start": "06/01/26",
-      "end": "06/30/26"
-    },
     {
       "from": "Bilt",
       "details": "Up to 200% transfer bonus from Bilt to Hilton",
@@ -69,6 +21,14 @@
     },
     {
       "from": "Amex Membership Rewards",
+      "details": "20% transfer bonus from Amex Membership Rewards to Hilton",
+      "pct": "20%",
+      "url": "https://frequentmiler.com/20-percent-transfer-bonus-american-express-membership-rewards-hilton-honors/",
+      "start": "07/01/26",
+      "end": "07/14/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
       "details": "15% transfer bonus from Amex Membership Rewards to Avianca LifeMiles",
       "pct": "15%",
       "url": "https://frequentmiler.com/15-transfer-bonus-from-amex-membership-rewards-to-avianca-lifemiles/",
@@ -82,6 +42,30 @@
       "url": "https://frequentmiler.com/50-percent-transfer-bonus-citi-thankyou-accor-all/",
       "start": "06/14/26",
       "end": "07/18/26"
+    },
+    {
+      "from": "Rove Miles",
+      "details": "25% transfer bonus from Rove Miles to Frontier Miles",
+      "pct": "25%",
+      "url": "https://frequentmiler.com/frontier-added-as-a-rove-transfer-partner-get-25-transfer-bonus-through-7-31-26/",
+      "start": "07/01/26",
+      "end": "07/31/26"
+    },
+    {
+      "from": "Capital One Miles",
+      "details": "30% transfer bonus from Capital One Miles to EVA Air Infinity MileageLands",
+      "pct": "30%",
+      "url": "https://frequentmiler.com/30-transfer-bonus-capital-one-miles-eva-air/",
+      "start": "07/01/26",
+      "end": "07/31/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
+      "details": "30% transfer bonus from Amex Membership Rewards to Virgin Atlantic Flying Club",
+      "pct": "30%",
+      "url": "https://frequentmiler.com/30-percent-transfer-bonus-american-express-membership-rewards-virgin-atlantic/",
+      "start": "07/01/26",
+      "end": "07/31/26"
     }
   ]
 }
