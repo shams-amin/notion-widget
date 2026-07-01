@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Credit Command</title>
+<style>
+  :root{
+    --bg:#0a0c11; --bg2:#0e1117; --tile:#141a24; --tile2:#171e2a;
+    --text:#eef2f8; --dim:#93a0b3; --faint:#5f6b7d; --line:#212a38;
+    --red:#ff5566; --orange:#ff9a3c; --yellow:#ffd23f; --green:#37dc8a; --blue:#5b9dff; --slate:#8b97ab;
+    --chase:#5b9dff; --amex:#3fd0c0; --cap:#ef5b54;
+    --shadow:0 8px 28px rgba(0,0,0,.45);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:radial-gradient(1200px 600px at 50% -10%, #131a26 0%, var(--bg) 55%) fixed;
+    color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.45; padding-bottom:64px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:660px;margin:0 auto;padding:0 16px}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+
+  /* Topbar */
+  .topbar{position:sticky;top:0;z-index:20;background:rgba(10,12,17,.82);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);padding:12px 0}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px;font-size:16px}
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green)}
+  .date{font-size:12px;color:var(--dim);text-align:right;letter-spacing:.3px}
+
+  /* Hero */
+  .hero{padding:26px 0 14px}
+  .hlabel{font-size:11px;letter-spacing:2.4px;text-transform:uppercase;color:var(--dim);font-weight:600}
+  .hamount{font-weight:800;letter-spacing:-1px;font-size:clamp(46px,15vw,72px);line-height:1;margin:8px 0 4px}
+  .hamount.crit{color:#fff}
+  .hsub{font-size:14px;color:var(--dim)}
+  .hsub b{color:var(--text)}
+  .htimer{margin-top:12px;display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--red);
+    background:rgba(255,85,102,.10);border:1px solid rgba(255,85,102,.28);padding:7px 12px;border-radius:999px}
+  .htimer .pulse{width:8px;height:8px;border-radius:50%;background:var(--red)}
+  @media (prefers-reduced-motion: no-preference){
+    .htimer .pulse{animation:pulse 1.4s ease-in-out infinite}
+    .crit-bar{animation:glow 2.4s ease-in-out infinite}
+  }
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+  @keyframes glow{0%,100%{box-shadow:0 0 0 rgba(255,85,102,0)}50%{box-shadow:-3px 0 16px rgba(255,85,102,.5)}}
+
+  /* progress */
+  .prog{margin:18px 0 4px}
+  .ptrack{height:9px;border-radius:99px;background:#1a2230;overflow:hidden;border:1px solid var(--line)}
+  .pfill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--green),#7bf0b4);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+  .plabel{display:flex;justify-content:space-between;font-size:12px;color:var(--dim);margin-top:7px}
+
+  /* chips */
+  .chips{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0 6px}
+  .chip{background:var(--tile);border:1px solid var(--line);border-radius:14px;padding:12px 12px}
+  .chip .k{font-size:10.5px;letter-spacing:1px;text-transform:uppercase;color:var(--faint);font-weight:600}
+  .chip .v{font-size:20px;font-weight:800;margin-top:4px;letter-spacing:-.5px}
+  .chip.m .v{color:var(--orange)} .chip.h .v{color:var(--yellow)} .chip.d .v{color:var(--green)}
+
+  /* controls */
+  .controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:18px 0 6px}
+  .seg{display:flex;gap:6px;flex-wrap:wrap}
+  .fchip{font-size:12.5px;font-weight:600;color:var(--dim);background:var(--tile);border:1px solid var(--line);
+    padding:8px 13px;border-radius:999px;cursor:pointer;transition:.15s}
+  .fchip[aria-pressed="true"]{color:#0a0c11;background:var(--text);border-color:var(--text)}
+  .toggle{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--dim);cursor:pointer;user-select:none}
+  .toggle .sw{width:38px;height:22px;border-radius:99px;background:#1c2532;border:1px solid var(--line);position:relative;transition:.2s}
+  .toggle .sw::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--faint);transition:.2s}
+  .toggle[aria-pressed="true"] .sw{background:rgba(55,220,138,.25);border-color:rgba(55,220,138,.5)}
+  .toggle[aria-pressed="true"] .sw::after{left:18px;background:var(--green)}
+
+  /* groups */
+  .group{margin-top:22px}
+  .ghead{display:flex;align-items:center;gap:10px;cursor:pointer;padding:6px 2px;user-select:none}
+  .ghead .gdot{width:10px;height:10px;border-radius:50%;flex:none}
+  .gname{font-size:13px;font-weight:700;letter-spacing:.3px}
+  .gmeta{margin-left:auto;font-size:12.5px;color:var(--dim)}
+  .gmeta b{color:var(--text)}
+  .gcar{color:var(--faint);transition:transform .2s;font-size:12px}
+  .group.collapsed .glist{display:none}
+  .group.collapsed .gcar{transform:rotate(-90deg)}
+  .glist{margin-top:10px;display:flex;flex-direction:column;gap:10px}
+
+  /* tile */
+  .tile{position:relative;background:var(--tile);border:1px solid var(--line);border-radius:16px;
+    padding:14px 14px 14px 16px;display:flex;gap:13px;align-items:flex-start;cursor:pointer;
+    transition:transform .12s, border-color .15s, opacity .2s;overflow:hidden}
+  .tile:active{transform:scale(.988)}
+  .tile:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+  .tile .accent{position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:4px 0 0 4px}
+  .tile.done{opacity:.5}
+  .tile.done .nm{text-decoration:line-through;text-decoration-color:var(--faint)}
+
+  .cbox{flex:none;width:26px;height:26px;border-radius:50%;border:2px solid var(--line);margin-top:2px;
+    display:grid;place-items:center;transition:.15s;background:#10151d}
+  .cbox svg{width:14px;height:14px;opacity:0;transform:scale(.5);transition:.15s}
+  .tile.done .cbox{background:var(--green);border-color:var(--green)}
+  .tile.done .cbox svg{opacity:1;transform:scale(1)}
+
+  .body{flex:1;min-width:0}
+  .row1{display:flex;align-items:flex-start;gap:10px;justify-content:space-between}
+  .nm{font-weight:650;font-size:15px;letter-spacing:-.1px}
+  .amt{flex:none;font-weight:800;font-size:17px;letter-spacing:-.4px}
+  .badge{display:inline-flex;align-items:center;gap:6px;margin-top:7px;font-size:11.5px;color:var(--dim);
+    background:#0f141d;border:1px solid var(--line);padding:3px 9px;border-radius:999px;font-weight:600}
+  .badge .bd{width:7px;height:7px;border-radius:50%}
+  .cd{display:inline-flex;align-items:center;gap:6px;margin-top:7px;margin-left:7px;font-size:11.5px;font-weight:700;
+    padding:3px 9px;border-radius:999px;vertical-align:top}
+  .note{color:var(--dim);font-size:12.5px;margin-top:9px}
+  .tile.done .note,.tile.done .badge{display:none}
+
+  .date-zone{margin-top:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .date-zone input[type=date]{background:#0f141d;border:1px solid var(--line);color:var(--text);
+    border-radius:9px;padding:6px 9px;font-size:12px;font-family:inherit}
+  .date-btn{font-size:12px;font-weight:600;color:var(--blue);background:rgba(91,157,255,.10);
+    border:1px solid rgba(91,157,255,.25);padding:6px 11px;border-radius:999px;cursor:pointer}
+  .date-clear{font-size:12px;color:var(--faint);cursor:pointer;padding:4px}
+
+  .auto-tag{font-size:10px;font-weight:700;letter-spacing:.6px;color:var(--slate);
+    border:1px solid var(--line);border-radius:6px;padding:2px 6px;margin-left:8px}
+
+  /* Track record section */
+  .section-hd{margin:32px 0 10px;padding:0 2px}
+  .stitle{font-size:15px;font-weight:800;letter-spacing:-.2px}
+  .ssub{font-size:12.5px;color:var(--dim);margin-top:3px}
+  .section-card{background:var(--tile);border:1px solid var(--line);border-radius:16px;padding:16px}
+  .tr-chips{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  @media (min-width:420px){.tr-chips{grid-template-columns:repeat(4,1fr)}}
+  .tr-chip{background:#10151f;border:1px solid var(--line);border-radius:12px;padding:11px}
+  .tr-chip .k{font-size:9.5px;letter-spacing:.7px;text-transform:uppercase;color:var(--faint);font-weight:700}
+  .tr-chip .v{font-size:17px;font-weight:800;margin-top:5px}
+  .tr-chip.pot .v{color:var(--blue)}
+  .tr-chip.sav .v{color:var(--green)}
+  .tr-chip.mis .v{color:var(--red)}
+  .tr-chip.unc .v{color:var(--slate)}
+  .trwrap{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+  .tr-toggle{display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}
+  .tr-toggle .lbl{font-size:13px;font-weight:650;flex:1}
+  .tr-toggle .cnt{font-size:12px;color:var(--dim)}
+  .tr-log{margin-top:14px}
+  .trwrap.collapsed .tr-log{display:none}
+  .trwrap.collapsed .gcar{transform:rotate(-90deg)}
+  .tr-cadgroup{margin-top:16px}
+  .tr-cadgroup:first-child{margin-top:0}
+  .tr-cadname{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--faint);font-weight:700;margin-bottom:9px}
+  .tr-row{display:flex;flex-direction:column;gap:7px;padding:10px 0;border-bottom:1px solid #171e2a}
+  .tr-row:last-child{border-bottom:none}
+  .tr-name{font-size:13px;font-weight:600}
+  .tr-name .card{display:block;font-size:11px;color:var(--faint);font-weight:500;margin-top:1px}
+  .tr-pills{display:flex;gap:6px;flex-wrap:wrap}
+  .pill{padding:6px 10px;border-radius:9px;border:1.5px solid var(--line);background:#10151f;
+    font-size:11px;font-weight:700;color:var(--dim);cursor:pointer;transition:.15s;user-select:none}
+  .pill:active{transform:scale(.92)}
+  .pill:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+  .pill[data-state="captured"]{background:rgba(55,220,138,.15);border-color:var(--green);color:var(--green)}
+  .pill[data-state="missed"]{background:rgba(255,85,102,.15);border-color:var(--red);color:var(--red);
+    text-decoration:line-through;text-decoration-color:rgba(255,85,102,.55)}
+  .legend2{display:flex;gap:14px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:11.5px;color:var(--dim)}
+  .legend2 span{display:inline-flex;align-items:center;gap:6px}
+  .lg-pill{width:16px;height:16px;border-radius:5px;display:inline-block}
+
+  footer{margin-top:34px;border-top:1px solid var(--line);padding-top:20px;color:var(--faint);font-size:12px}
+  .legend{display:flex;flex-wrap:wrap;gap:12px 16px;margin-bottom:16px}
+  .legend div{display:flex;align-items:center;gap:7px;color:var(--dim);font-size:12px}
+  .legend .ld{width:9px;height:9px;border-radius:50%}
+  footer a{color:var(--blue);text-decoration:none}
+  .allclear{text-align:center;padding:30px 0;color:var(--green);font-weight:700;font-size:18px}
+</style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap">
+    <div class="brand"><span class="dot"></span> Credit Command</div>
+    <div class="date" id="dateline"></div>
+  </div></div>
+
+  <div class="wrap">
+    <section class="hero">
+      <div class="hlabel" id="herolabel">Soonest deadline</div>
+      <div class="hamount crit" id="heroamt">$0</div>
+      <div class="hsub" id="herosub"></div>
+      <div id="herotimerwrap"></div>
+      <div class="prog">
+        <div class="ptrack"><div class="pfill" id="pfill" style="width:0%"></div></div>
+        <div class="plabel"><span id="proglabel"></span><span id="progpct"></span></div>
+      </div>
+    </section>
+
+    <div class="chips">
+      <div class="chip m"><div class="k">This month left</div><div class="v mono" id="c-month">$0</div></div>
+      <div class="chip h"><div class="k">This half left</div><div class="v mono" id="c-half">$0</div></div>
+      <div class="chip d"><div class="k">Captured</div><div class="v mono" id="c-done">$0</div></div>
+    </div>
+
+    <div class="controls">
+      <div class="seg" id="filters">
+        <button class="fchip" data-f="all" aria-pressed="true">All</button>
+        <button class="fchip" data-f="Chase" aria-pressed="false">Chase</button>
+        <button class="fchip" data-f="Amex" aria-pressed="false">Amex</button>
+        <button class="fchip" data-f="Capital One" aria-pressed="false">Cap One</button>
+      </div>
+      <div class="toggle" id="hidedone" role="button" aria-pressed="false" tabindex="0">
+        <span class="sw"></span> Hide done
+      </div>
+    </div>
+
+    <main id="groups"></main>
+
+    <div class="section-hd">
+      <div class="stitle">Annual track record</div>
+      <div class="ssub">What your full lineup is worth in a year — and how this year is actually going</div>
+    </div>
+    <div class="section-card">
+      <div class="tr-chips">
+        <div class="tr-chip pot"><div class="k">Annual potential</div><div class="v mono" id="tr-potential">$0</div></div>
+        <div class="tr-chip sav"><div class="k">Saved this year</div><div class="v mono" id="tr-saved">$0</div></div>
+        <div class="tr-chip mis"><div class="k">Missed</div><div class="v mono" id="tr-missed">$0</div></div>
+        <div class="tr-chip unc"><div class="k">Unconfirmed</div><div class="v mono" id="tr-unconfirmed">$0</div></div>
+      </div>
+      <div class="trwrap collapsed" id="trwrap">
+        <div class="tr-toggle" id="tr-togglebtn" role="button" tabindex="0" aria-expanded="false">
+          <span class="lbl">Log past periods</span>
+          <span class="cnt" id="tr-toggle-text"></span>
+          <span class="gcar">▾</span>
+        </div>
+        <div class="tr-log" id="tr-log"></div>
+      </div>
+      <div class="legend2">
+        <span><span class="lg-pill" style="background:#10151f;border:1.5px solid var(--line)"></span>Unconfirmed — tap to log</span>
+        <span><span class="lg-pill" style="background:rgba(55,220,138,.18);border:1.5px solid var(--green)"></span>Captured</span>
+        <span><span class="lg-pill" style="background:rgba(255,85,102,.18);border:1.5px solid var(--red)"></span>Missed</span>
+      </div>
+    </div>
+
+    <footer>
+      <div class="legend">
+        <div><span class="ld" style="background:var(--red)"></span>≤2 days</div>
+        <div><span class="ld" style="background:var(--orange)"></span>≤14 days</div>
+        <div><span class="ld" style="background:var(--yellow)"></span>≤45 days</div>
+        <div><span class="ld" style="background:var(--green)"></span>Plenty of time</div>
+        <div><span class="ld" style="background:var(--slate)"></span>No fixed date</div>
+      </div>
+      <div style="margin-bottom:8px">Deadlines are computed live from today. Monthly credits show the current month only, then roll to next month automatically. Check-offs reset each period on their own. Past periods move into Annual track record, where you confirm them yourself — nothing is assumed missed or captured until you tap it.</div>
+      <div>Snapshot of your Notion tracker · tap a card to mark it captured. Data lives on this device.</div>
+    </footer>
+  </div>
+
+<script>
+/* ---------- Data (from your live Credits & Perks Tracker) ---------- */
+const CREDITS = [
+  // Monthly
+  {id:'csr-lifestyle', name:'Lifestyle — DoorDash + Lyft + Peloton', card:'Sapphire Reserve', issuer:'Chase', cadence:'month', annual:540, note:'DoorDash $5 restaurant + 2×$10 non-restaurant, $10 Lyft, Peloton. No rollover.'},
+  {id:'unitedquest-monthly', name:'Instacart + rideshare', card:'United Quest', issuer:'Chase', cadence:'month', annual:280, note:'Monthly Instacart + rideshare statement credits. No rollover.'},
+  {id:'bizgold-monthly', name:'FedEx / Grubhub / office + Walmart+', card:'Business Gold', issuer:'Amex', cadence:'month', annual:395, note:'$20 FedEx/Grubhub/office supply + $12.95 Walmart+. Enrollment required.'},
+  {id:'bizplat-wireless', name:'Wireless credit', card:'Business Platinum', issuer:'Amex', cadence:'month', annual:120, note:'$10 back on a wireless bill charged to the card.'},
+  {id:'delta-monthly', name:'Resy + rideshare', card:'Delta Reserve Biz', issuer:'Amex', cadence:'month', annual:360, note:'$20 Resy dining + $10 rideshare monthly. No rollover.'},
+  // Quarterly
+  {id:'aspire-flight', name:'Airline flight credit', card:'Hilton Aspire', issuer:'Amex', cadence:'quarter', annual:200, note:'$50 in flight credit each quarter — any airline.'},
+  // Semiannual
+  {id:'csr-dining', name:'Dining credit (OpenTable)', card:'Sapphire Reserve', issuer:'Chase', cadence:'half', annual:300, note:'$150 at OpenTable / participating restaurants. Jan–Jun & Jul–Dec.'},
+  {id:'csrbiz-ziprecruiter', name:'ZipRecruiter credit', card:'Sapphire Reserve Biz', issuer:'Chase', cadence:'half', annual:400, note:'$200 direct with ZipRecruiter. Only worth it if actively hiring (~$299/mo plans).'},
+  {id:'bizplat-fhr', name:'Hotel — FHR / The Hotel Collection', card:'Business Platinum', issuer:'Amex', cadence:'half', annual:600, note:'$300 on prepaid FHR / Hotel Collection (2-night min).'},
+  {id:'aspire-resort', name:'Hilton resort credit', card:'Hilton Aspire', issuer:'Amex', cadence:'half', annual:400, note:'$200 at Hilton resort properties. Jan–Jun & Jul–Dec.'},
+  {id:'csr-stubhub', name:'StubHub / viagogo credit', card:'Sapphire Reserve', issuer:'Chase', cadence:'half', annual:300, note:'$150 at StubHub / viagogo (live events). Through 2027.'},
+  // Calendar-year (Dec 31)
+  {id:'csr-edit', name:'The Edit hotel credit', card:'Sapphire Reserve', issuer:'Chase', cadence:'year', annual:500, note:'Up to $250 × 2 prepaid Edit bookings (2-night min). Flexible all year.'},
+  {id:'csrbiz-edit', name:'The Edit hotel credit', card:'Sapphire Reserve Biz', issuer:'Chase', cadence:'year', annual:500, note:'Up to $250 × 2 prepaid Edit bookings (2-night min). Flexible all year.'},
+  {id:'bizplat-airline', name:'Airline fee credit', card:'Business Platinum', issuer:'Amex', cadence:'year', annual:200, note:'$200 airline incidental fee credit. Pick your airline each January.'},
+  {id:'delta-airline', name:'Airline fee credit', card:'Delta Reserve Biz', issuer:'Amex', cadence:'year', annual:200, note:'$200 Delta incidental fee credit (calendar year).'},
+  {id:'ritz-airline', name:'Airline incidental credit', card:'Ritz-Carlton', issuer:'Chase', cadence:'year', annual:300, note:'$300 airline incidental credit (calendar year).'},
+  {id:'dell-credit', name:'Dell credit', card:'Business Platinum', issuer:'Amex', cadence:'year', annual:150, note:'$150 at Dell (+$1,000 after $5k spend). Enroll. Calendar-year.'},
+  {id:'csrbiz-google', name:'Google Workspace credit', card:'Sapphire Reserve Biz', issuer:'Chase', cadence:'year', annual:200, note:'$200 on Google Workspace. Pre-pay in December if unused.'},
+  // Manual — anniversary spend credits
+  {id:'csr-travel', name:'Annual Travel Credit', card:'Sapphire Reserve', issuer:'Chase', cadence:'manual', kind:'anniv', annual:300, note:'$300 on any travel purchase. Resets on your account anniversary.'},
+  {id:'csrbiz-travel', name:'Annual Travel Credit', card:'Sapphire Reserve Biz', issuer:'Chase', cadence:'manual', kind:'anniv', annual:300, note:'$300 on any travel purchase. Resets on your account anniversary.'},
+  {id:'capone-travel', name:'Capital One Travel credit', card:'Venture X Business', issuer:'Capital One', cadence:'manual', kind:'anniv', annual:300, note:'$300 via Capital One Travel. Resets each anniversary; can split.'},
+  {id:'united-travelbank', name:'United TravelBank credit', card:'United Quest', issuer:'Chase', cadence:'manual', kind:'anniv', annual:200, note:'$200 TravelBank cash. Resets each account anniversary.'},
+  {id:'delta-stays', name:'Delta Stays credit', card:'Delta Reserve Biz', issuer:'Amex', cadence:'manual', kind:'anniv', annual:250, note:'$250 on hotels via Delta Stays. Annual.'},
+  {id:'aspire-clear', name:'CLEAR Plus membership', card:'Hilton Aspire', issuer:'Amex', cadence:'manual', kind:'anniv', annual:209, note:'Covers CLEAR Plus (~$209/yr). Charge the renewal to the card.'},
+  // Manual — certificates
+  {id:'ritz-freenight', name:'Free Night (up to 85k)', card:'Ritz-Carlton', issuer:'Chase', cadence:'manual', kind:'cert', annual:500, note:'One of your most valuable perks. Expires ~12 mo after AF (~Jul).'},
+  {id:'aspire-freenight', name:'Free Night Reward', card:'Hilton Aspire', issuer:'Amex', cadence:'manual', kind:'cert', annual:400, note:'Hilton free night (~$300–600 value). Renews annually.'},
+  {id:'bonvoybiz-freenight', name:'Free Night (up to 35k)', card:'Bonvoy Business', issuer:'Amex', cadence:'manual', kind:'cert', annual:200, note:'Marriott free night. Expires ~1 yr after renewal (~Jul).'},
+  {id:'hyatt-freenight', name:'Free Night (Cat 1–4)', card:'World of Hyatt', issuer:'Chase', cadence:'manual', kind:'cert', annual:175, note:'Category 1–4 free night. Expires ~1 yr after AF (~May).'},
+  {id:'ihg-premier-freenight', name:'Free Night (up to 40k)', card:'IHG Premier', issuer:'Chase', cadence:'manual', kind:'cert', annual:175, note:'IHG free night up to 40k. Expires ~1 yr after AF (~Jan).'},
+  {id:'ihg-premierbiz-freenight', name:'Free Night (up to 40k)', card:'IHG Premier Business', issuer:'Chase', cadence:'manual', kind:'cert', annual:175, note:'IHG free night up to 40k. Expires ~1 yr after AF (~May).'},
+  {id:'delta-companion', name:'Companion Certificate', card:'Delta Reserve Biz', issuer:'Amex', cadence:'manual', kind:'cert', annual:400, note:'Delta companion fare. Book within certificate validity.'},
+  {id:'csr-globalentry', name:'Global Entry / TSA PreCheck', card:'Sapphire Reserve', issuer:'Chase', cadence:'manual', kind:'cert', annual:120, note:'Application fee credit — once every ~4 years.'},
+  // Auto-post (no action needed)
+  {id:'sw-perfbiz-points', name:'9,000 anniversary points', card:'Southwest Performance Biz', issuer:'Chase', cadence:'manual', kind:'auto', annual:120, note:'Posts automatically on anniversary. No action needed.'},
+  {id:'sw-priority-points', name:'7,500 anniversary points', card:'Southwest Priority', issuer:'Chase', cadence:'manual', kind:'auto', annual:105, note:'Posts automatically on anniversary. No action needed.'},
+  {id:'capone-miles', name:'10,000 anniversary miles', card:'Venture X Business', issuer:'Capital One', cadence:'manual', kind:'auto', annual:100, note:'Posts automatically on anniversary. No action needed.'},
+];
+const PERIODS={month:12,quarter:4,half:2,year:1,manual:1};
+CREDITS.forEach(c=>c.per=Math.round(c.annual/PERIODS[c.cadence]));
+const ANNUAL_POTENTIAL = CREDITS.reduce((s,c)=>s+c.annual,0);
+
+/* ---------- Storage (window.storage with in-memory mirror) ---------- */
+const mem={};
+function save(k,v,del){ try{ if(window.storage){ if(del){window.storage.delete(k).catch(()=>{});} else {window.storage.set(k,v).catch(()=>{});} } }catch(e){} }
+async function loadStore(){
+  try{
+    if(window.storage && window.storage.list){
+      const res=await window.storage.list('cc_');
+      if(res&&res.keys){ for(const k of res.keys){ try{const r=await window.storage.get(k); if(r&&r.value!=null) mem[k]=r.value;}catch(e){} } }
+    }
+  }catch(e){}
+}
+
+/* ---------- Date helpers ---------- */
+function chkKey(c,now){
+  const y=now.getFullYear(),m=now.getMonth();
+  let p='once';
+  if(c.cadence==='month') p=y+'-'+String(m+1).padStart(2,'0');
+  else if(c.cadence==='quarter') p=y+'-Q'+(Math.floor(m/3)+1);
+  else if(c.cadence==='half') p=y+'-H'+(m<6?1:2);
+  else if(c.cadence==='year') p=''+y;
+  return 'cc_chk_'+c.id+'_'+p;
+}
+function dateKey(c){return 'cc_date_'+c.id;}
+function deadlineFor(c,now){
+  const y=now.getFullYear(),m=now.getMonth();
+  if(c.cadence==='month')   return new Date(y,m+1,0,23,59,59,999);
+  if(c.cadence==='quarter') return new Date(y,(Math.floor(m/3)+1)*3,0,23,59,59,999);
+  if(c.cadence==='half')    return m<6?new Date(y,5,30,23,59,59,999):new Date(y,11,31,23,59,59,999);
+  if(c.cadence==='year')    return new Date(y,11,31,23,59,59,999);
+  const d=mem[dateKey(c)]; return d?new Date(d+'T23:59:59'):null;
+}
+function calDaysLeft(date,now){
+  if(!date)return null;
+  const a=new Date(date.getFullYear(),date.getMonth(),date.getDate());
+  const b=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  return Math.round((a-b)/86400000);
+}
+function tier(d){ if(d==null)return 'nodate'; if(d<=2)return 'crit'; if(d<=14)return 'soon'; if(d<=45)return 'up'; return 'ok'; }
+const TIERMETA={
+  crit:{name:'Expiring now',color:'var(--red)'},
+  soon:{name:'Due soon',color:'var(--orange)'},
+  up:{name:'This quarter',color:'var(--yellow)'},
+  ok:{name:'Plenty of time',color:'var(--green)'},
+  nodate:{name:'No fixed date — certs & anniversaries',color:'var(--slate)'},
+  auto:{name:'Posts automatically',color:'var(--slate)'},
+};
+const TIERORDER=['crit','soon','up','ok','nodate','auto'];
+const ISSCOLOR={'Chase':'var(--chase)','Amex':'var(--amex)','Capital One':'var(--cap)'};
+const fmt=n=>'$'+Math.round(n).toLocaleString('en-US');
+
+/* ---------- Track record: period enumeration for past-year confirmation ---------- */
+const MONTH_ABBR=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function periodKeyFor(cadence,year,idx){
+  if(cadence==='month')   return year+'-'+String(idx+1).padStart(2,'0');
+  if(cadence==='quarter') return year+'-Q'+(idx+1);
+  if(cadence==='half')    return year+'-H'+(idx+1);
+  return String(year);
+}
+function periodLabelFor(cadence,idx){
+  if(cadence==='month')   return MONTH_ABBR[idx];
+  if(cadence==='quarter') return 'Q'+(idx+1);
+  if(cadence==='half')    return 'H'+(idx+1);
+  return '';
+}
+function elapsedIndices(cadence,now){
+  const m=now.getMonth();
+  if(cadence==='month')   return Array.from({length:m},(_,i)=>i);
+  if(cadence==='quarter'){ const q=Math.floor(m/3); return Array.from({length:q},(_,i)=>i); }
+  if(cadence==='half')    return m<6?[]:[0];
+  return [];
+}
+function chkKeyRaw(id,period){return 'cc_chk_'+id+'_'+period;}
+function missKeyRaw(id,period){return 'cc_miss_'+id+'_'+period;}
+function pillState(id,period){
+  if(mem[chkKeyRaw(id,period)]==='1') return 'captured';
+  if(mem[missKeyRaw(id,period)]==='1') return 'missed';
+  return 'unconfirmed';
+}
+function cyclePill(id,period){
+  const s=pillState(id,period);
+  const ck=chkKeyRaw(id,period), mk=missKeyRaw(id,period);
+  if(s==='unconfirmed'){ mem[ck]='1'; delete mem[mk]; save(ck,'1'); save(mk,null,true); }
+  else if(s==='captured'){ delete mem[ck]; mem[mk]='1'; save(ck,null,true); save(mk,'1'); }
+  else { delete mem[ck]; delete mem[mk]; save(ck,null,true); save(mk,null,true); }
+  renderTrackRecord();
+}
+function trackRecordData(now){
+  const y=now.getFullYear();
+  let saved=0, missed=0, unconfirmedVal=0, unconfirmedCount=0;
+  const rows=[];
+  CREDITS.forEach(c=>{
+    if(isDone(c,now)) saved+=c.per;
+    const recurring=(c.cadence==='month'||c.cadence==='quarter'||c.cadence==='half');
+    if(recurring){
+      const idxs=elapsedIndices(c.cadence,now);
+      if(idxs.length){
+        const periods=idxs.map(i=>({key:periodKeyFor(c.cadence,y,i),label:periodLabelFor(c.cadence,i)}));
+        periods.forEach(p=>{
+          const st=pillState(c.id,p.key);
+          if(st==='captured') saved+=c.per;
+          else if(st==='missed') missed+=c.per;
+          else { unconfirmedVal+=c.per; unconfirmedCount++; }
+        });
+        rows.push({c,periods});
+      }
+    } else if(c.cadence==='manual' && c.kind!=='auto'){
+      const dl=deadlineFor(c,now);
+      if(dl && dl<now && !isDone(c,now)) missed+=c.per;
+    }
+  });
+  return {saved,missed,unconfirmedVal,unconfirmedCount,rows};
+}
+
+/* ---------- State ---------- */
+let filter='all', hideDone=false, trOpen=false;
+const collapsed={crit:false,soon:false,up:false,ok:true,nodate:true,auto:true};
+
+function isDone(c,now){ return mem[chkKey(c,now)]==='1'; }
+
+function compute(now){
+  return CREDITS.map(c=>{
+    const dl=deadlineFor(c,now);
+    const d=calDaysLeft(dl,now);
+    const done=isDone(c,now);
+    let t=tier(d);
+    if(c.kind==='auto') t='auto';
+    return {...c,deadline:dl,days:d,done,t};
+  });
+}
+
+/* ---------- Countdown label ---------- */
+function cdLabel(item){
+  const d=item.days;
+  if(d==null) return {txt:'No date',col:'var(--slate)',bg:'rgba(139,151,171,.12)'};
+  const col = d<=2?'var(--red)': d<=14?'var(--orange)': d<=45?'var(--yellow)':'var(--green)';
+  const bg  = d<=2?'rgba(255,85,102,.13)': d<=14?'rgba(255,154,60,.13)': d<=45?'rgba(255,210,63,.13)':'rgba(55,220,138,.13)';
+  let txt;
+  if(d<0) txt='Expired';
+  else if(d===0) txt='Today';
+  else if(d===1) txt='Tomorrow';
+  else if(d<=14) txt=d+' days';
+  else txt=item.deadline.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+  return {txt,col,bg};
+}
+
+/* ---------- Render ---------- */
+const now0=()=>new Date();
+function render(){
+  const now=now0();
+  const items=compute(now);
+  const dateEl=document.getElementById('dateline');
+  dateEl.textContent=now.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'});
+
+  // hero: soonest cluster among items with a real deadline (>=0), not done
+  const live=items.filter(i=>!i.done && i.days!=null && i.days>=0);
+  const hero={amt:0,cnt:0,days:null};
+  if(live.length){
+    const min=Math.min(...live.map(i=>i.days));
+    const cl=live.filter(i=>i.days===min);
+    hero.days=min; hero.cnt=cl.length; hero.amt=cl.reduce((s,i)=>s+i.per,0);
+  }
+  const heroAmtEl=document.getElementById('heroamt');
+  const heroSubEl=document.getElementById('herosub');
+  const heroLblEl=document.getElementById('herolabel');
+  const timerWrap=document.getElementById('herotimerwrap');
+  if(hero.days==null){
+    heroLblEl.textContent='All clear';
+    heroAmtEl.textContent='✓';
+    heroAmtEl.style.color='var(--green)';
+    heroSubEl.innerHTML='Nothing with a fixed deadline is outstanding.';
+    timerWrap.innerHTML='';
+  } else {
+    const when = hero.days===0?'expiring today': hero.days===1?'expiring tomorrow':'expiring in '+hero.days+' days';
+    heroLblEl.textContent = when;
+    heroAmtEl.textContent = fmt(hero.amt);
+    heroAmtEl.style.color = hero.days<=2?'#fff':'var(--text)';
+    heroSubEl.innerHTML='<b>'+hero.cnt+'</b> credit'+(hero.cnt===1?'':'s')+' '+when+'.';
+    timerWrap.innerHTML = hero.days===0
+      ? '<div class="htimer"><span class="pulse"></span><span>Resets at midnight in <b class="mono" id="livetimer">--:--:--</b></span></div>'
+      : '';
+  }
+
+  // progress: soonest-day cluster incl done
+  const withDL=items.filter(i=>i.days!=null && i.days>=0);
+  const pf=document.getElementById('pfill'), pl=document.getElementById('proglabel'), pp=document.getElementById('progpct');
+  if(withDL.length){
+    const min=Math.min(...withDL.map(i=>i.days));
+    const cl=withDL.filter(i=>i.days===min);
+    const tot=cl.reduce((s,i)=>s+i.per,0);
+    const cap=cl.filter(i=>i.done).reduce((s,i)=>s+i.per,0);
+    const pct=tot?Math.round(cap/tot*100):0;
+    pf.style.width=pct+'%';
+    const dayTxt = min===0?"today's":min===1?"tomorrow's":min+'-day';
+    pl.textContent=fmt(cap)+' of '+fmt(tot)+' captured ('+dayTxt+' deadline)';
+    pp.textContent=pct+'%';
+  } else { pf.style.width='0%'; pl.textContent=''; pp.textContent=''; }
+
+  // chips
+  const monthLeft=items.filter(i=>i.cadence==='month'&&!i.done).reduce((s,i)=>s+i.per,0);
+  const halfLeft =items.filter(i=>i.cadence==='half'&&!i.done).reduce((s,i)=>s+i.per,0);
+  const doneAmt  =items.filter(i=>i.done).reduce((s,i)=>s+i.per,0);
+  document.getElementById('c-month').textContent=fmt(monthLeft);
+  document.getElementById('c-half').textContent=fmt(halfLeft);
+  document.getElementById('c-done').textContent=fmt(doneAmt);
+
+  // groups
+  let list=items;
+  if(filter!=='all') list=list.filter(i=>i.issuer===filter);
+  if(hideDone) list=list.filter(i=>!i.done);
+
+  const byTier={}; TIERORDER.forEach(t=>byTier[t]=[]);
+  list.forEach(i=>byTier[i.t].push(i));
+  // sort within tier: by days asc (nulls last), then amount desc
+  Object.values(byTier).forEach(arr=>arr.sort((a,b)=>{
+    const ad=a.days==null?1e9:a.days, bd=b.days==null?1e9:b.days;
+    return ad-bd || b.per-a.per;
+  }));
+
+  const root=document.getElementById('groups');
+  root.innerHTML='';
+  let shown=0;
+  TIERORDER.forEach(t=>{
+    const arr=byTier[t]; if(!arr.length)return; shown+=arr.length;
+    const meta=TIERMETA[t];
+    const subtotal=arr.filter(i=>!i.done).reduce((s,i)=>s+i.per,0);
+    const g=document.createElement('div');
+    g.className='group'+(collapsed[t]?' collapsed':'');
+    g.dataset.group=t;
+    g.innerHTML=
+      '<div class="ghead" data-toggle="'+t+'">'
+      +'<span class="gdot" style="background:'+meta.color+'"></span>'
+      +'<span class="gname">'+meta.name+'</span>'
+      +'<span class="gmeta"><b>'+arr.length+'</b> · '+fmt(subtotal)+'</span>'
+      +'<span class="gcar">▾</span></div>'
+      +'<div class="glist">'+arr.map(tileHTML).join('')+'</div>';
+    root.appendChild(g);
+  });
+  if(shown===0){ root.innerHTML='<div class="allclear">✓ Nothing here — you\'re all caught up.</div>'; }
+
+  renderTrackRecord();
+}
+
+function tileHTML(i){
+  const cd=cdLabel(i);
+  const iss=ISSCOLOR[i.issuer]||'var(--slate)';
+  const cdPill = (i.days!=null)
+    ? '<span class="cd" style="color:'+cd.col+';background:'+cd.bg+'">⏱ '+cd.txt+'</span>'
+    : '';
+  const autoTag = i.kind==='auto' ? '<span class="auto-tag">AUTO</span>' : '';
+  // date zone only for manual items without a fixed cadence deadline
+  let dateZone='';
+  if(i.cadence==='manual' && i.kind!=='auto'){
+    const cur=mem[dateKey(i)];
+    dateZone = '<div class="date-zone" data-datezone="'+i.id+'">'
+      + (cur
+          ? '<input type="date" data-dateinput="'+i.id+'" value="'+cur+'"><span class="date-clear" data-dateclear="'+i.id+'">Clear</span>'
+          : '<span class="date-btn" data-dateadd="'+i.id+'">＋ Set expiry / reminder</span>')
+      + '</div>';
+  }
+  return '<div class="tile'+(i.done?' done':'')+'" data-id="'+i.id+'" tabindex="0" role="button" aria-pressed="'+i.done+'">'
+    + '<span class="accent" style="background:'+(TIERMETA[i.t].color)+'"></span>'
+    + '<span class="cbox"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#0a0c11" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
+    + '<div class="body">'
+    +   '<div class="row1"><div class="nm">'+i.name+autoTag+'</div><div class="amt">'+fmt(i.per)+'</div></div>'
+    +   '<span class="badge"><span class="bd" style="background:'+iss+'"></span>'+i.card+'</span>'
+    +   cdPill
+    +   '<div class="note">'+i.note+'</div>'
+    +   dateZone
+    + '</div>'
+    + '</div>';
+}
+
+/* ---------- Track record render ---------- */
+function renderTrackRecord(){
+  const now=now0();
+  const d=trackRecordData(now);
+  document.getElementById('tr-potential').textContent=fmt(ANNUAL_POTENTIAL);
+  document.getElementById('tr-saved').textContent=fmt(d.saved);
+  document.getElementById('tr-missed').textContent=fmt(d.missed);
+  document.getElementById('tr-unconfirmed').textContent=fmt(d.unconfirmedVal);
+  document.getElementById('tr-toggle-text').textContent = d.unconfirmedCount ? (d.unconfirmedCount+' to confirm') : 'All caught up';
+
+  const wrap=document.getElementById('trwrap');
+  wrap.classList.toggle('collapsed',!trOpen);
+  document.getElementById('tr-togglebtn').setAttribute('aria-expanded',String(trOpen));
+
+  const log=document.getElementById('tr-log');
+  if(!d.rows.length){
+    log.innerHTML='<div style="color:var(--dim);font-size:13px;padding:4px 0 8px">Nothing has closed out yet this year — this fills in after your next monthly or quarterly deadline passes.</div>';
+    return;
+  }
+  const names={month:'Monthly',quarter:'Quarterly',half:'Semiannual'};
+  const groups={};
+  d.rows.forEach(r=>{ (groups[r.c.cadence]=groups[r.c.cadence]||[]).push(r); });
+  let html='';
+  ['month','quarter','half'].forEach(cad=>{
+    if(!groups[cad])return;
+    html+='<div class="tr-cadgroup"><div class="tr-cadname">'+names[cad]+'</div>';
+    groups[cad].forEach(r=>{
+      html+='<div class="tr-row"><div class="tr-name">'+r.c.name+'<span class="card">'+r.c.card+'</span></div>'
+        +'<div class="tr-pills">'+r.periods.map(p=>{
+          const st=pillState(r.c.id,p.key);
+          const suf = st==='captured' ? ' ✓' : (st==='missed' ? ' ✕' : '');
+          return '<div class="pill" data-state="'+st+'" data-pid="'+r.c.id+'" data-pkey="'+p.key+'" role="button" tabindex="0" aria-label="'+r.c.name+' '+p.label+', currently '+st+'. Tap to change.">'+p.label+suf+'</div>';
+        }).join('')+'</div></div>';
+    });
+    html+='</div>';
+  });
+  log.innerHTML=html;
+}
+
+/* ---------- Interactions ---------- */
+function toggle(id){
+  const now=now0();
+  const c=CREDITS.find(x=>x.id===id); if(!c)return;
+  const k=chkKey(c,now);
+  if(mem[k]==='1'){ delete mem[k]; save(k,null,true); }
+  else { mem[k]='1'; save(k,'1'); }
+  render();
+}
+document.getElementById('groups').addEventListener('click',e=>{
+  const head=e.target.closest('[data-toggle]');
+  if(head){ const t=head.getAttribute('data-toggle'); collapsed[t]=!collapsed[t]; render(); return; }
+  if(e.target.closest('.date-zone')){
+    const add=e.target.closest('[data-dateadd]');
+    if(add){ const id=add.getAttribute('data-dateadd');
+      const inp=document.createElement('input'); inp.type='date'; inp.setAttribute('data-dateinput',id);
+      add.replaceWith(inp); inp.focus(); if(inp.showPicker){try{inp.showPicker();}catch(_){}}
+      return;
+    }
+    const clr=e.target.closest('[data-dateclear]');
+    if(clr){ const id=clr.getAttribute('data-dateclear'); delete mem['cc_date_'+id]; save('cc_date_'+id,null,true); render(); return; }
+    return; // clicks inside date zone never toggle
+  }
+  const tile=e.target.closest('[data-id]');
+  if(tile) toggle(tile.getAttribute('data-id'));
+});
+document.getElementById('groups').addEventListener('change',e=>{
+  const inp=e.target.closest('[data-dateinput]');
+  if(inp){ const id=inp.getAttribute('data-dateinput'); const v=inp.value;
+    if(v){ mem['cc_date_'+id]=v; save('cc_date_'+id,v); } else { delete mem['cc_date_'+id]; save('cc_date_'+id,null,true); }
+    render();
+  }
+});
+document.getElementById('groups').addEventListener('keydown',e=>{
+  if((e.key==='Enter'||e.key===' ')){
+    const tile=e.target.closest('[data-id]');
+    if(tile && !e.target.closest('.date-zone')){ e.preventDefault(); toggle(tile.getAttribute('data-id')); }
+  }
+});
+document.getElementById('filters').addEventListener('click',e=>{
+  const b=e.target.closest('[data-f]'); if(!b)return;
+  filter=b.getAttribute('data-f');
+  [...document.querySelectorAll('#filters .fchip')].forEach(x=>x.setAttribute('aria-pressed', x===b));
+  render();
+});
+const hd=document.getElementById('hidedone');
+function toggleHide(){ hideDone=!hideDone; hd.setAttribute('aria-pressed',hideDone); render(); }
+hd.addEventListener('click',toggleHide);
+hd.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();toggleHide();} });
+
+document.getElementById('tr-togglebtn').addEventListener('click',()=>{ trOpen=!trOpen; renderTrackRecord(); });
+document.getElementById('tr-togglebtn').addEventListener('keydown',e=>{
+  if(e.key==='Enter'||e.key===' '){ e.preventDefault(); trOpen=!trOpen; renderTrackRecord(); }
+});
+document.getElementById('tr-log').addEventListener('click',e=>{
+  const p=e.target.closest('[data-pid]'); if(!p)return;
+  cyclePill(p.getAttribute('data-pid'), p.getAttribute('data-pkey'));
+});
+document.getElementById('tr-log').addEventListener('keydown',e=>{
+  if(e.key==='Enter'||e.key===' '){
+    const p=e.target.closest('[data-pid]');
+    if(p){ e.preventDefault(); cyclePill(p.getAttribute('data-pid'), p.getAttribute('data-pkey')); }
+  }
+});
+
+/* ---------- Live clock ---------- */
+let lastDay=new Date().getDate();
+function startClock(){
+  setInterval(()=>{
+    const now=new Date();
+    if(now.getDate()!==lastDay){ lastDay=now.getDate(); render(); return; }
+    const t=document.getElementById('livetimer');
+    if(t){
+      const mid=new Date(now.getFullYear(),now.getMonth(),now.getDate()+1,0,0,0);
+      let s=Math.max(0,Math.floor((mid-now)/1000));
+      const h=String(Math.floor(s/3600)).padStart(2,'0');
+      const m=String(Math.floor((s%3600)/60)).padStart(2,'0');
+      const ss=String(s%60).padStart(2,'0');
+      t.textContent=h+':'+m+':'+ss;
+    }
+  },1000);
+}
+
+/* ---------- Boot ---------- */
+(async function(){ await loadStore(); render(); startClock(); })();
+</script>
+</body>
+</html>
