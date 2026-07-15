@@ -1,24 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-07-14T15:02:46+00:00",
+  "lastUpdated": "2026-07-15T15:01:17+00:00",
   "count": 7,
   "bonuses": [
-    {
-      "from": "Chase Ultimate Rewards",
-      "details": "30% transfer bonus from Chase Ultimate Rewards to Virgin Atlantic Flying Club",
-      "pct": "30%",
-      "url": "https://frequentmiler.com/chase-ultimate-rewards-virgin-atlantic-30-percent-transfer-bonus/",
-      "start": "06/09/26",
-      "end": "07/14/26"
-    },
-    {
-      "from": "Amex Membership Rewards",
-      "details": "20% transfer bonus from Amex Membership Rewards to Hilton",
-      "pct": "20%",
-      "url": "https://frequentmiler.com/20-percent-transfer-bonus-american-express-membership-rewards-hilton-honors/",
-      "start": "07/01/26",
-      "end": "07/14/26"
-    },
     {
       "from": "Amex Membership Rewards",
       "details": "15% transfer bonus from Amex Membership Rewards to Avianca LifeMiles",
@@ -34,6 +18,14 @@
       "url": "https://frequentmiler.com/50-percent-transfer-bonus-citi-thankyou-accor-all/",
       "start": "06/14/26",
       "end": "07/18/26"
+    },
+    {
+      "from": "Chase Ultimate Rewards",
+      "details": "100% transfer bonus from Chase Ultimate Rewards to IHG",
+      "pct": "100%",
+      "url": "",
+      "start": "07/15/26",
+      "end": "07/30/26"
     },
     {
       "from": "Rove Miles",
@@ -58,6 +50,14 @@
       "url": "https://frequentmiler.com/30-percent-transfer-bonus-american-express-membership-rewards-virgin-atlantic/",
       "start": "07/01/26",
       "end": "07/31/26"
+    },
+    {
+      "from": "Rove Miles",
+      "details": "50% transfer bonus from Rove Miles to Qantas Frequent Flyer",
+      "pct": "50%",
+      "url": "https://frequentmiler.com/rove-adds-qantas-as-transfer-partner-launches-with-50-transfer-bonus/",
+      "start": "07/15/26",
+      "end": "08/14/26"
     }
   ]
 }
