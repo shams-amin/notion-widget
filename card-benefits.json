@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-06",
-  "verified": "2026-07-06",
-  "method": "Primary-sourced quarterly re-audit: every benefit re-verified against issuer pages (chase.com, americanexpress.com, capitalone.com, delta.com, marriott.com, hilton.com, DoorDash/Chase co-brand terms) on 2026-07-06 (prior full audit 2026-07-01). sk:'secondary' = confirmed via multiple reputable trackers (Frequent Miler, TPG, Doctor of Credit, USCCG, AwardWallet) where the issuer page was JS-gated.",
+  "updated": "2026-07-19",
+  "verified": "2026-07-19",
+  "method": "Primary-sourced re-audit: every benefit re-verified against issuer pages (chase.com, americanexpress.com, capitalone.com, delta.com, marriott.com, hilton.com, united.com, hyatt.com, ihg.com, southwest.com, and the Chase/DoorDash co-brand terms) on 2026-07-19 via four parallel research agents (Chase premium / Chase co-brands / Amex / Capital One). All 164 benefit lines verified UNCHANGED in value, cadence and existence vs 2026-07-13; no annual fee moved. This pass corrected 10 pre-existing data errors/imprecisions rather than tracking new issuer changes. sk:'issuer' = primary issuer page; sk:'partner' = first-party partner source (e.g. CLEAR's Amex FAQ); sk:'secondary' = confirmed via multiple reputable trackers (Frequent Miler, TPG, Doctor of Credit, US Credit Card Guide, AwardWallet, Upgraded Points, One Mile at a Time, NerdWallet).",
   "cards": [
     {
       "id": "csr",
@@ -39,7 +39,7 @@
           "pp": 250,
           "cad": "year",
           "enroll": false,
-          "how": "Prepaid Chase Travel bookings (2-night min) at IHG, Montage, Pendry, Omni, Virgin, Minor, Pan Pacific. Automatic.",
+          "how": "Prepaid Chase Travel bookings (2-night min) at IHG, Montage, Pendry, Omni, Virgin, Minor, Pan Pacific. Automatic. ENDS 12/31/26 -- final year for this credit.",
           "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
           "sk": "issuer",
           "flag": "new — ends 12/31/26"
@@ -178,7 +178,7 @@
           "pp": null,
           "cad": "once",
           "enroll": true,
-          "how": "Limited-time (added 7/1/26): register via Chase by 9/30/26 for 3 months complimentary Marriott Bonvoy Gold, then complete 3 paid Marriott-direct nights by 9/30/26 to keep Gold through Feb 2028. Excludes those already Gold or higher; award nights & OTA/Chase Travel stays don't count.",
+          "how": "Limited-time (added 7/1/26): REGISTER via Chase by 9/30/26 to receive 3 months complimentary Marriott Bonvoy Gold. Then complete 3 paid Marriott-direct nights DURING that 3-month window (not by 9/30/26) to keep Gold through Feb 2028 -- so a September registrant has until roughly end of December. Excludes those already Gold or higher; award nights & OTA/Chase Travel stays don't count.",
           "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
           "sk": "issuer",
           "flag": "register + 3 nights by 9/30/26"
@@ -254,7 +254,7 @@
           "pp": 250,
           "cad": "year",
           "enroll": false,
-          "how": "Prepaid Chase Travel bookings (2-night min) at IHG, Montage, Pendry, Omni, Virgin, Minor, Pan Pacific.",
+          "how": "Prepaid Chase Travel bookings (2-night min) at IHG, Montage, Pendry, Omni, Virgin, Minor, Pan Pacific. ENDS 12/31/26 -- final year for this credit.",
           "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
           "sk": "issuer",
           "flag": "new — ends 12/31/26"
@@ -380,9 +380,9 @@
           "pp": null,
           "cad": "once",
           "enroll": true,
-          "how": "Limited-time (added 7/1/26): register via Chase by 9/30/26 for 3 months complimentary Marriott Bonvoy Gold, then complete 3 paid Marriott-direct nights by 9/30/26 to keep Gold through Feb 2028. Excludes those already Gold or higher; award nights & OTA/Chase Travel stays don't count.",
+          "how": "Limited-time (added 7/1/26): REGISTER via Chase by 9/30/26 to receive 3 months complimentary Marriott Bonvoy Gold. Then complete 3 paid Marriott-direct nights DURING that 3-month window (not by 9/30/26) to keep Gold through Feb 2028 -- so a September registrant has until roughly end of December. Excludes those already Gold or higher; award nights & OTA/Chase Travel stays don't count. NOTE: offer terms name only Chase Sapphire Reserve and J.P. Morgan Reserve cardholders -- Sapphire Reserve for Business is neither named nor explicitly excluded. Confirm eligibility before relying on this.",
           "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
-          "sk": "issuer",
+          "sk": "secondary",
           "flag": "register + 3 nights by 9/30/26"
         },
         {
@@ -715,7 +715,7 @@
           "pp": 15,
           "cad": "month",
           "enroll": false,
-          "how": "One $10 + one $5 credit per calendar month — needs two separate Instacart orders to max. Ends 12/31/27.",
+          "how": "One $10 + one $5 credit per calendar month -- needs two separate Instacart orders to max. REQUIRES an active Instacart+ membership: the card includes 3 months free, then auto-enrolls at 50% off the annual rate. If Instacart+ lapses, the credits stop. Ends 12/31/27.",
           "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
           "sk": "issuer",
           "flag": "ends 12/31/27"
@@ -924,7 +924,7 @@
           "pp": 50,
           "cad": "anniversary",
           "enroll": false,
-          "how": "Spend $50+ at any Hyatt property → $50 credit, up to 2× each anniversary year. (Chase no longer specifies 6-mo halves — verify timing on first credit.)",
+          "how": "Spend $50+ at any Hyatt property -> $50 credit, up to 2x each anniversary year. Confirmed: no 6-month halves or split-period restriction.",
           "src": "https://www.chase.com/personal/credit-cards/hyatt/world-hyatt-business/exclusive-benefits",
           "sk": "issuer"
         },
@@ -1479,15 +1479,16 @@
           "sk": "issuer"
         },
         {
-          "n": "CLEAR+ credit $209",
+          "n": "CLEAR+ credit $219",
           "t": "credit",
-          "v": 209,
-          "pp": 209,
+          "v": 219,
+          "pp": 219,
           "cad": "year",
           "enroll": false,
-          "how": "Up to $209/calendar year when auto-renewing CLEAR+ is paid with the card.",
+          "how": "Up to $219/calendar year when auto-renewing CLEAR+ is paid with the card. Raised from $209 on 7/1/26 to match CLEAR's new $219 retail price. Confirmed by CLEAR's own Amex partnership FAQ, which names Business Platinum at $219; Amex's public CLEAR terms page still lags at $209, so a credit could briefly post at $209 before their systems catch up.",
           "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
-          "sk": "issuer"
+          "sk": "partner",
+          "flag": "raised to $219 (7/1/26)"
         },
         {
           "n": "Global Entry / TSA PreCheck",
@@ -1507,7 +1508,7 @@
           "pp": null,
           "cad": "ongoing",
           "enroll": true,
-          "how": "Centurion Lounges; 10 Delta Sky Club visits/yr (flying Delta); Priority Pass Select (enroll); Escape, Plaza Premium + more.",
+          "how": "Centurion Lounges; 10 Delta Sky Club visits/yr (flying Delta, visit year runs Feb 1-Jan 31); Priority Pass Select (enroll); Escape, Plaza Premium + more. Note: since ~7/8/26 Centurion Lounge guests must be ticketed on the SAME FLIGHT as the cardmember. The standard entry window remains 3 hours before departure; connecting passengers, previously exempt from any time limit, are now capped at 5 hours before the connecting flight.",
           "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
           "sk": "issuer"
         },
@@ -1584,7 +1585,7 @@
           "pp": 20,
           "cad": "month",
           "enroll": true,
-          "how": "Enroll; up to $20/mo at Grubhub + US office supply stores. ⚠️ FedEx drops off 10/1/26 (FedEx purchases through 9/30/26 still count). Monthly, no rollover.",
+          "how": "Enroll; up to $20/mo at Grubhub + US office supply stores. FedEx drops off after 10/1/26 -- Amex's copy reads 'FedEx (through 10/01/2026)', inclusive, though treating 9/30 as the operational deadline is safer since credits can key off posting date. Monthly, no rollover.",
           "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-gold-card-amex/",
           "sk": "issuer",
           "flag": "FedEx ends 10/1/26"
@@ -1684,7 +1685,7 @@
           "pp": null,
           "cad": "anniversary",
           "enroll": false,
-          "how": "Annual on renewal. Enhanced 6/4/26: valid in Delta First, Premium Select, Comfort+, or Main across domestic + Caribbean + Central America, and usable toward the flight portion of a Delta Vacations package. Pay $22–$250 taxes/fees.",
+          "how": "Annual on renewal. Valid in Delta First, Premium Select, Comfort+, or Main (not Delta One) within the U.S. and to Mexico, the Caribbean, or Central America. Premium Select eligibility predates 2026; the 6/4/26 change was Delta Vacations redemption eligibility (usable toward the flight portion of a package). Pay $22-$250 taxes/fees.",
           "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
           "sk": "issuer",
           "flag": "enhanced 6/4/26"
@@ -1776,16 +1777,16 @@
           "sk": "secondary"
         },
         {
-          "n": "CLEAR+ credit $209",
+          "n": "CLEAR+ credit $219",
           "t": "credit",
-          "v": 209,
-          "pp": 209,
+          "v": 219,
+          "pp": 219,
           "cad": "year",
           "enroll": false,
-          "how": "REAL — dedicated Amex benefit page. Up to $209/calendar year on auto-renewing CLEAR+ paid with card. (Added when Priority Pass was cut 2/1/24.)",
+          "how": "Dedicated Amex benefit page. Up to $219/calendar year on auto-renewing CLEAR+ paid with card (raised from $209 on 7/1/26). Confirmed by CLEAR's own Amex partnership FAQ, which names Hilton Aspire at $219; Amex's benefit-dashboard page for this card still lags at $209. Added when Priority Pass was cut 2/1/24.",
           "src": "https://global.americanexpress.com/card-benefits/detail/clear-credit/hilton-aspire",
-          "sk": "issuer",
-          "flag": "verified real"
+          "sk": "partner",
+          "flag": "raised to $219 (7/1/26)"
         },
         {
           "n": "Annual Free Night Reward",
@@ -1805,7 +1806,7 @@
           "pp": null,
           "cad": "ongoing",
           "enroll": false,
-          "how": "Top-tier Diamond while card is open — upgrades, breakfast/F&B credit, lounge access.",
+          "how": "Complimentary Hilton Diamond while card is open -- upgrades, breakfast/F&B credit, lounge access. Note: Diamond is no longer Hilton's top tier; Diamond Reserve launched Jan 2026 and is not obtainable via credit card.",
           "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
           "sk": "issuer"
         },
@@ -1944,7 +1945,7 @@
           "pp": null,
           "cad": "ongoing",
           "enroll": true,
-          "how": "Primary unlimited; PP requires self-enrollment. Guests no longer free: $45/$25 at C1 lounges, $35 at PP ($75k spend = 2 free guests). AUs now $125/yr each. Plaza Premium direct access ended 3/1/25.",
+          "how": "Primary unlimited Capital One Lounge/Landing + Priority Pass (self-enroll). Business card keeps 2 complimentary Priority Pass guests per visit ($35 each beyond 2). Capital One Lounge guests $45 (17&under $25); $75k spend = 2 free C1-lounge guests. AUs $125/yr each. Plaza Premium direct access ended 3/1/25.",
           "src": "https://www.capitalone.com/credit-cards/disclosures/airport-lounge-terms/",
           "sk": "issuer",
           "flag": "2025–26 nerfs"
