@@ -1,24 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-07-19T14:34:32+00:00",
-  "count": 7,
+  "lastUpdated": "2026-07-20T15:20:17+00:00",
+  "count": 6,
   "bonuses": [
-    {
-      "from": "Amex Membership Rewards",
-      "details": "15% transfer bonus from Amex Membership Rewards to Avianca LifeMiles",
-      "pct": "15%",
-      "url": "https://frequentmiler.com/15-transfer-bonus-from-amex-membership-rewards-to-avianca-lifemiles/",
-      "start": "06/15/26",
-      "end": "07/15/26"
-    },
-    {
-      "from": "Citi ThankYou Rewards",
-      "details": "50% transfer bonus from Citi ThankYou Rewards to ALL Accor",
-      "pct": "50%",
-      "url": "https://frequentmiler.com/50-percent-transfer-bonus-citi-thankyou-accor-all/",
-      "start": "06/14/26",
-      "end": "07/18/26"
-    },
     {
       "from": "Chase Ultimate Rewards",
       "details": "100% transfer bonus from Chase Ultimate Rewards to IHG",
@@ -58,6 +42,14 @@
       "url": "https://frequentmiler.com/rove-adds-qantas-as-transfer-partner-launches-with-50-transfer-bonus/",
       "start": "07/15/26",
       "end": "08/14/26"
+    },
+    {
+      "from": "Citi ThankYou Rewards",
+      "details": "20% transfer bonus from Citi ThankYou Rewards to Air France KLM Flying Blue",
+      "pct": "20%",
+      "url": "",
+      "start": "07/19/26",
+      "end": "08/22/26"
     }
   ]
 }
