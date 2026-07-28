@@ -1,7 +1,7 @@
 {
- "updated": "2026-07-20",
- "verified": "2026-07-20",
- "method": "Change-detection sweep against issuer pages (chase.com, americanexpress.com, capitalone.com, delta.com, marriott.com, hilton.com, united.com, hyatt.com, ihg.com, southwest.com, Chase/DoorDash co-brand terms, thecenturionlounge.com, clearme.com), run by four parallel per-issuer agents against the fully-verified 2026-07-19 baseline. Reputable trackers used only as labelled secondary confirmation where issuer pages are JavaScript-gated or login-gated.",
+ "updated": "2026-07-27",
+ "verified": "2026-07-27",
+ "method": "Change-detection sweep against issuer pages (chase.com, americanexpress.com, capitalone.com, delta.com, marriott.com, hilton.com, united.com, hyatt.com, ihg.com, southwest.com, Chase/DoorDash co-brand terms, clearme.com), run by four parallel per-issuer agents against the fully-verified 2026-07-20 baseline. No issuer-side benefit changes found in the 7/20->7/27 week. This pass removed the United Quest DoorDash line (convergent evidence it is not a benefit on that card), and refreshed the CLEAR $219 and Capital One lounge-guest notes. Reputable trackers used only as labelled secondary/partner confirmation where issuer pages are JavaScript- or login-gated.",
  "cards": [
   {
    "id": "csr",
@@ -778,18 +778,6 @@
      "sk": "issuer"
     },
     {
-     "n": "DoorDash $10/quarter + DashPass",
-     "t": "credit",
-     "v": 40,
-     "pp": 10,
-     "cad": "quarter",
-     "enroll": true,
-     "how": "Co-brand tier: 12-mo complimentary DashPass (activate by 12/31/27, auto-bills after) + $10/quarter non-restaurant promo while enrolled. ⚠️ UNVERIFIED ON THIS CARD: as of 7/20/26 neither the Chase United Quest page nor cardmembers.united.com/Quest mentions DoorDash or DashPass, and Chase's \"over $850 in annual partner credits\" sums to the six non-DoorDash credits exactly. May be over-inclusion on our side rather than a removal. Check Chase account > Merchant Offers under this card before relying on it.",
-     "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
-     "sk": "secondary",
-     "flag": "UNVERIFIED on this card — check in-account"
-    },
-    {
      "n": "Earn rates",
      "t": "earn",
      "v": null,
@@ -1474,7 +1462,7 @@
      "pp": 219,
      "cad": "year",
      "enroll": false,
-     "how": "Up to $219/calendar year when auto-renewing CLEAR+ is paid with the card. Raised from $209 on 7/1/26 to match CLEAR's new retail price. Source of truth is CLEAR's own Amex partnership FAQ, which names The Business Platinum Card at $219. Re-checked 7/20/26: Amex still shows $209 on THREE of its own pages (Biz Platinum product page, Aspire product page, and its dedicated CLEAR benefit page) -- the lag is wholesale, not card-specific. A credit could post at $209 before Amex catches up; $219 is the operative figure.",
+     "how": "Up to $219/calendar year when auto-renewing CLEAR+ is paid with the card. Raised from $209 on 7/1/26 to match CLEAR's new retail price. CLEAR's own Amex partnership FAQ names The Business Platinum Card at $219 (partner-confirmed 7/27/26). Re-checked 7/27/26: secondary trackers (AwardWallet, Danny Deal Guru) now report Amex has raised its own card credits to $219 to match, resolving the earlier $209 lag; Amex's own product/benefit pages stayed JS/login-gated this run and were not directly eyeballed. $219 is the operative figure -- a credit could still post at $209 if a given Amex page lags.",
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "partner",
      "flag": "raised to $219 (7/1/26)"
@@ -1774,7 +1762,7 @@
      "pp": 219,
      "cad": "year",
      "enroll": false,
-     "how": "Up to $219/calendar year on auto-renewing CLEAR+ paid with card (raised from $209 on 7/1/26). Confirmed by CLEAR's own Amex partnership FAQ, which names Hilton Honors Aspire at $219. Re-checked 7/20/26: Amex's Aspire product page and its dedicated CLEAR benefit page both still read $209 -- stale, not card-specific. Added when Priority Pass was cut 2/1/24.",
+     "how": "Up to $219/calendar year on auto-renewing CLEAR+ paid with card (raised from $209 on 7/1/26). CLEAR's own Amex partnership FAQ names Hilton Honors Aspire at $219 (partner-confirmed 7/27/26). Re-checked 7/27/26: secondary trackers now report Amex raised its own card credits to $219 to match, resolving the earlier $209 lag; Amex's Aspire pages stayed JS/login-gated this run. Added when Priority Pass was cut 2/1/24.",
      "src": "https://global.americanexpress.com/card-benefits/detail/clear-credit/hilton-aspire",
      "sk": "partner",
      "flag": "raised to $219 (7/1/26)"
@@ -1936,7 +1924,7 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": true,
-     "how": "Primary unlimited Capital One Lounge/Landing + Priority Pass (self-enroll). Business card keeps 2 complimentary Priority Pass guests per visit ($35 each beyond 2). Capital One Lounge guests $45 (17&under $25); $75k spend = 2 free C1-lounge guests. AUs $125/yr each. Plaza Premium direct access ended 3/1/25.",
+     "how": "Primary unlimited Capital One Lounge/Landing + Priority Pass (self-enroll). Business card keeps 2 complimentary Priority Pass guests per visit ($35 each beyond 2). Capital One Lounge guests $45 (17&under $25, under-2 free); $75k calendar spend = 2 complimentary Capital One Lounge guests AND 1 Capital One Landing guest per visit (corrected 7/27/26 -- prior line omitted the Landing guest). Up to 99 AUs may be added but only 4 paid AUs ($125/yr each) get lounge access. Plaza Premium direct access ended 3/1/25.",
      "src": "https://www.capitalone.com/credit-cards/disclosures/airport-lounge-terms/",
      "sk": "issuer",
      "flag": "2025–26 nerfs"
