@@ -1,7 +1,7 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-07-28T15:33:17+00:00",
-  "count": 6,
+  "lastUpdated": "2026-07-29T15:18:32+00:00",
+  "count": 7,
   "bonuses": [
     {
       "from": "Chase Ultimate Rewards",
@@ -50,6 +50,14 @@
       "url": "https://frequentmiler.com/citi-thankyou-air-france-klm-flying-blue-20-percent-transfer-bonus/",
       "start": "07/19/26",
       "end": "08/22/26"
+    },
+    {
+      "from": "Other / Unknown",
+      "details": "10% transfer bonus from any bank points & Marriott Bonvoy to Cathay Pacific Asia Miles",
+      "pct": "10%",
+      "url": "",
+      "start": "07/27/26",
+      "end": "08/28/26"
     }
   ]
 }
