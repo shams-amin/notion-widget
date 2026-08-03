@@ -1,7 +1,7 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-08-02T14:42:35+00:00",
-  "count": 5,
+  "lastUpdated": "2026-08-03T15:50:52+00:00",
+  "count": 9,
   "bonuses": [
     {
       "from": "Rove Miles",
@@ -42,6 +42,38 @@
       "url": "https://frequentmiler.com/15-transfer-bonus-from-capital-one-to-lifemiles-avianca/",
       "start": "08/01/26",
       "end": "08/31/26"
+    },
+    {
+      "from": "Citi ThankYou Rewards",
+      "details": "40% transfer bonus from Citi ThankYou Rewards to Turkish Airlines Miles & Smiles",
+      "pct": "40%",
+      "url": "",
+      "start": "08/01/26",
+      "end": "08/31/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
+      "details": "30% transfer bonus from Amex Membership Rewards to British Airways Avios",
+      "pct": "30%",
+      "url": "",
+      "start": "08/03/26",
+      "end": "09/27/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
+      "details": "30% transfer bonus from Amex Membership Rewards to Iberia Avios",
+      "pct": "30%",
+      "url": "",
+      "start": "08/03/26",
+      "end": "09/27/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
+      "details": "30% transfer bonus from Amex Membership Rewards to Aer Lingus Avios",
+      "pct": "30%",
+      "url": "",
+      "start": "08/03/26",
+      "end": "09/27/26"
     }
   ]
 }
