@@ -1,7 +1,7 @@
 {
- "updated": "2026-07-27",
- "verified": "2026-07-27",
- "method": "Change-detection sweep against issuer pages (chase.com, americanexpress.com, capitalone.com, delta.com, marriott.com, hilton.com, united.com, hyatt.com, ihg.com, southwest.com, Chase/DoorDash co-brand terms, clearme.com), run by four parallel per-issuer agents against the fully-verified 2026-07-20 baseline. No issuer-side benefit changes found in the 7/20->7/27 week. This pass removed the United Quest DoorDash line (convergent evidence it is not a benefit on that card), and refreshed the CLEAR $219 and Capital One lounge-guest notes. Reputable trackers used only as labelled secondary/partner confirmation where issuer pages are JavaScript- or login-gated.",
+ "updated": "2026-08-03",
+ "verified": "2026-08-03",
+ "method": "Change-detection sweep against issuer pages (chase.com, americanexpress.com, capitalone.com, delta.com, marriott.com, hilton.com, united.com, hyatt.com, ihg.com, southwest.com, Chase/DoorDash co-brand terms, clearme.com), run by four parallel per-issuer agents against the 2026-07-27 baseline. No issuer-side benefit changes found across all 17 cards (fourth consecutive zero-change pass); all 17 annual fees unchanged; benefit count holds at 162. This pass upgraded CLEAR $219 and Indeed $360 on Business Platinum from secondary to issuer-confirmed (Amex's own product pages rendered this run), confirmed the Delta Reserve Business Resy narrowing took effect 8/1/26 as scheduled, and re-verified the Capital One lounge-guest tier against Capital One's lounge terms (Last updated 2026-02-01). Reputable trackers used only as labelled secondary/partner confirmation where issuer pages are JavaScript- or login-gated.",
  "cards": [
   {
    "id": "csr",
@@ -1393,9 +1393,9 @@
      "pp": 90,
      "cad": "quarter",
      "enroll": true,
-     "how": "Enroll; up to $90/quarter directly with Indeed. Confirmed still live July 2026 — survived the refresh.",
+     "how": "Enroll; up to $90/quarter ($360/yr) directly with Indeed. Issuer-confirmed 8/3/26 -- now printed on Amex's Business Platinum product page (\"Up to $360 Indeed Credit\"); survived the late-2025 refresh.",
      "src": "https://www.uscreditcardguide.com/amex-business-platinum-card/",
-     "sk": "secondary"
+     "sk": "issuer"
     },
     {
      "n": "ChatGPT Business credit $300",
@@ -1462,9 +1462,9 @@
      "pp": 219,
      "cad": "year",
      "enroll": false,
-     "how": "Up to $219/calendar year when auto-renewing CLEAR+ is paid with the card. Raised from $209 on 7/1/26 to match CLEAR's new retail price. CLEAR's own Amex partnership FAQ names The Business Platinum Card at $219 (partner-confirmed 7/27/26). Re-checked 7/27/26: secondary trackers (AwardWallet, Danny Deal Guru) now report Amex has raised its own card credits to $219 to match, resolving the earlier $209 lag; Amex's own product/benefit pages stayed JS/login-gated this run and were not directly eyeballed. $219 is the operative figure -- a credit could still post at $209 if a given Amex page lags.",
+     "how": "Up to $219/calendar year when auto-renewing CLEAR+ is paid with the card. Raised from $209 on 7/1/26 to match CLEAR's new retail price. Issuer-confirmed 8/3/26: Amex's own Business Platinum product page rendered this run and prints \"Up to $219 CLEAR+ Credit ... per calendar year,\" closing the earlier $209-lag caveat; also named at $219 on CLEAR's Amex partnership FAQ. $219 is operative.",
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
-     "sk": "partner",
+     "sk": "issuer",
      "flag": "raised to $219 (7/1/26)"
     },
     {
@@ -1762,7 +1762,7 @@
      "pp": 219,
      "cad": "year",
      "enroll": false,
-     "how": "Up to $219/calendar year on auto-renewing CLEAR+ paid with card (raised from $209 on 7/1/26). CLEAR's own Amex partnership FAQ names Hilton Honors Aspire at $219 (partner-confirmed 7/27/26). Re-checked 7/27/26: secondary trackers now report Amex raised its own card credits to $219 to match, resolving the earlier $209 lag; Amex's Aspire pages stayed JS/login-gated this run. Added when Priority Pass was cut 2/1/24.",
+     "how": "Up to $219/calendar year on auto-renewing CLEAR+ paid with card (raised from $209 on 7/1/26). CLEAR's own Amex partnership FAQ names Hilton Honors Aspire at $219 (partner-confirmed 8/3/26). Amex's Aspire consumer page stayed JS/login-gated on the 8/3/26 audit, so the Aspire-side figure remains partner/secondary-sourced; secondary trackers report Amex raised its own credit to $219 to match. Added when Priority Pass was cut 2/1/24.",
      "src": "https://global.americanexpress.com/card-benefits/detail/clear-credit/hilton-aspire",
      "sk": "partner",
      "flag": "raised to $219 (7/1/26)"
@@ -1924,7 +1924,7 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": true,
-     "how": "Primary unlimited Capital One Lounge/Landing + Priority Pass (self-enroll). Business card keeps 2 complimentary Priority Pass guests per visit ($35 each beyond 2). Capital One Lounge guests $45 (17&under $25, under-2 free); $75k calendar spend = 2 complimentary Capital One Lounge guests AND 1 Capital One Landing guest per visit (corrected 7/27/26 -- prior line omitted the Landing guest). Up to 99 AUs may be added but only 4 paid AUs ($125/yr each) get lounge access. Plaza Premium direct access ended 3/1/25.",
+     "how": "Primary unlimited Capital One Lounge/Landing + Priority Pass (self-enroll). Business card keeps 2 complimentary Priority Pass guests per visit ($35 each beyond 2). Capital One Lounge guests $45 (17&under $25, under-2 free); $75k calendar spend = 2 complimentary Capital One Lounge guests AND 1 Capital One Landing guest per visit (corrected 7/27/26; re-verified 8/3/26 against Capital One's lounge terms, Last updated 2026-02-01). Up to 99 AUs may be added but only 4 paid AUs ($125/yr each) get lounge access. Plaza Premium direct access ended 3/1/25.",
      "src": "https://www.capitalone.com/credit-cards/disclosures/airport-lounge-terms/",
      "sk": "issuer",
      "flag": "2025–26 nerfs"
