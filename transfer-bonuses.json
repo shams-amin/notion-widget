@@ -1,7 +1,7 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-08-11T14:30:58+00:00",
-  "count": 9,
+  "lastUpdated": "2026-08-12T14:31:12+00:00",
+  "count": 10,
   "bonuses": [
     {
       "from": "Rove Miles",
@@ -74,6 +74,14 @@
       "url": "https://frequentmiler.com/30-percent-transfer-bonus-american-express-membership-rewards-avios-british-airways-iberia-aer-lingus/",
       "start": "08/03/26",
       "end": "09/27/26"
+    },
+    {
+      "from": "Chase Ultimate Rewards",
+      "details": "20% transfer bonus from Chase Ultimate Rewards to Air Canada Aeroplan",
+      "pct": "20%",
+      "url": "https://frequentmiler.com/get-20-bonus-when-transferring-chase-ultimate-rewards-to-air-canada-aeroplan-stack-with-10-cardholder-bonus/",
+      "start": "08/12/26",
+      "end": "09/30/26"
     }
   ]
 }
