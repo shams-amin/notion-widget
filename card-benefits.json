@@ -1,7 +1,7 @@
 {
- "updated": "2026-08-10",
- "verified": "2026-08-10",
- "method": "Change-detection sweep against issuer pages (chase.com, americanexpress.com, capitalone.com, delta.com, marriott.com, hilton.com, united.com, hyatt.com, ihg.com, southwest.com, thecenturionlounge.com, Chase/DoorDash co-brand terms, clearme.com), run by four parallel per-issuer agents against the 2026-08-03 baseline. NO issuer-side benefit change found on any of the 17 cards for the fifth consecutive pass; all 17 annual fees unchanged. What this pass changed is our record, not the products: +12 benefits (162 -> 174). Added three issuer-confirmed Instacart co-brand credits ($10/mo, $120/yr, through 12/31/27) on IHG Premier, IHG Premier Business and Southwest Priority -- and established that World of Hyatt, World of Hyatt Business and Southwest Performance Business do NOT carry it (absent from all three Chase product pages), correcting the earlier 'six cards' assumption. Added no-foreign-transaction-fee on the six co-brands that were missing it, Capital One's Lifestyle Collection $50 experience credit, Hilton Aspire's Amex Venue Collection 10%/$250, and Business Platinum cell-phone protection. Sourcing upgrades: Aspire CLEAR $219 partner -> issuer (Amex's Aspire page rendered for the first time), Marriott 25k Free Night Award top-off secondary -> issuer (Marriott program terms 3.3), Capital One cell-phone protection secondary -> issuer (plus a previously-missing $1,000/12mo aggregate cap), Centurion $75k guest access -> issuer. Corrections: the Hertz 12/31/26 re-enrollment deadline was wrongly attached to Delta Reserve Business (it belongs to Business Platinum; Delta's path is delta.com/hertz); the CSR Marriott Gold fast-track requires its 3 qualifying nights DURING the Jul 1 - Sep 30 window, not in the 3 months after registering; the phantom '$100 Centurion on-property credit' was a conflation with The Hotel Collection credit and is retired. Sourcing degraded: the Hyatt early-award-access '13-month / from 6/30/26' specifics are no longer corroborated by any renderable Hyatt page. Re-confirmed negative: United Quest still has no DoorDash (Chase's '$850+' still sums to $860 without it); American Airlines is still NOT a Capital One transfer partner (partner page still dated 2026-01-29, 18 airlines + 4 hotels); Delta Reserve Business still has no CLEAR and no airline-fee credit, and its companion certificate still includes Premium Select per Delta's governing terms even though three marketing surfaces now omit it; Hilton Aspire still has no lounge access and no Global Entry credit; Southwest's retired $75 credit and upgraded boardings are still gone.",
+ "updated": "2026-08-17",
+ "verified": "2026-08-17",
+ "method": "Change-detection sweep against issuer pages (chase.com, americanexpress.com, capitalone.com, delta.com, marriott.com, hilton.com, united.com, hyatt.com, ihg.com, southwest.com, thecenturionlounge.com, instacart.com Chase co-brand pages, Chase/DoorDash co-brand terms), run by four parallel per-issuer agents against the 2026-08-10 baseline. NO issuer-side benefit change found on any of the 17 cards for the SIXTH consecutive pass; all 17 annual fees re-confirmed unchanged from issuer page headers. What changed is our record, not the products: +14 benefits (174 -> 188). HEADLINE: instacart.com/p/chase-cobrands rendered for the first time after being JS-gated on every prior attempt, and it contradicts us on three cards -- it names World of Hyatt, World of Hyatt Business and Southwest Performance Business as enrollment-eligible, though Chase's own product pages for those three market no Instacart benefit. Added all three (+$360/yr) on the enrollment page's authority, flagged 'verify at enrollment', because enrolling is free and reversible while leaving them unrecorded forfeits $10/month each. SECOND MATERIAL FIX: United Quest's Instacart credit was recorded as requiring no enrollment -- it does, and at a DIFFERENT url (instacart.com/p/chase-united, window 3/23/25-12/31/27). That error was silently costing $15/month. Other additions: Southwest Priority 5X Lyft through 12/31/27; Reserve Travel Designers on both Reserves; CSP Points Boost 1.5x; Business Gold's Hotel Collection $100 and cell-phone protection; Delta Reserve Business Global Dining Access and 4 Sky Club guest passes; Aspire Return Protection and Global Dining Access; Venture X Business rental-car coverage (with the condition that 'primary' applies only to business-purpose or foreign rentals). Sourcing upgrades: four Aspire items (resort credit, flight credit, National Emerald, earn rates) and the Business Platinum Indeed credit moved off blog sources onto Amex/Hilton pages -- only 2 secondary-sourced items remain. Sourcing corrections: the Bonvoy 35k cap cites the marriott.com card page (the string '35,000' appears zero times in Marriott's program terms) and the 25k top-off is section 3.3.c.i; the Southwest Performance Business DoorDash source moved off doordash.com onto Chase's terms page; IHG United TravelBank registration is at ihg.com/united through your IHG account, NOT a MileagePlus registration. Sourcing downgrades: the Delta Stays 'calendar year' reset is not issuer-supported and is now flagged unknown; the Exclusive Tables 404-restaurant count and 60-day grace period are not on any issuer page; Hyatt's early-award-access wording names the personal card only, so applying it to the business card is our inference. Re-confirmed negative: United Quest still has no DoorDash (Chase's '$850+' still itemises to $860 without it); American Airlines is still NOT a Capital One transfer partner (page still dated 2026-01-29, 18 airlines + 4 hotels -- refuted a fifth time); Delta Reserve Business still has no CLEAR and no airline-fee credit, and its companion certificate still includes Premium Select per Delta's governing T&C despite marketing copy omitting it; Hilton Aspire still has no lounge access and no Global Entry credit; Southwest's retired $75 credit and upgraded boardings are still gone; the CSR Marriott Gold fast-track wording is character-for-character unchanged (register AND complete 3 nights inside Jul 1 - Sep 30). Method note: Chase's JS-gated IHG Business and Hyatt Business perk pages can be bypassed via their AEM disclosure fragments (chase.com/content/chase-ux/.../disclaimer.html), which serve full verbatim terms over plain HTTP.",
  "cards": [
   {
    "id": "csr",
@@ -51,7 +51,7 @@
      "pp": 150,
      "cad": "half",
      "enroll": false,
-     "how": "$150 Jan–Jun + $150 Jul–Dec at Sapphire Exclusive Tables restaurants booked via OpenTable; pay with card. Roster churns: ~7/7/26 Chase added 91 and removed 64 restaurants (404 total; Las Vegas cut from 9 to 1). Grace period per Chase CS: a reservation booked BEFORE a restaurant was removed still earns the credit for up to 60 days after removal. Re-check the list before booking.",
+     "how": "$150 Jan–Jun + $150 Jul–Dec at Sapphire Exclusive Tables restaurants booked via OpenTable; pay with card. Roster churns: ~7/7/26 Chase added 91 and removed 64 restaurants (404 total; Las Vegas cut from 9 to 1). Grace period per Chase CS: a reservation booked BEFORE a restaurant was removed still earns the credit for up to 60 days after removal. Re-check the list before booking. ⚠️ SOURCING NOTE (8/17/26): Chase publishes only \"a list of over 275 top dining spots across the U.S. curated by The Infatuation.\" The 404-restaurant count and the 60-day post-removal grace period are NOT on any issuer page -- the grace period traces to a Chase phone rep. Treat both as secondary.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "roster changed 7/7/26"
@@ -216,6 +216,17 @@
      "how": "Primary CDW to $75k. Trip cancel/interrupt $10k/person, $20k/trip; delay 6+hrs $500; $1M travel accident; $100k evac.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer"
+    },
+    {
+     "n": "Reserve Travel Designers",
+     "t": "perk",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "added 8/17/26",
+     "how": "Chase builds and books a custom itinerary for you. Chase values the service at \"up to $300 per trip.\" Per-trip and uncapped, so deliberately NOT counted in the fixed-credit dashboard total. Pre-existing benefit that was missing from this dataset -- not a new August 2026 addition.",
+     "sk": "issuer",
+     "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve"
     }
    ]
   },
@@ -406,6 +417,17 @@
      "how": "Primary CDW on business rentals to $75k. Cell phone: $1,000/claim, 3 claims/12mo, $100 deductible, bill paid with card.",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer"
+    },
+    {
+     "n": "Reserve Travel Designers",
+     "t": "perk",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "added 8/17/26",
+     "how": "Chase builds and books a custom itinerary for you. Chase values the service at \"up to $300 per trip.\" Per-trip and uncapped, so deliberately NOT counted in the fixed-credit dashboard total. Pre-existing benefit that was missing from this dataset -- not a new August 2026 addition.",
+     "sk": "issuer",
+     "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve"
     }
    ]
   },
@@ -521,6 +543,17 @@
      "src": "https://media.chase.com/news/Meet-the-New-Chase-Sapphire-Preferred",
      "sk": "issuer",
      "flag": "new 6/15/26"
+    },
+    {
+     "n": "Points Boost (up to 1.5x)",
+     "t": "earn",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "added 8/17/26",
+     "how": "Up to 1.5x redemption value on top-booked hotels and flights through Chase Travel. Lower than the Reserves' up-to-2x tier -- the tier difference is the main redemption gap between CSP and CSR.",
+     "sk": "issuer",
+     "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred"
     }
    ]
   },
@@ -654,7 +687,8 @@
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer"
     }
-   ]
+   ],
+   "fee_note": "$450 is secondary-sourced. The card is closed to new applicants and no Chase-owned page publishes the fee; there is no acquisition page. Re-checked 8/17/26 -- still unpublished. A 2025 rumour of a hike to $695 was denied by Chase PR."
   },
   {
    "id": "united-quest",
@@ -703,11 +737,11 @@
      "v": 180,
      "pp": 15,
      "cad": "month",
-     "enroll": false,
-     "how": "One $10 + one $5 credit per calendar month -- needs two separate Instacart orders to max. REQUIRES an active Instacart+ membership: the card includes 3 months free, then auto-enrolls at 50% off the annual rate. If Instacart+ lapses, the credits stop. Ends 12/31/27.",
-     "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
+     "enroll": true,
+     "how": "One $10 + one $5 credit per calendar month -- needs two SEPARATE Instacart orders to max ($15/mo, $180/yr). ⚠️ CORRECTED 8/17/26: this DOES require one-time enrollment, and at a different URL from the other Chase co-brands -- instacart.com/p/chase-united, not /p/chase-cobrands. It was previously recorded as no-enrollment-needed, which would have silently forfeited the credit. Also requires an active Instacart+ membership: 3 months free with the card, then 50% off the annual rate. If Instacart+ lapses, the credits stop. Program window 3/23/2025-12/31/2027.",
+     "src": "https://www.instacart.com/p/chase-united",
      "sk": "issuer",
-     "flag": "ends 12/31/27"
+     "flag": "ends 12/31/27 -- ENROLLMENT REQUIRED"
     },
     {
      "n": "Rideshare credits ($100/yr)",
@@ -784,7 +818,7 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "4x United (up to 6x on fares); 5x Renowned Hotels prepaid; 2x other travel, dining, select streaming; 1x other. Award prices 10%+ lower.",
+     "how": "4x United (up to 6x on fares); 5x Renowned Hotels prepaid; 2x other travel, dining, select streaming; 1x other. Award prices 10%+ lower. PRECISION FIX 8/17/26: Chase's \"10x total miles on eligible United flights\" is 6x from United as a MileagePlus member plus 4x from the card. The 6x is airline-side earning, not a card multiplier -- only the 4x is attributable to this card.",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer"
     },
@@ -907,6 +941,18 @@
      "how": "No foreign transaction fee on purchases made abroad. Issuer-confirmed on the card's own pricing-and-terms disclosure 8/10/26 (previously recorded only on Southwest Priority).",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card"
+    },
+    {
+     "n": "Instacart credit $10/mo",
+     "t": "credit",
+     "v": 120,
+     "pp": 10,
+     "cad": "month",
+     "enroll": true,
+     "flag": "added 8/17/26 -- verify at enrollment",
+     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. ⚠️ SOURCE CONFLICT (found 8/17/26): Instacart's Chase co-brand enrollment page -- the page Chase itself links to, and the one that actually governs enrollment -- names this card as eligible. Chase's own product page for this card markets NO Instacart benefit. Added on the enrollment page's authority because enrolling is free, takes two minutes, and costs nothing if it turns out ineligible -- whereas leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it rejects the card.",
+     "sk": "issuer",
+     "src": "https://www.instacart.com/p/chase-cobrands"
     }
    ]
   },
@@ -968,7 +1014,7 @@
      "cad": "quarter",
      "enroll": true,
      "how": "12-mo free DashPass (activate by 12/31/27) + $10/quarter non-restaurant promo while enrolled. Needs its own DoorDash account to stack.",
-     "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
+     "src": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-business-credit-card",
      "sk": "issuer",
      "flag": "ends 12/31/27"
     },
@@ -979,10 +1025,10 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "World of Hyatt co-brand cardholders (with Explorists, Globalists and Lifetime Globalists) get early access to award-night availability. SOURCING DEGRADED 8/10/26: our recorded source page (world.hyatt.com booking-window) now returns empty/JS-gated, and the only Hyatt page that renders (newsroom.hyatt.com/awardchartupdates, dated 2/25/26) confirms the benefit exists but states NO 13-month window and NO effective date -- it says only \"early access to award night availability ... More details coming soon.\" The previously recorded \"~13 months out\" and \"from 6/30/26\" specifics are therefore UNVERIFIED; the benefit itself is real. Related program change: from May 2026 the award chart expands to five redemption levels (Lowest/Low/Moderate/Upper/Top) within the existing eight categories, which affects what the Cat 1-4 anniversary free night can reach.",
+     "how": "Hyatt confirms the benefit exists but publishes no window and no effective date: \"early access to award night availability... More details coming soon\" (newsroom, dated 2/25/26). The \"~13 months out\" and \"from 6/30/26\" specifics remain uncorroborated -- world.hyatt.com's booking-window page returns 403. ⚠️ FLAGGED 8/17/26: Hyatt's wording names \"World of Hyatt Credit Cardmembers\" only. Neither Hyatt nor Chase names the BUSINESS card anywhere, so applying this benefit to the business card is our inference, not an issuer statement.",
      "src": "https://newsroom.hyatt.com/awardchartupdates",
      "sk": "secondary",
-     "flag": "unverified specifics 8/10/26"
+     "flag": "specifics unverified -- business card not named by Hyatt"
     },
     {
      "n": "Earn rates",
@@ -1005,6 +1051,18 @@
      "how": "No foreign transaction fee on purchases made abroad. Issuer-confirmed on the card's own pricing-and-terms disclosure 8/10/26 (previously recorded only on Southwest Priority).",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card"
+    },
+    {
+     "n": "Instacart credit $10/mo",
+     "t": "credit",
+     "v": 120,
+     "pp": 10,
+     "cad": "month",
+     "enroll": true,
+     "flag": "added 8/17/26 -- verify at enrollment",
+     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. ⚠️ SOURCE CONFLICT (found 8/17/26): Instacart's Chase co-brand enrollment page -- the page Chase itself links to, and the one that actually governs enrollment -- names this card as eligible. Chase's own product page for this card markets NO Instacart benefit. Added on the enrollment page's authority because enrolling is free, takes two minutes, and costs nothing if it turns out ineligible -- whereas leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it rejects the card.",
+     "sk": "issuer",
+     "src": "https://www.instacart.com/p/chase-cobrands"
     }
    ]
   },
@@ -1032,7 +1090,7 @@
      "pp": 25,
      "cad": "half",
      "enroll": true,
-     "how": "STILL ACTIVE. Register card with MileagePlus once. $25 deposits ~Jan 5 & ~Jul 5 — H1 expires Jul 15, H2 expires Jan 15. Tiny use window!",
+     "how": "$25 deposited on or about January 5 and another $25 on or about July 5. ⚠️ Tiny expiry windows: deposits made Jan 1-Jun 30 expire July 15 of the same year; deposits made Jul 1-Dec 31 expire January 15 of the following year. CORRECTED 8/17/26: registration is at ihg.com/united and must be made through your IHG One Rewards account -- it is NOT a MileagePlus-side registration, which is how we had it recorded.",
      "src": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
      "sk": "issuer",
      "flag": "expires fast"
@@ -1164,7 +1222,7 @@
      "pp": 25,
      "cad": "half",
      "enroll": true,
-     "how": "Active on the business card too. Register with MileagePlus; deposits ~Jan 5 & ~Jul 5 expire Jul 15 / Jan 15.",
+     "how": "$25 deposited on or about January 5 and another $25 on or about July 5. ⚠️ Tiny expiry windows: deposits made Jan 1-Jun 30 expire July 15 of the same year; deposits made Jul 1-Dec 31 expire January 15 of the following year. CORRECTED 8/17/26: registration is at ihg.com/united and must be made through your IHG One Rewards account -- it is NOT a MileagePlus-side registration, which is how we had it recorded.",
      "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
      "sk": "issuer",
      "flag": "expires fast"
@@ -1232,7 +1290,7 @@
      "cad": "quarter",
      "enroll": true,
      "how": "12-mo free DashPass (activate by 12/31/27) + $10/quarter non-restaurant promo while enrolled.",
-     "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
+     "src": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
      "sk": "issuer",
      "flag": "ends 12/31/27"
     },
@@ -1368,6 +1426,17 @@
      "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26.",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority"
+    },
+    {
+     "n": "5X Rapid Rewards on Lyft",
+     "t": "earn",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "ends 12/31/27",
+     "how": "5X points on qualifying Lyft products bought in the Lyft app through 12/31/2027 -- 4 additional points on top of the base 1x. Covers rideshare, bike/scooter rides, and subscription/membership products including Lyft Cash. Lyft appears on Southwest Priority only, not on the other six Chase co-brands.",
+     "sk": "issuer",
+     "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority"
     }
    ]
   },
@@ -1430,7 +1499,7 @@
      "cad": "quarter",
      "enroll": true,
      "how": "12-mo free DashPass (activate by 12/31/27) + $10/quarter non-restaurant promo while enrolled.",
-     "src": "https://help.doordash.com/en-us/consumers/article/chase-partnership",
+     "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
      "sk": "issuer",
      "flag": "ends 12/31/27"
     },
@@ -1455,6 +1524,18 @@
      "how": "No foreign transaction fee on purchases made abroad. Issuer-confirmed on the card's own pricing-and-terms disclosure 8/10/26 (previously recorded only on Southwest Priority).",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/business-credit-cards/southwest/performance-business"
+    },
+    {
+     "n": "Instacart credit $10/mo",
+     "t": "credit",
+     "v": 120,
+     "pp": 10,
+     "cad": "month",
+     "enroll": true,
+     "flag": "added 8/17/26 -- verify at enrollment",
+     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. ⚠️ SOURCE CONFLICT (found 8/17/26): Instacart's Chase co-brand enrollment page -- the page Chase itself links to, and the one that actually governs enrollment -- names this card as eligible. Chase's own product page for this card markets NO Instacart benefit. Added on the enrollment page's authority because enrolling is free, takes two minutes, and costs nothing if it turns out ineligible -- whereas leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it rejects the card.",
+     "sk": "issuer",
+     "src": "https://www.instacart.com/p/chase-cobrands"
     }
    ]
   },
@@ -1496,7 +1577,7 @@
      "cad": "quarter",
      "enroll": true,
      "how": "Enroll; up to $90/quarter ($360/yr) directly with Indeed. Issuer-confirmed 8/3/26 -- now printed on Amex's Business Platinum product page (\"Up to $360 Indeed Credit\"); survived the late-2025 refresh.",
-     "src": "https://www.uscreditcardguide.com/amex-business-platinum-card/",
+     "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "issuer"
     },
     {
@@ -1727,6 +1808,28 @@
      "how": "4x on your top 2 of 6 categories each cycle (US ads, US electronics/cloud, US restaurants, US gas, transit, US wireless) up to $150k/yr; 3x Amex Travel flights + prepaid hotels; 1x other.",
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-gold-card-amex/",
      "sk": "issuer"
+    },
+    {
+     "n": "The Hotel Collection $100 credit",
+     "t": "credit",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "added 8/17/26 -- per stay, not counted in dashboard total",
+     "how": "$100 credit toward eligible on-property charges when you book two nights or more through AmexTravel.com. Per booking with no stated annual cap, so deliberately excluded from the fixed-credit total.",
+     "sk": "issuer",
+     "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-gold-card-amex/"
+    },
+    {
+     "n": "Cell phone protection",
+     "t": "protection",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "added 8/17/26",
+     "how": "Up to $800 per claim, $50 deductible, maximum 2 approved claims per 12 months. Requires paying the monthly wireless bill with the card.",
+     "sk": "issuer",
+     "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-gold-card-amex/"
     }
    ]
   },
@@ -1743,10 +1846,10 @@
      "pp": 250,
      "cad": "year",
      "enroll": false,
-     "how": "Per CALENDAR year (not anniversary) on prepaid Delta Stays bookings on delta.com; 'pay at property' excluded. Business version is $250 (personal is $200).",
+     "how": "$250 on prepaid Delta Stays bookings on delta.com. ⚠️ DOWNGRADED 8/17/26: we had recorded this as a CALENDAR-year credit. That is not issuer-supported. Amex says \"annually\", Delta says \"up to $250 per year\", and neither says \"calendar year\". The governing terms page (delta.com/resbizbenefitterms) has returned an empty JS shell on three consecutive passes. Treat the reset date as unknown until confirmed -- if you are relying on a December deadline, verify first.",
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
      "sk": "issuer",
-     "flag": "cadence corrected"
+     "flag": "calendar-vs-membership year UNCONFIRMED"
     },
     {
      "n": "Resy credit $20/mo",
@@ -1778,7 +1881,7 @@
      "pp": null,
      "cad": "anniversary",
      "enroll": false,
-     "how": "Annual on renewal. Valid in Delta First, Premium Select, Comfort+, or Main (not Delta One) within the U.S. and to Mexico, the Caribbean, or Central America. Premium Select eligibility predates 2026; the 6/4/26 change was Delta Vacations redemption eligibility (usable toward the flight portion of a package). Pay $22-$250 taxes/fees.",
+     "how": "Annual on renewal. Valid in Delta First, Premium Select, Comfort+, or Main (not Delta One) within the U.S. and to Mexico, the Caribbean, or Central America. Premium Select eligibility predates 2026; the 6/4/26 change was Delta Vacations redemption eligibility (usable toward the flight portion of a package). Pay $22-$250 taxes/fees. Governing T&C re-confirmed 8/17/26 as covering \"Delta First, Delta Premium Select, Delta Comfort or Delta Main\" and excluding only Delta One -- note that delta.com's MARKETING page omits Premium Select; the T&C is authoritative. Companion pays taxes/fees: no more than $80 round-trip domestic, no more than $250 round-trip international.",
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
      "sk": "issuer",
      "flag": "enhanced 6/4/26"
@@ -1838,6 +1941,28 @@
      "how": "3x Delta; 1.5x transit, US shipping, US office supplies (+all purchases after $150k/yr); 1x other. No FX fees.",
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
      "sk": "issuer"
+    },
+    {
+     "n": "Global Dining Access by Resy",
+     "t": "perk",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "added 8/17/26",
+     "how": "Access to reservations at Resy's Global Dining Access restaurants. Among the three Delta business cards this is Reserve-only.",
+     "sk": "issuer",
+     "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards"
+    },
+    {
+     "n": "4 Sky Club guest passes",
+     "t": "perk",
+     "v": 0,
+     "cad": "year",
+     "enroll": false,
+     "flag": "added 8/17/26",
+     "how": "Four one-time guest passes per year, on top of the 15 Sky Club visits. Listed in the delta.com comparison table (not the card panel).",
+     "sk": "issuer",
+     "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards"
     }
    ]
   },
@@ -1855,8 +1980,8 @@
      "cad": "half",
      "enroll": false,
      "how": "$200 Jan–Jun + $200 Jul–Dec at participating Hilton Resorts (room + charges paid direct). Check hilton.com eligible-resorts list first.",
-     "src": "https://upgradedpoints.com/credit-cards/reviews/hilton-honors-american-express-aspire-card/maximize-resort-credit/",
-     "sk": "secondary"
+     "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
+     "sk": "issuer"
     },
     {
      "n": "Flight credit $50/quarter",
@@ -1866,8 +1991,8 @@
      "cad": "quarter",
      "enroll": false,
      "how": "Up to $50/quarter on flights booked directly with airlines or via Amex Travel. Use-it-or-lose-it each quarter.",
-     "src": "https://awardwallet.com/credit-cards/hilton-honors/hilton-aspire-airline-credit/",
-     "sk": "secondary"
+     "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
+     "sk": "issuer"
     },
     {
      "n": "CLEAR+ credit $219",
@@ -1922,8 +2047,8 @@
      "cad": "ongoing",
      "enroll": true,
      "how": "Enroll via Amex account. Note: Aspire has NO lounge access and NO Global Entry credit (Priority Pass removed 2/1/24).",
-     "src": "https://militarymoneymanual.com/amex-hilton-aspire-military/",
-     "sk": "secondary"
+     "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
+     "sk": "issuer"
     },
     {
      "n": "Earn rates",
@@ -1933,8 +2058,8 @@
      "cad": "ongoing",
      "enroll": false,
      "how": "14x Hilton; 7x flights direct/Amex Travel, car rentals direct, US restaurants; 3x other.",
-     "src": "https://thepointsguy.com/credit-cards/reviews/hilton-amex-aspire-review/",
-     "sk": "secondary"
+     "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
+     "sk": "issuer"
     },
     {
      "n": "Cell phone protection",
@@ -1958,6 +2083,28 @@
      "how": "10% back on qualifying concessions at American Express Venue Collection venues, up to $250 per calendar year. Enrollment required; one enrolled card per member. This is a 10% rebate (you must spend ~$2,500 on concessions to max it), NOT a claimable fixed credit -- so it is deliberately NOT counted in the dashboard's fixed-credit total. Issuer-confirmed 8/10/26 when Amex's Aspire page rendered its full 25-benefit list for the first time.",
      "sk": "issuer",
      "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/"
+    },
+    {
+     "n": "Return Protection",
+     "t": "protection",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "added 8/17/26",
+     "how": "Amex will refund eligible purchases the merchant won't take back, within the stated window and caps.",
+     "sk": "issuer",
+     "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/"
+    },
+    {
+     "n": "Global Dining Access by Resy",
+     "t": "perk",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "added 8/17/26",
+     "how": "Access to reservations at Resy's Global Dining Access restaurants.",
+     "sk": "issuer",
+     "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/"
     }
    ]
   },
@@ -1974,8 +2121,8 @@
      "pp": null,
      "cad": "anniversary",
      "enroll": false,
-     "how": "One FNA (<=35k points) each year after renewal month; top-off up to 25k points allowed, so it can reach ~60k-point properties. Second FNA after $60k calendar spend. Resort fees may apply. The 25k top-off is now ISSUER-CONFIRMED (8/10/26) in Marriott's own program terms section 3.3, in the general Free Night Award section that expressly covers awards issued through Marriott co-brand credit cards.",
-     "src": "https://www.marriott.com/loyalty/terms/default.mi",
+     "how": "One FNA (<=35k points) each year after renewal month; top-off up to 25k points allowed, so it can reach ~60k-point properties. Second FNA after $60k calendar spend. Resort fees may apply. The 25k top-off is now ISSUER-CONFIRMED (8/10/26) in Marriott's own program terms section 3.3, in the general Free Night Award section that expressly covers awards issued through Marriott co-brand credit cards. SOURCING CORRECTED 8/17/26: the 35,000-point redemption cap comes from the marriott.com CARD page -- the string \"35,000\" appears zero times in Marriott's program terms. The 25,000-point top-off is program terms section 3.3.c.i (previously cited as 3.3): \"Members are able to redeem or purchase up to 25,000 Points to expand the value of such Free Night Award.\"",
+     "src": "https://www.marriott.com/credit-cards/marriott-bonvoy-business-american-express-card.mi",
      "sk": "issuer",
      "flag": "sourcing upgraded 8/10/26"
     },
@@ -2120,6 +2267,17 @@
      "how": "Up to $50 experience credit applied at checkout by the hotel on qualifying charges, per Lifestyle Collection (or vacation-rental) booking made through Capital One Business Travel in the cardholder's name. Also includes complimentary Wi-Fi and, when available, room upgrade / early check-in / late check-out. NO daily breakfast -- footnote 7 restricts breakfast-for-two to Premier Collection bookings. Per booking, no annual cap stated, so it is not counted in the dashboard's fixed-credit total.",
      "sk": "issuer",
      "src": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/"
+    },
+    {
+     "n": "Auto rental collision damage waiver",
+     "t": "protection",
+     "v": 0,
+     "cad": "none",
+     "enroll": false,
+     "flag": "added 8/17/26 -- \"primary\" is conditional",
+     "how": "MasterRental coverage. Primary is CONDITIONAL, not unconditional: the Guide to Benefits pays on a primary basis only where \"the vehicle is rented primarily for business purposes or outside the cardholder's domiciled country.\" You must initiate and pay the entire rental with the card, and decline the rental company's collision/damage waiver where coverage is secondary. Max 31 consecutive days. Excluded countries: Ireland, Northern Ireland, Israel, Jamaica, Australia, Italy, New Zealand.",
+     "sk": "issuer",
+     "src": "https://ecm.capitalone.com/WCM/card/world-elite-business-mastercard.pdf"
     }
    ]
   }
