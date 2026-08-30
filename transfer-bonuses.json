@@ -1,16 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-08-29T17:06:36+00:00",
+  "lastUpdated": "2026-08-30T17:27:53+00:00",
   "count": 9,
   "bonuses": [
-    {
-      "from": "Other / Unknown",
-      "details": "10% transfer bonus from any bank points & Marriott Bonvoy to Cathay Pacific Asia Miles",
-      "pct": "10%",
-      "url": "https://frequentmiler.com/get-a-10-bonus-when-transferring-bank-or-hotel-points-to-cathay-pacific-asia-miles/",
-      "start": "07/27/26",
-      "end": "08/28/26"
-    },
     {
       "from": "Chase Ultimate Rewards",
       "details": "70% transfer bonus from Chase Ultimate Rewards to IHG",
@@ -34,6 +26,14 @@
       "url": "https://frequentmiler.com/40-percent-transfer-bonus-citi-thankyou-turkish-milesandsmiles/",
       "start": "08/01/26",
       "end": "08/31/26"
+    },
+    {
+      "from": "Bilt",
+      "details": "Up to 100% transfer bonus from Bilt to Virgin Atlantic Flying Club",
+      "pct": "Up to 100%",
+      "url": "https://frequentmiler.com/bilt-rent-day-up-to-100-transfer-bonus-to-virgin/",
+      "start": "09/01/26",
+      "end": "09/01/26"
     },
     {
       "from": "Citi ThankYou Rewards",
