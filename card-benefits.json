@@ -1,7 +1,7 @@
 {
- "updated": "2026-08-24",
- "verified": "2026-08-24",
- "method": "Change-detection sweep against issuer pages (chase.com, creditcards.chase.com, media.chase.com, Chase AEM disclosure fragments, americanexpress.com, capitalone.com, delta.com, marriott.com, hilton.com, united.com, hyatt.com/newsroom.hyatt.com, ihg.com, southwest.com, thecenturionlounge.com, instacart.com Chase co-brand pages, Chase/DoorDash co-brand terms), run by four parallel per-issuer agents against the 2026-08-17 baseline. NO issuer-side benefit change found on any of the 17 cards for the SEVENTH consecutive pass; all 16 issuer-confirmable annual fees re-confirmed unchanged from page headers (Ritz $450 remains the sole unconfirmable fee). What changed is our record: 188 -> 202 benefits, 14 additions and 30 corrections. HEADLINE -- A SYNC GAP, NOT A DISCOVERY: this pass independently re-derived that the CSR Marriott Gold fast-track (the nearest date in this system, 9/30/26) is UNUSABLE, via Chase's controlling AEM disclosure -- \"by invitation only\" and \"Existing Marriott Bonvoy members with Gold Elite status or higher Elite status are not eligible.\" Three of the cardholder's cards independently confer Marriott Gold (Ritz-Carlton, Amex Bonvoy Business, Amex Business Platinum). CRITICALLY: the Notion tracker ALREADY recorded this as resolved on 8/19/26; this JSON dataset and the site did not, and had been carrying the 9/30 deadline as live for five days. The real finding is that Notion and the site had diverged. Now reconciled. SECOND MARRIOTT FIX, opposite direction: the 3-night qualifying clock runs \"3 months from the first date following successful promotion registration\", NOT inside the Jul 1 - Sep 30 window as the 8/10/26 pass concluded -- registering 9/30 pushes qualifying nights into late December. THIRD REVERSAL: Delta Reserve Business companion-certificate cabin eligibility. We recorded Delta Premium Select as eligible on the authority of delta.com/resbizbenefitterms. Root cause of that page's three-pass failure is now known -- it is not a JS shell, it 302s to an Amex print route returning HTTP 404, and the Gold/Platinum/Bonvoy equivalents 404 identically. Both LIVE issuer pages say only \"Delta First, Delta Comfort, or Delta Main\" with ZERO occurrences of \"Premium Select\" (and zero of \"Delta One\", so our \"excludes only Delta One\" line was never issuer text either). Downgraded to confirm-at-booking. Companion taxes corrected from our $80/$250 split to the issuer's actual \"$22 and $250 (for itineraries with up to four flight segments)\". INSTACART HOLDS: instacart.com/p/chase-cobrands rendered a SECOND consecutive week and now names World of Hyatt, Hyatt Business and Southwest Performance Business as eligible in THREE independent places, including a new hero line reading \"consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG\". Chase's pages for those three still show zero Instacart content (4 raw hits each, all hamburger-nav chrome). The +$360/yr stands, still flagged verify-at-enrollment. OTHER MATERIAL CORRECTIONS: Priority Pass is AUTO-ACTIVATED on CSR, CSR Business and Ritz -- we had all three flagged enroll-required; Apple TV dates on CSR (6/22/27) and CSP (12/31/26) are ACTIVATION deadlines, not service end dates, with 12 months running from activation; CSR Peloton 10x is capped at $5,000 of purchases; ZipRecruiter ends 12/31/27 and GiftCards.com ends 10/31/28 (the only 2028 date in the dataset); the Hyatt 4:3 cut is scoped to Sapphire Preferred and Ink Business Preferred ONLY, with different timing for each. SOURCING: Hyatt's booking-window and FAQ pages are DELETED, not bot-blocked -- via a real browser they return a genuine 404 and ERROR:E9010, so the early-award-access specifics (\"~13 months\", \"from 6/30/26\") are downgraded from unverified to UNSUPPORTED. Ritz Global Entry cadence and Ritz DoorDash tier are both flagged as our inference. Southwest Performance Business DashPass rests on absence from an exclusion list, now flagged. Aspire's ZZAAP1 phone code is retired in favour of 855-292-5757. OPEN ITEMS CLOSED: Lufthansa lounge removal is an AUSTRALIAN-market change only, zero occurrences on the U.S. Business Platinum page -- item retired. Ritz $450 fee recommended for retirement as unresolvable after 12 failed routes. RE-CONFIRMED NEGATIVES: American Airlines is still NOT a Capital One transfer partner (page still dated 2026-01-29, 18 airlines + 4 hotels, refuted a SIXTH time, this pass with a byte-level negative check against a working control term); Delta Reserve Business still has no CLEAR and no airline-fee credit; Hilton Aspire still has no lounge access and no Global Entry credit, confirmed by complete enumeration of Amex's 25-item list; Hyatt Explorist at $50k is still on no Chase page (zero \"Explorist\" occurrences); Southwest's retired $75 credit and upgraded boardings are still gone; Business Gold's FedEx exit is still on schedule for 10/01/2026, character-for-character. Capital One's Guide to Benefits PDF is byte-identical to May 2024 (Last-Modified header unchanged, MD5 matches the ETag), so no silent revision.",
+ "updated": "2026-08-31",
+ "verified": "2026-08-31",
+ "method": "Change-detection sweep against issuer pages only (chase.com, creditcards.chase.com, marriott.chase.com, media.chase.com, Chase AEM content fragments, americanexpress.com including the governing card-application terms documents, delta.com, capitalone.com, hilton.com, marriott.com, hyatt.com/newsroom.hyatt.com, ihg.com, united.com, southwest.com, thecenturionlounge.com, instacart.com Chase co-brand pages, Chase/DoorDash co-brand terms), run by four parallel per-issuer agents against the 2026-08-24 baseline. THE SEVEN-WEEK RUN OF ZERO CHANGES IS OVER -- THREE GENUINE ISSUER CHANGES FOUND, TWO OF THEM 30 DAYS OUT. (1) LUFTHANSA LOUNGE ACCESS ENDS 10/1/2026 FOR U.S. BUSINESS PLATINUM. The 8/24 pass closed this as \"an Australian-market change only\" on the strength of a zero-count for \"Lufthansa\" on Amex's marketing page. That was a FALSE NEGATIVE FROM A BAD CONTROL -- the marketing page never enumerates individual Global Lounge Collection partner lounges by name, so a zero-count there proves nothing. The U.S. governing terms contain \"Lufthansa\" 12 times under their own section heading and state: \"Platinum Card Members have access to Lufthansa Lounges through September 30, 2026. Effective October 1, 2026, Platinum Card Members will not have access to any Lufthansa Lounges.\" Item REOPENED. (2) The Hyatt 4:3 transfer release now names FOUR products, not two -- Ink Plus and Corporate Flex are named in two independent FAQ answers. The page carries no \"last updated\" stamp, so we cannot distinguish \"Chase edited it\" from \"we misread it last pass\"; logged as an open ambiguity. Cutover is 10/1/2026. (3) Amex Venue Collection carries a hard \"Offer ends 12/31/2026\" in the governing terms of all five Amex cards; we carried no end date. THE METHOD FIX THAT MADE THIS PASS DIFFERENT: delta.com/resbizbenefitterms is NOT dead. It 404s to server-side fetchers but RENDERS FULLY IN A REAL BROWSER. Four passes had recorded it as unreachable and reasoned from marketing copy instead. Reading the actual governing terms resolved four standing open items at once and REVERSED THREE 8/24 CORRECTIONS THAT WERE WRONG: Delta Stays IS calendar-year (so it DOES expire Dec 31, and posting date governs); the companion certificate DOES cover Delta Premium Select and Delta One is the only excluded cabin (our original record was right); and ZZAAP1 is NOT retired -- both issuers publish both the phone number and the code, and booking by phone without quoting it forfeits the $100. Also reversed: the 8/17 IHG Premier Business TravelBank correction, which was derived from the personal card's terms and wrongly applied to the business card. STANDING LESSON RECORDED: every one of these errors came from treating marketing copy as authoritative when the governing terms were unreachable -- or from running a negative check against the wrong document. A zero-count only means something on a page that would have contained the term. Record: 202 -> 206 benefits, 4 additions and 24 corrections. All 16 issuer-confirmable annual fees re-confirmed unchanged from page headers (Ritz $450 remains the sole unconfirmable fee, now 15 failed routes -- retire it). American Airlines refuted as a Capital One transfer partner a SEVENTH consecutive time, with control. Instacart rendered a THIRD consecutive week; the $45/mo is still unenrolled and still expiring. Every \"confirmed absent\" claim in this dataset is paired with a known-present control term and its hit count.",
  "cards": [
   {
    "id": "csr",
@@ -145,7 +145,7 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "Chase Sapphire Lounges + 1,300+ Priority Pass lounges + Air Canada Maple Leaf; you + 2 guests. ⚠️ CORRECTED 8/24/26: NO enrollment needed — Chase: \"Primary cardmembers and any authorized users will have their Priority Pass Select membership automatically activated.\" We had this as enroll-required. AUs ($195) get their own access.",
+     "how": "Chase Sapphire Lounges + 1,300+ Priority Pass lounges (you + 2 guests) + Air Canada Maple Leaf Lounges and Cafés. NO enrollment needed — Chase: \"Primary cardmembers and any authorized users will have their Priority Pass Select membership automatically activated.\" AUs ($195) get their own access. ⚠️ CORRECTED 8/31/26 — Air Canada is 1 GUEST, not 2, and carries conditions we never recorded: \"Eligible cardmembers are granted complimentary access for themselves and 1 guest each to Air Canada's network of Maple Leaf Lounges and Air Canada Cafés… Air Canada Signature Suites and all lounges located in Montréal (YUL) are excluded.\" Additional guests cost $59 per guest per visit. Access also requires \"departing on a Star Alliance member airline flight.\" The 2-guest allowance applies to Priority Pass and Sapphire Lounges ONLY.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer"
     },
@@ -267,6 +267,18 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "added 8/24/26"
+    },
+    {
+     "n": "Reserved by Sapphire",
+     "t": "access",
+     "v": null,
+     "pp": null,
+     "cad": "ongoing",
+     "enroll": false,
+     "how": "➕ ADDED 8/31/26 — a SECOND, distinct dining-access program we had conflated with Exclusive Tables. Exclusive Tables runs through OpenTable; this one runs through Chase Dining. Chase: \"The 'Reserved by Sapphire' program is a benefit available to Chase Sapphire Reserve and J.P. Morgan Reserve cardmembers. 'Reserved by Sapphire' provides cardmembers access to reservations held exclusively for Reserve cardmembers. 'Reserved by Sapphire' reservations are available through Chase Dining in Ultimate Rewards at dining.chase.com or in the Chase Mobile app. Reservations are based on a first-come, first-served basis… Generally, reservations that are not booked 72-96 hours prior to the reservation time are released back to restaurants.\" No fixed annual credit, so no dashboard-dollar impact.",
+     "src": "https://www.chase.com/sapphire-cards/personal/reserve",
+     "sk": "issuer",
+     "flag": "added 8/31/26 — distinct from Exclusive Tables"
     }
    ]
   },
@@ -466,10 +478,10 @@
      "v": 0,
      "cad": "none",
      "enroll": false,
-     "flag": "added 8/17/26",
+     "flag": "src corrected 8/31/26 — full disclosure is on the PERSONAL page",
      "how": "Chase builds and books a custom itinerary for you, and \"No travel agency fees will be assessed for reservations made through Reserve Travel Designers.\" Covered on this card — Chase: \"The Reserve Travel Designer program is provided as exclusive benefit for Chase Sapphire Reserve primary cardmembers and Chase Sapphire Reserve for Business authorizing officers.\" ⚠️ CORRECTED 8/24/26: the \"up to $300 per trip\" valuation appears on the PERSONAL page only — the business page carries the benefit without the valuation. Per-trip and uncapped either way, so deliberately NOT counted in the fixed-credit dashboard total. Caveat: bookings via FROSCH by Chase Travel, Valerie Wilson Travel by Chase Travel or Frosch International Travel LLC do not earn 8x.",
      "sk": "issuer",
-     "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve"
+     "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve"
     },
     {
      "n": "The Edit — on-property benefits",
@@ -487,9 +499,9 @@
      "cad": "ongoing",
      "enroll": true,
      "how": "⚠️ NEW FIND 8/24/26 — the business Reserve IS an eligible card for Exclusive Tables reservation access, which we had recorded as personal-only. Chase: \"Through 06/30/2030 ('Chase Benefit Term'), the Sapphire Reserve OpenTable Benefit... is available to cardholders with eligible U.S. issued... Chase Sapphire Reserve for Business cards.\" Add the card at OpenTable to unlock held tables. IMPORTANT LIMIT: this is reservation ACCESS only — the $300 dining statement credit remains personal-CSR-only (zero \"OpenTable\"/\"Exclusive Tables\" hits on either business page). No dashboard dollars.",
-     "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
+     "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "flag": "added 8/24/26 — access only, no credit"
+     "flag": "src corrected 8/31/26 — eligibility text is on the PERSONAL page"
     }
    ]
   },
@@ -577,10 +589,11 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "⚠️ Hyatt transfers fall 1:1 → 4:3. Chase: \"Your Ultimate Rewards points will transfer to World of Hyatt at a rate of 4:3... if you transfer 1,000 Ultimate Rewards points, you will get 750 World of Hyatt points.\" Accounts opened before 6/15/26 keep 1:1 \"through September 30, 2026\", then drop 10/1/26. Move UR→Hyatt off the CSP before then, or transfer via either Reserve (both Reserves confirmed 1:1 — zero 4:3 language on any Reserve page, re-verified 8/24/26). ⚠️ SCOPE CORRECTED 8/24/26: Chase's press release names only TWO products — Sapphire Preferred and Ink Business Preferred. Ink Plus and Corporate Flex appear nowhere and should not have been implied. Timing also differs by product: Ink Business Preferred cardmembers keep 1:1 until 10/1/26 regardless of when they applied, whereas CSP applicants on/after 6/15/26 lost it immediately.",
-     "src": "https://www.chase.com/sapphire-cards/personal/preferred",
+     "how": "🚨 30 DAYS OUT. Hyatt transfers fall 1:1 → 4:3 on 10/1/2026. Chase: \"Your Ultimate Rewards points will transfer to World of Hyatt at a rate of 4:3… 1,000 Ultimate Rewards points will receive 750 points with World of Hyatt.\" ⚠️ SCOPE CHANGED 8/31/26 — the release now names FOUR products, not two. Last week we recorded \"only Sapphire Preferred and Ink Business Preferred; NOT Ink Plus, NOT Corporate Flex.\" Chase's release now says, in two independent FAQ answers: \"This update will apply to Sapphire Preferred cardmembers, new and existing Ink Business Preferred cardmembers and existing Ink Plus and Corporate Flex cardmembers, effective October 1, 2026.\" The page carries no \"last updated\" stamp, so we CANNOT distinguish \"Chase edited the release\" from \"we misread it last pass\" — logged as an open ambiguity. The current issuer text is unambiguous. TIMING (confirmed exactly as recorded): CSP — immediate for applicants on/after 6/15/26; 10/1/2026 for accounts opened before then. Ink Business Preferred — 10/1/2026 for everyone regardless of application date. ➡️ ACTION before 10/1: move UR→Hyatt off the CSP, or transfer via a Reserve (both Reserves still show \"4:3\" = 0 hits; control \"points\" = 83/64).",
+     "src": "https://media.chase.com/news/Meet-the-New-Chase-Sapphire-Preferred",
      "sk": "issuer",
-     "flag": "deadline 10/1/26"
+     "flag": "🚨 10/1/2026 — scope widened to 4 products 8/31/26",
+     "ends": "2026-10-01"
     },
     {
      "n": "Earn rates",
@@ -612,10 +625,10 @@
      "v": 0,
      "cad": "none",
      "enroll": false,
-     "flag": "added 8/17/26",
+     "flag": "src corrected 8/31/26 — \"Points Boost\" = 0 hits on the creditcards.chase.com page",
      "how": "Up to 1.5x redemption value on top-booked hotels and flights through Chase Travel. Lower than the Reserves' up-to-2x tier -- the tier difference is the main redemption gap between CSP and CSR.",
      "sk": "issuer",
-     "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred"
+     "src": "https://www.chase.com/sapphire-cards/personal/preferred"
     },
     {
      "n": "Apple One $7.50/mo discount",
@@ -730,10 +743,9 @@
      "pp": 120,
      "cad": "once",
      "enroll": false,
-     "how": "$120 statement credit for a Global Entry application fee paid with the card (GE includes TSA PreCheck). ⚠️ DOWNGRADED 8/24/26: the \"every 4 years\" cadence is OUR inference on this card. Chase's Ritz page says only \"pay your application fee (currently $120) and receive a $120 statement credit\" — no cadence. Footnote 15 is a generic Visa Infinite block with no cadence, and footnote 17 stamps that block \"current as of 08/2025\". Both Reserves and the CSP DO state \"one statement credit every four years (up to $120)\" explicitly; the Ritz does not.",
+     "how": "$120 statement credit for a Global Entry application fee paid with the card (GE includes TSA PreCheck). ✅ UPGRADED 8/31/26 — the 8/24/26 downgrade was WRONG. Footnote 15 is NOT a cadence-free generic Visa block; it states the cadence explicitly: \"Holders of eligible cards are entitled to one (1) $120 statement credit per card every 4 years in connection with the Global Entry program application fee. Please allow 6 to 8 weeks after the Global Entry program application fee is charged to an eligible card for a statement credit to be posted.\" Caveat retained: footnote 17 on the same page still reads \"Benefits referenced on this page are current as of 08/2025\", but that stamp attaches to footnote 17 (Visa T&Cs), not footnote 15. Cadence restored to every 4 years, source upgraded inference → issuer.",
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
-     "sk": "inference",
-     "flag": "cadence not issuer-stated"
+     "sk": "issuer"
     },
     {
      "n": "DoorDash $10/quarter + DashPass",
@@ -776,9 +788,21 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "Primary CDW to $75k; trip delay $500 after 12hrs; lost luggage $3k; $1M travel accident.",
+     "how": "Primary CDW to $75k; lost luggage $3k; $1M travel accident. ⚠️ CORRECTED 8/31/26 — trip delay is 6 HOURS, not 12: \"If your common carrier travel is delayed more than 6 hours or requires an overnight stay, you are covered for unreimbursed expenses, such as meals and lodging, up to $500 per covered traveler.\" Control: \"6 hours\" = 4 hits on the page, \"12 hours\" = 0. (The CSP genuinely IS 12 hours — that record line is correct; we had cross-contaminated them.) ADDED same pass — trip cancellation/interruption, which we omitted entirely: \"you can be reimbursed up to $10,000 per covered traveler and $20,000 per trip for your pre-paid, non-refundable travel expenses.\"",
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer"
+    },
+    {
+     "n": "Marriott Bonvoy Chase card events",
+     "t": "access",
+     "v": null,
+     "pp": null,
+     "cad": "ongoing",
+     "enroll": false,
+     "how": "➕ ADDED 8/31/26 — Chase publishes \"Access to Marriott Bonvoy Chase Credit Card Events\" on the Ritz benefits page. Parity note: the CSR already carried an equivalent events-access row. No fixed annual credit.",
+     "src": "https://marriott.chase.com/ritz-carlton/benefits",
+     "sk": "issuer",
+     "flag": "added 8/31/26 — parity fix"
     }
    ],
    "fee_note": "$450 is secondary-sourced. The card is closed to new applicants and no Chase-owned page publishes the fee; there is no acquisition page. Re-checked 8/17/26 -- still unpublished. A 2025 rumour of a hike to $695 was denied by Chase PR.",
@@ -832,10 +856,10 @@
      "pp": 15,
      "cad": "month",
      "enroll": true,
-     "how": "One $10 + one $5 credit per calendar month -- needs two SEPARATE Instacart orders to max ($15/mo, $180/yr). ⚠️ CORRECTED 8/17/26: this DOES require one-time enrollment, and at a different URL from the other Chase co-brands -- instacart.com/p/chase-united, not /p/chase-cobrands. It was previously recorded as no-enrollment-needed, which would have silently forfeited the credit. Also requires an active Instacart+ membership: 3 months free with the card, then 50% off the annual rate. If Instacart+ lapses, the credits stop. Program window 3/23/2025-12/31/2027. ⚠️ ADDED 8/24/26: Instacart now publishes the actual renewal price for the 50%-off benefit — \"$49/yr thru 12/31/27 then $99/yr\" — so the discount is a hard $50/yr saving, not just \"50% off\". Chase's own page independently corroborates the credit total: \"Receive one $10 Instacart credit and one $5 Instacart credit monthly, up to $180 total each calendar year.\" Instacart+ now also bundles Peacock and New York Times Cooking ($50 stated annual value); activating the NYT Cooking offer voids the 5-day Instacart+ refund window. Note Instacart's own terms contain a broken enrollment URL (instacart.com/chase-united without /p/) — only the /p/ form is live.",
+     "how": "One $10 + one $5 credit per calendar month -- needs two SEPARATE Instacart orders to max ($15/mo, $180/yr). ⚠️ CORRECTED 8/17/26: this DOES require one-time enrollment, and at a different URL from the other Chase co-brands -- instacart.com/p/chase-united, not /p/chase-cobrands. It was previously recorded as no-enrollment-needed, which would have silently forfeited the credit. Also requires an active Instacart+ membership: 3 months free with the card, then 50% off the annual rate. If Instacart+ lapses, the credits stop. Program window 3/23/2025-12/31/2027. ⚠️ ADDED 8/24/26: Instacart now publishes the actual renewal price for the 50%-off benefit — \"$49/yr thru 12/31/27 then $99/yr\" — so the discount is a hard $50/yr saving, not just \"50% off\". Chase's own page independently corroborates the credit total: \"Receive one $10 Instacart credit and one $5 Instacart credit monthly, up to $180 total each calendar year.\" Instacart+ now also bundles Peacock and New York Times Cooking ($50 stated annual value); activating the NYT Cooking offer voids the 5-day Instacart+ refund window. Note Instacart's own terms contain a broken enrollment URL (instacart.com/chase-united without /p/) — only the /p/ form is live. ✅ 8/31/26 — the broken enrollment URL is RESOLVED: all 20 URL occurrences on /p/chase-united now use the /p/ form and the bare form 301-redirects to it (HTTP 200). Window 3/23/2025–12/31/2027. Instacart+ renewal \"$49/yr thru 12/31/27 then $99/yr\" (a hard $50/yr saving). Chase corroborates \"up to $180 total each calendar year.\"",
      "src": "https://www.instacart.com/p/chase-united",
      "sk": "issuer",
-     "flag": "ends 12/31/27 -- ENROLLMENT REQUIRED"
+     "flag": "🚨 NOT YET ENROLLED — $15/mo expiring · enrollment URL now fixed"
     },
     {
      "n": "Rideshare credits ($100/yr)",
@@ -844,7 +868,7 @@
      "pp": 8,
      "cad": "month",
      "enroll": true,
-     "how": "$8/mo Jan–Nov + $12 in Dec. ⚠️ Requires re-enrollment EVERY January or credits stop.",
+     "how": "$8/mo Jan–Nov + $12 in Dec. ⚠️ CORRECTED 8/31/26 — Chase's actual words are \"Yearly opt-in is required.\" Our \"re-enrollment EVERY January\" was an inference layered on top; Chase states no month. Opt in at the start of each calendar year to be safe, but do not treat January as an issuer-published deadline.",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
      "flag": "re-enroll each Jan"
@@ -1043,8 +1067,8 @@
      "pp": 10,
      "cad": "month",
      "enroll": true,
-     "flag": "RE-CONFIRMED 8/24/26 — verify at enrollment",
-     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year; co-brand program window 5/1/2025–12/31/2027. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. ⚠️ SOURCE CONFLICT, RE-TESTED 8/24/26 AND THE FINDING HOLDS. Instacart's Chase co-brand enrollment page rendered for a SECOND consecutive week and now names this card as eligible in THREE independent places: the eligible-card grid, the FAQ enumeration, and a new hero line reading \"Enroll with your consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG.\" Chase's own product page for this card still markets zero Instacart (raw-HTML occurrence count: 4, all four being global hamburger-nav chrome pointing at the unrelated Instacart Mastercard). No Chase document anywhere EXCLUDES this card — unlike DoorDash, which publishes an explicit exclusion list. The enrollment page is the operative document: Chase's marketing describes the card, Instacart's page gates whether enrollment succeeds. Enrolling is free and reversible; leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it is rejected. Stacking is explicit: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Each credit needs one order of $10 or more; restaurant orders powered by Uber Eats are excluded. Instacart+ itself now bundles Peacock and New York Times Cooking (Instacart states a $50 annual value for NYT Cooking) — note that activating the NYT Cooking offer voids the 5-day Instacart+ refund window.",
+     "flag": "🚨 NOT YET ENROLLED — $10/mo expiring · use the /p/ URL only · 3rd render 8/31/26",
+     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year; co-brand program window 5/1/2025–12/31/2027. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. ⚠️ SOURCE CONFLICT, RE-TESTED 8/24/26 AND THE FINDING HOLDS. Instacart's Chase co-brand enrollment page rendered for a SECOND consecutive week and now names this card as eligible in THREE independent places: the eligible-card grid, the FAQ enumeration, and a new hero line reading \"Enroll with your consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG.\" Chase's own product page for this card still markets zero Instacart (raw-HTML occurrence count: 4, all four being global hamburger-nav chrome pointing at the unrelated Instacart Mastercard). No Chase document anywhere EXCLUDES this card — unlike DoorDash, which publishes an explicit exclusion list. The enrollment page is the operative document: Chase's marketing describes the card, Instacart's page gates whether enrollment succeeds. Enrolling is free and reversible; leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it is rejected. Stacking is explicit: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Each credit needs one order of $10 or more; restaurant orders powered by Uber Eats are excluded. Instacart+ itself now bundles Peacock and New York Times Cooking (Instacart states a $50 annual value for NYT Cooking) — note that activating the NYT Cooking offer voids the 5-day Instacart+ refund window. ✅ THIRD CONSECUTIVE RENDER 8/31/26 — this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") — but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. 🚨 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands — the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass — that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.) Chase's own page for this card still shows ZERO Instacart content — 4 raw hits, all four global hamburger-nav chrome pointing at the unrelated Instacart Mastercard (controls: \"annual fee\"=10/10/8, Hyatt=195/224, DoorDash=31/31/6). Addition still rests on Instacart's enumeration, which no Chase document contradicts.",
      "sk": "issuer",
      "src": "https://www.instacart.com/p/chase-cobrands"
     }
@@ -1097,8 +1121,9 @@
      "cad": "ongoing",
      "enroll": true,
      "how": "Company access to Hyatt Leverage corporate rates at participating hotels. ⚠️ ADDED 8/24/26: enrollment URL is now recorded — Chase: \"You, as the authorizing officer can receive complimentary membership in the Hyatt Leverage Program. Go to hyatt.com/hl-chase to enroll.\" We had this flagged enroll-required with no URL.",
-     "src": "https://www.chase.com/personal/credit-cards/hyatt/world-hyatt-business/exclusive-benefits",
-     "sk": "issuer"
+     "src": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card",
+     "sk": "issuer",
+     "flag": "src corrected 8/31/26 — \"hl-chase\" = 0 on the exclusive-benefits page, = 2 on the acquisition page"
     },
     {
      "n": "DoorDash $10/quarter + DashPass",
@@ -1153,8 +1178,8 @@
      "pp": 10,
      "cad": "month",
      "enroll": true,
-     "flag": "RE-CONFIRMED 8/24/26 — verify at enrollment",
-     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year; co-brand program window 5/1/2025–12/31/2027. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. ⚠️ SOURCE CONFLICT, RE-TESTED 8/24/26 AND THE FINDING HOLDS. Instacart's Chase co-brand enrollment page rendered for a SECOND consecutive week and now names this card as eligible in THREE independent places: the eligible-card grid, the FAQ enumeration, and a new hero line reading \"Enroll with your consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG.\" Chase's own product page for this card still markets zero Instacart (raw-HTML occurrence count: 4, all four being global hamburger-nav chrome pointing at the unrelated Instacart Mastercard). No Chase document anywhere EXCLUDES this card — unlike DoorDash, which publishes an explicit exclusion list. The enrollment page is the operative document: Chase's marketing describes the card, Instacart's page gates whether enrollment succeeds. Enrolling is free and reversible; leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it is rejected. Stacking is explicit: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Each credit needs one order of $10 or more; restaurant orders powered by Uber Eats are excluded. Instacart+ itself now bundles Peacock and New York Times Cooking (Instacart states a $50 annual value for NYT Cooking) — note that activating the NYT Cooking offer voids the 5-day Instacart+ refund window.",
+     "flag": "🚨 NOT YET ENROLLED — $10/mo expiring · use the /p/ URL only · 3rd render 8/31/26",
+     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year; co-brand program window 5/1/2025–12/31/2027. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. ⚠️ SOURCE CONFLICT, RE-TESTED 8/24/26 AND THE FINDING HOLDS. Instacart's Chase co-brand enrollment page rendered for a SECOND consecutive week and now names this card as eligible in THREE independent places: the eligible-card grid, the FAQ enumeration, and a new hero line reading \"Enroll with your consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG.\" Chase's own product page for this card still markets zero Instacart (raw-HTML occurrence count: 4, all four being global hamburger-nav chrome pointing at the unrelated Instacart Mastercard). No Chase document anywhere EXCLUDES this card — unlike DoorDash, which publishes an explicit exclusion list. The enrollment page is the operative document: Chase's marketing describes the card, Instacart's page gates whether enrollment succeeds. Enrolling is free and reversible; leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it is rejected. Stacking is explicit: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Each credit needs one order of $10 or more; restaurant orders powered by Uber Eats are excluded. Instacart+ itself now bundles Peacock and New York Times Cooking (Instacart states a $50 annual value for NYT Cooking) — note that activating the NYT Cooking offer voids the 5-day Instacart+ refund window. ✅ THIRD CONSECUTIVE RENDER 8/31/26 — this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") — but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. 🚨 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands — the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass — that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.) Chase's own page for this card still shows ZERO Instacart content — 4 raw hits, all four global hamburger-nav chrome pointing at the unrelated Instacart Mastercard (controls: \"annual fee\"=10/10/8, Hyatt=195/224, DoorDash=31/31/6). Addition still rests on Instacart's enumeration, which no Chase document contradicts.",
      "sk": "issuer",
      "src": "https://www.instacart.com/p/chase-cobrands"
     }
@@ -1274,8 +1299,8 @@
      "pp": 10,
      "cad": "month",
      "enroll": true,
-     "flag": "added 8/10/26",
-     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26. ⚠️ ADDED 8/24/26: the co-brand program window has a stated START date — \"between 5/1/2025 and 12/31/2027\" — confirmed on both Instacart's page and Chase's product pages. Instacart+ now bundles Peacock and New York Times Cooking ($50 stated annual value).",
+     "flag": "🚨 NOT YET ENROLLED — $10/mo expiring · use the /p/ URL only · 3rd render 8/31/26",
+     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26. ⚠️ ADDED 8/24/26: the co-brand program window has a stated START date — \"between 5/1/2025 and 12/31/2027\" — confirmed on both Instacart's page and Chase's product pages. Instacart+ now bundles Peacock and New York Times Cooking ($50 stated annual value). ✅ THIRD CONSECUTIVE RENDER 8/31/26 — this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") — but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. 🚨 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands — the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass — that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.)",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier"
     },
@@ -1310,16 +1335,16 @@
      "sk": "issuer"
     },
     {
-     "n": "United TravelBank $50/yr ($25 × 2)",
+     "n": "United TravelBank up to $50/yr",
      "t": "credit",
      "v": 50,
      "pp": 25,
      "cad": "half",
      "enroll": true,
-     "how": "$25 deposited on or about January 5 and another $25 on or about July 5. ⚠️ Tiny expiry windows: deposits made Jan 1-Jun 30 expire July 15 of the same year; deposits made Jul 1-Dec 31 expire January 15 of the following year. CORRECTED 8/17/26: registration is at ihg.com/united and must be made through your IHG One Rewards account -- it is NOT a MileagePlus-side registration, which is how we had it recorded.",
+     "how": "Up to $50 in United TravelBank Cash per calendar year. 🚨 THE 8/17/26 CORRECTION WAS WRONG AND IS REVERSED — it was derived from the PERSONAL card's terms and wrongly applied to the Business card. Chase's own business page says the opposite: \"Earn up to $50 in United TravelBank Cash each calendar year after registering your IHG One Rewards Premier Credit Card with your MileagePlus account.\" Registration is MILEAGEPLUS-SIDE on this card, not at ihg.com/united. Controls on the rendered business page: TravelBank=2, MileagePlus=1, Diamond=2 — vs \"ihg.com/united\"=0, \"January 15\"=0, \"July 5\"=0. ⚠️ ALSO REMOVED: the $25 × 2 split and the Jan 15 / Jul 15 expiry windows appear NOWHERE on Chase's business surfaces — those are the PERSONAL card's terms and should never have been on this row. (\"TravelBank\" = 0 on creditcards.chase.com/business-credit-cards/IHG/business-premier; controls Instacart=61, DoorDash=31.) Chase's business page also misnames the product (\"Premier Credit Card\" on the Business card's own page) — likely a Chase copy error, noted so it is not mistaken for a product change next pass.",
      "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
      "sk": "issuer",
-     "flag": "expires fast"
+     "flag": "🚨 reversed 8/31/26 — MileagePlus-side registration; no $25×2 split on this card"
     },
     {
      "n": "$100 credit + 10k pts at $20k spend",
@@ -1406,8 +1431,8 @@
      "pp": 10,
      "cad": "month",
      "enroll": true,
-     "flag": "added 8/10/26",
-     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26. ⚠️ ADDED 8/24/26: the co-brand program window has a stated START date — \"between 5/1/2025 and 12/31/2027\" — confirmed on both Instacart's page and Chase's product pages. Instacart+ now bundles Peacock and New York Times Cooking ($50 stated annual value).",
+     "flag": "🚨 NOT YET ENROLLED — $10/mo expiring · use the /p/ URL only · 3rd render 8/31/26",
+     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26. ⚠️ ADDED 8/24/26: the co-brand program window has a stated START date — \"between 5/1/2025 and 12/31/2027\" — confirmed on both Instacart's page and Chase's product pages. Instacart+ now bundles Peacock and New York Times Cooking ($50 stated annual value). ✅ THIRD CONSECUTIVE RENDER 8/31/26 — this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") — but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. 🚨 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands — the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass — that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.)",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier"
     },
@@ -1516,8 +1541,8 @@
      "pp": 10,
      "cad": "month",
      "enroll": true,
-     "flag": "added 8/10/26",
-     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26. ⚠️ ADDED 8/24/26: the co-brand program window has a stated START date — \"between 5/1/2025 and 12/31/2027\" — confirmed on both Instacart's page and Chase's product pages. Instacart+ now bundles Peacock and New York Times Cooking ($50 stated annual value).",
+     "flag": "🚨 NOT YET ENROLLED — $10/mo expiring · use the /p/ URL only · 3rd render 8/31/26",
+     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26. ⚠️ ADDED 8/24/26: the co-brand program window has a stated START date — \"between 5/1/2025 and 12/31/2027\" — confirmed on both Instacart's page and Chase's product pages. Instacart+ now bundles Peacock and New York Times Cooking ($50 stated annual value). ✅ THIRD CONSECUTIVE RENDER 8/31/26 — this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") — but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. 🚨 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands — the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass — that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.)",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority"
     },
@@ -1626,8 +1651,8 @@
      "pp": 10,
      "cad": "month",
      "enroll": true,
-     "flag": "RE-CONFIRMED 8/24/26 — verify at enrollment",
-     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year; co-brand program window 5/1/2025–12/31/2027. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. ⚠️ SOURCE CONFLICT, RE-TESTED 8/24/26 AND THE FINDING HOLDS. Instacart's Chase co-brand enrollment page rendered for a SECOND consecutive week and now names this card as eligible in THREE independent places: the eligible-card grid, the FAQ enumeration, and a new hero line reading \"Enroll with your consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG.\" Chase's own product page for this card still markets zero Instacart (raw-HTML occurrence count: 4, all four being global hamburger-nav chrome pointing at the unrelated Instacart Mastercard). No Chase document anywhere EXCLUDES this card — unlike DoorDash, which publishes an explicit exclusion list. The enrollment page is the operative document: Chase's marketing describes the card, Instacart's page gates whether enrollment succeeds. Enrolling is free and reversible; leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it is rejected. Stacking is explicit: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Each credit needs one order of $10 or more; restaurant orders powered by Uber Eats are excluded. Instacart+ itself now bundles Peacock and New York Times Cooking (Instacart states a $50 annual value for NYT Cooking) — note that activating the NYT Cooking offer voids the 5-day Instacart+ refund window.",
+     "flag": "🚨 NOT YET ENROLLED — $10/mo expiring · use the /p/ URL only · 3rd render 8/31/26",
+     "how": "Up to $10 in statement credits each month on Instacart, max $120/calendar year; co-brand program window 5/1/2025–12/31/2027. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. ⚠️ SOURCE CONFLICT, RE-TESTED 8/24/26 AND THE FINDING HOLDS. Instacart's Chase co-brand enrollment page rendered for a SECOND consecutive week and now names this card as eligible in THREE independent places: the eligible-card grid, the FAQ enumeration, and a new hero line reading \"Enroll with your consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG.\" Chase's own product page for this card still markets zero Instacart (raw-HTML occurrence count: 4, all four being global hamburger-nav chrome pointing at the unrelated Instacart Mastercard). No Chase document anywhere EXCLUDES this card — unlike DoorDash, which publishes an explicit exclusion list. The enrollment page is the operative document: Chase's marketing describes the card, Instacart's page gates whether enrollment succeeds. Enrolling is free and reversible; leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it is rejected. Stacking is explicit: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Each credit needs one order of $10 or more; restaurant orders powered by Uber Eats are excluded. Instacart+ itself now bundles Peacock and New York Times Cooking (Instacart states a $50 annual value for NYT Cooking) — note that activating the NYT Cooking offer voids the 5-day Instacart+ refund window. ✅ THIRD CONSECUTIVE RENDER 8/31/26 — this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") — but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. 🚨 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands — the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass — that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.) Chase's own page for this card still shows ZERO Instacart content — 4 raw hits, all four global hamburger-nav chrome pointing at the unrelated Instacart Mastercard (controls: \"annual fee\"=10/10/8, Hyatt=195/224, DoorDash=31/31/6). Addition still rests on Instacart's enumeration, which no Chase document contradicts.",
      "sk": "issuer",
      "src": "https://www.instacart.com/p/chase-cobrands"
     }
@@ -1646,7 +1671,7 @@
      "pp": 300,
      "cad": "half",
      "enroll": false,
-     "how": "$300 Jan–Jun + $300 Jul–Dec on PREPAID Amex Travel bookings of Fine Hotels + Resorts or The Hotel Collection (THC 2-night min).",
+     "how": "$300 Jan–Jun + $300 Jul–Dec on PREPAID Amex Travel bookings of Fine Hotels + Resorts or The Hotel Collection (THC 2-night min). ✅ RESET BASIS TERMS-CONFIRMED 8/31/26 (first time): \"will not exceed $300 semi-annually for a total of up to $600 per calendar year… Each semi-annual eligibility period is defined as January to June and July to December.\" The adjacent \"Starting on September 18, 2025\" clause is the historical refresh date, not a pending change (\"September 1, 2026\" = zero occurrences).",
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "issuer",
      "flag": "new in refresh"
@@ -1762,10 +1787,12 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": true,
-     "how": "Centurion Lounges; 10 Delta Sky Club visits/yr (flying Delta, visit year runs Feb 1-Jan 31); Priority Pass Select (enroll); Escape, Plaza Premium + more. Centurion guest access is now ISSUER-CONFIRMED (8/10/26, thecenturionlounge.com): $75,000 in eligible purchases in a calendar year unlocks up to 2 complimentary guests per visit, valid for the rest of the attainment year PLUS the entire following calendar year PLUS through Jan 31 of the year after that. Otherwise guests are $50/adult, $30/child 2-17, under 2 free. Since ~7/8/26 guests must be ticketed on the SAME FLIGHT as the cardmember. A physical Amex card is required for paid guest access. Entry 3 hours before departure, 5 hours during a layover. NOTE: there is no $100 Centurion on-property credit -- that was a conflation with The Hotel Collection $100 credit, and is now retired as an open item. ⚠️ RE-CONFIRMED VERBATIM 8/24/26, plus three details we did not record: \"Guest access is per Card Member, not per Card\"; \"Same-day round-trip itineraries are not considered connecting flights\"; and Sidecar by The Centurion Lounge requires arrival \"within 90 minutes\" of departure versus 3 hours for a full Centurion Lounge (5 hours during a layover). Guest pricing $50 adult / $30 child 2–17 / under 2 free. Confirmed absent: no $100 Centurion on-property credit — \"$100\" returns zero occurrences on the access-policy page. Also confirmed: Lufthansa was never part of the U.S. Global Lounge Collection — the 10/1/26 Lufthansa removal is an AUSTRALIAN-market change only, and \"Lufthansa\" returns zero occurrences on the U.S. Business Platinum page. That open item is now CLOSED.",
+     "how": "Centurion Lounges; 10 Delta Sky Club visits/yr (flying Delta, visit year runs Feb 1-Jan 31); Priority Pass Select (enroll); Escape, Plaza Premium + more. Centurion guest access is now ISSUER-CONFIRMED (8/10/26, thecenturionlounge.com): $75,000 in eligible purchases in a calendar year unlocks up to 2 complimentary guests per visit, valid for the rest of the attainment year PLUS the entire following calendar year PLUS through Jan 31 of the year after that. Otherwise guests are $50/adult, $30/child 2-17, under 2 free. Since ~7/8/26 guests must be ticketed on the SAME FLIGHT as the cardmember. A physical Amex card is required for paid guest access. Entry 3 hours before departure, 5 hours during a layover. NOTE: there is no $100 Centurion on-property credit -- that was a conflation with The Hotel Collection $100 credit, and is now retired as an open item. ⚠️ RE-CONFIRMED VERBATIM 8/31/26, plus: \"Guest access is per Card Member, not per Card\"; \"Same-day round-trip itineraries are not considered connecting flights\"; Sidecar arrival window is 90 minutes and is now scoped to LAS specifically (\"At Sidecar by The Centurion Lounge (LAS), all Platinum Card Members must enter within 90 minutes\"). Guest pricing $50 adult / $30 child 2–17 / under 2 free. No $100 Centurion on-property credit (\"$100\" = zero occurrences on the access-policy page). 🚨 LUFTHANSA REOPENED AND REVERSED 8/31/26 — THIS IS A REAL U.S. CHANGE, 30 DAYS OUT. The 8/24/26 pass closed this item as \"an Australian-market change only\" on the strength of a zero-count for \"Lufthansa\" on Amex's marketing page. That was a FALSE NEGATIVE from a bad control: the marketing page never enumerates individual Global Lounge Collection partner lounges by name, so a zero-count there proves nothing. The U.S. Business Platinum GOVERNING TERMS contain \"Lufthansa\" 12 times under their own section heading \"Lufthansa Lounge Access – Platinum\", and state: \"This benefit is available to U.S. Business Platinum Card Members. Platinum Card Members have access to Lufthansa Lounges through September 30, 2026. Effective October 1, 2026, Platinum Card Members will not have access to any Lufthansa Lounges.\" Lesson recorded: a negative check against marketing copy is not a negative check against the product.",
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "issuer",
-     "flag": "issuer-confirmed 8/10/26"
+     "flag": "🚨 Lufthansa lounges END 10/1/2026 (U.S.) — reopened 8/31/26 after a wrong close",
+     "ends": "2026-10-01",
+     "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/stand-alone-supps/terms/business-platinum-charge-card/68339-9-0"
     },
     {
      "n": "Marriott Gold + Hilton Gold + LHW Sterling",
@@ -1847,6 +1874,18 @@
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "issuer",
      "flag": "added 8/24/26 — per stay, not annual"
+    },
+    {
+     "n": "Platinum Nights + Global Dining Access by Resy",
+     "t": "access",
+     "v": null,
+     "pp": null,
+     "cad": "ongoing",
+     "enroll": false,
+     "how": "➕ ADDED 8/31/26 — Amex flags Platinum Nights™ by Resy as \"NEW\" on the Business Platinum product page and gives it its own terms section: \"access to in-restaurant dining reservations on select nights in select cities.\" Global Dining Access by Resy sits alongside it. Because Amex labels it NEW, this may be a genuine addition since our last sweep rather than a record gap — we have no prior-week snapshot to distinguish the two, so it is logged as an addition with that ambiguity noted. No fixed annual credit.",
+     "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
+     "sk": "issuer",
+     "flag": "added 8/31/26 — Amex labels it NEW"
     }
    ]
   },
@@ -1949,12 +1988,13 @@
      "t": "credit",
      "v": 250,
      "pp": 250,
-     "cad": "year",
+     "cad": "calendar",
      "enroll": false,
-     "how": "$250 on prepaid Delta Stays bookings on delta.com. ⚠️ RESET BASIS UNKNOWN (downgraded 8/17/26, evidence strengthened 8/24/26). ROOT CAUSE FOUND: delta.com/resbizbenefitterms was never \"an empty JS shell\" — it 302-redirects to an Amex card-application print route that returns HTTP 404. The Gold Business, Platinum Business and Marriott Bonvoy Business equivalents 404 identically, so the entire route is dead to server-side fetchers. It will only yield to a real rendered browser session. NEW NEGATIVE EVIDENCE — a contrast test on Amex's own page: \"calendar year\" appears there SIX times as a deliberate term of art (\"$75,000 in purchases on your Card during calendar year\", \"up to $50,000 per calendar year\"), yet Delta Stays is described three times as an \"annual statement credit\" and never once as calendar-year. Delta's wording is \"up to $250 per year\" / \"annually\". Amex plainly uses \"calendar year\" when it means it, and pointedly does not here. That is strong evidence AGAINST a December 31 deadline, now resting on two independent issuer domains. Do not drive a use-it-or-lose-it alert off December. Check your own Amex app.",
-     "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
+     "how": "$250 on prepaid Delta Stays bookings on delta.com. ✅ RESOLVED 8/31/26 — IT IS CALENDAR YEAR, and the 8/17–8/24 conclusion is REFUTED. Root cause of four failed passes: delta.com/resbizbenefitterms was judged \"dead\" because it 404s to server-side fetchers. It is not dead — it RENDERS FULLY IN A REAL BROWSER. The governing terms say, twice: \"Basic Delta SkyMiles Reserve Business American Express Card Members can earn up to $250 in statement credits per calendar year\" and \"the total amount of statement credits for Eligible Delta Stays Bookings will not exceed $250 on the Card Account per calendar year.\" Our prior reasoning (Amex says \"annual\" not \"calendar year\", therefore not calendar year) inferred from marketing copy against terms it could not reach — the terms were always reachable with the right tool. ⚠️ ACTION: this DOES expire December 31. Book with margin — POSTING date governs, not purchase date. The terms address the boundary directly: \"if an Eligible Delta Stays Booking is purchased on December 31st but the merchant processes the transaction such that it is identified to us as occurring on January 1st, the January statement credit would be applied if available.\"",
+     "src": "https://www.delta.com/resbizbenefitterms",
      "sk": "issuer",
-     "flag": "reset basis UNKNOWN — do not assume December"
+     "flag": "✅ resolved 8/31/26 — calendar year, book with margin",
+     "ends": "2026-12-31"
     },
     {
      "n": "Resy credit $20/mo",
@@ -1986,10 +2026,10 @@
      "pp": null,
      "cad": "anniversary",
      "enroll": false,
-     "how": "Annual on renewal, within the U.S. and to Mexico, the Caribbean or Central America. Pay $22–$250 in government-imposed taxes/fees. ⚠️ CORRECTED 8/24/26 — the tax figures we had ($80 domestic / $250 international) are NOT issuer-supported. Amex and Delta both state one range: \"government-imposed taxes and fees of between $22 and $250 (for itineraries with up to four flight segments).\" ⚠️ CABIN ELIGIBILITY REVERSED 8/24/26. We recorded Delta Premium Select as eligible on the authority of Delta's governing T&C page. THAT PAGE DOES NOT EXIST: delta.com/resbizbenefitterms 302-redirects to an Amex print route that returns HTTP 404 with title \"Page Not Found | American Express US\". Root cause confirmed by controls — the Gold Business, Platinum Business and Marriott Bonvoy Business equivalents all 404 identically, so the whole print route is dead to non-browser clients, not a Delta-specific breakage. The two LIVE issuer pages both say: \"a Delta First, Delta Comfort, or Delta Main domestic, Caribbean, or Central American round-trip flight\" (delta.com) and \"a round-trip ticket in Delta First, Delta Comfort+, or Delta Main cabin\" (americanexpress.com). \"Premium Select\" appears ZERO times on either, across three renderings. \"Delta One\" also appears zero times, so our \"excludes only Delta One\" line was never issuer text either. HONEST POSITION: First / Comfort+ / Main is what the issuer currently publishes. Premium Select is neither confirmed nor refuted — the document that supported it is unreachable. CONFIRM AT BOOKING before planning a Premium Select redemption. Delta Basic is excluded. The 6/4/26 enhancement (Delta Vacations redemption eligibility) is unaffected.",
-     "src": "https://www.americanexpress.com/en-us/business/credit-cards/delta-skymiles-reserve/",
+     "how": "Annual on renewal, within the U.S. and to Mexico, the Caribbean or Central America. Pay $22–$250 in government-imposed taxes/fees (\"for itineraries with up to four flight segments\"). ✅ CABIN ELIGIBILITY RESOLVED 8/31/26 — the 8/24/26 reversal was WRONG and is itself reversed. Our ORIGINAL record was right all along. The governing terms (delta.com/resbizbenefitterms, reachable in a rendered browser) state: \"Companion Certificate is valid for one round-trip Delta First, Delta Premium Select, Delta Comfort or Delta Main Companion ticket\" and \"Companion Certificates are not eligible to purchase Delta One seats.\" So Premium Select IS eligible and Delta One IS the only excluded cabin. Both marketing pages (\"Delta First, Delta Comfort+, or Delta Main\") are ABBREVIATED COPY that omits Premium Select — last week we treated that omission as authoritative. It is not. Fare classes, newly captured: Main = L/U/T/X/V · Comfort = W/S (only when L/U/T/X/V are open in Main) · Premium Select = A/G · First = I/Z. Delta Basic excluded. Also usable \"for the flight portion of a Delta Vacations package.\"",
+     "src": "https://www.delta.com/resbizbenefitterms",
      "sk": "issuer",
-     "flag": "Premium Select UNCONFIRMABLE — confirm at booking"
+     "flag": "✅ Premium Select CONFIRMED eligible — Delta One is the only exclusion"
     },
     {
      "n": "Delta Sky Club — 15 visits/yr",
@@ -2150,9 +2190,10 @@
      "pp": 100,
      "cad": "ongoing",
      "enroll": false,
-     "how": "Per 2-night-min paid Waldorf Astoria/Conrad stay booked via HiltonHonorsAspireCard.com 'Aspire Card Benefit' rate. On-property credit, not statement. ⚠️ CORRECTED 8/24/26: the phone code ZZAAP1 is no longer published by either issuer. Both now give a phone number instead — Amex: \"or call Hilton Honors at (855) 292-5757 with the proper booking reference\"; hilton.com: \"or by calling Hilton at 855-292-5757 with the proper booking reference.\"",
-     "src": "https://www.hiltonhonorsaspirecard.com/",
-     "sk": "issuer"
+     "how": "Per 2-night-min paid Waldorf Astoria/Conrad stay booked via HiltonHonorsAspireCard.com 'Aspire Card Benefit' rate. On-property credit, not statement. 🚨 THE 8/24/26 CORRECTION WAS WRONG AND IS REVERSED — ZZAAP1 IS NOT RETIRED, AND THIS ONE COSTS MONEY. Both issuers publish BOTH the phone number and the code; they are not alternatives. The phone number is in the headline copy, the code is in the terms: \"If you are booking by phone, you must reference ZZAAP1 for your stay to be eligible for this benefit.\" Last week's pass zero-counted the headline copy and never read the terms. ⚠️ Booking by phone WITHOUT quoting ZZAAP1 forfeits the $100.",
+     "src": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
+     "sk": "issuer",
+     "flag": "🚨 must quote ZZAAP1 when booking by phone"
     },
     {
      "n": "National Emerald Club Executive",
@@ -2194,10 +2235,11 @@
      "v": 0,
      "cad": "year",
      "enroll": true,
-     "flag": "added 8/10/26",
-     "how": "10% back on qualifying concessions at American Express Venue Collection venues, up to $250 per calendar year. Enrollment required; one enrolled card per member. This is a 10% rebate (you must spend ~$2,500 on concessions to max it), NOT a claimable fixed credit -- so it is deliberately NOT counted in the dashboard's fixed-credit total. Issuer-confirmed 8/10/26 when Amex's Aspire page rendered its full 25-benefit list for the first time.",
+     "flag": "ends 12/31/2026 — recorded 8/31/26",
+     "how": "10% back on qualifying concessions at American Express Venue Collection venues, up to $250 per calendar year. Enrollment required; one enrolled card per member. This is a 10% rebate (you must spend ~$2,500 on concessions to max it), NOT a claimable fixed credit -- so it is deliberately NOT counted in the dashboard's fixed-credit total. Issuer-confirmed 8/10/26 when Amex's Aspire page rendered its full 25-benefit list for the first time. ⚠️ HARD EXPIRY RECORDED 8/31/26: the governing terms for all five Amex cards state \"Offer ends 12/31/2026\" (Bonvoy Business restates it as \"Offer ends December 31, 2026\"). We carried no end date. Note this benefit also exists on Business Platinum, Business Gold, Delta Reserve Business and Bonvoy Business — we track it only here.",
      "sk": "issuer",
-     "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/"
+     "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
+     "ends": "2026-12-31"
     },
     {
      "n": "Return Protection",
@@ -2248,7 +2290,7 @@
      "pp": null,
      "cad": "year",
      "enroll": false,
-     "how": "Gold Elite + 15 elite night credits per calendar year (stacks with the Ritz card's 15 since one is business, one consumer).",
+     "how": "Gold Elite + 15 elite night credits per calendar year (stacks with the Ritz card's 15 since one is business, one consumer). ➕ 8/31/26 — two mechanics newly issuer-confirmed: the 15 Elite Night Credits deposit \"on or before March 1 of each subsequent calendar year\", and the business/consumer stacking we had been ASSUMING is now stated outright: \"you will receive an Annual ENC benefit for each, for a total of two Annual ENC benefits per Marriott Bonvoy Member Account per year.\" Upgrades that line from inference to issuer.",
      "src": "https://www.marriott.com/credit-cards/marriott-bonvoy-business-american-express-card.mi",
      "sk": "issuer"
     },
@@ -2259,7 +2301,7 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "Amex Business Card Rate: 7% off eligible direct Bonvoy bookings. No statement credits exist on this card.",
+     "how": "Amex Business Card Rate. ⚠️ CORRECTED 8/31/26 — the 7% is a TOTAL, not an increment, so our line overstated the benefit. Amex: \"As a Marriott Bonvoy member (even without the Card), you have access to Member Rates, which offers a discount of 2%-5% off the Standard Flexible Room Rate. In addition, as a Card Member, you can select the Amex Business Card Rate to get an additional discount which will add up to a total of 7% off the Standard Flexible Room Rate.\" Real delta over a plain member rate is 2–5 points, not 7. No statement credits exist on this card.",
      "src": "https://www.marriott.com/credit-cards/marriott-bonvoy-business-american-express-card.mi",
      "sk": "issuer"
     },
@@ -2303,6 +2345,18 @@
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/amex-marriott-bonvoy-business-credit-card/",
      "sk": "issuer",
      "flag": "added 8/24/26"
+    },
+    {
+     "n": "Airline transfer bonus (5k per 60k)",
+     "t": "earn",
+     "v": null,
+     "pp": null,
+     "cad": "ongoing",
+     "enroll": false,
+     "how": "➕ ADDED 8/31/26 — a real economic term we never recorded. Amex: \"5,000 bonus miles for every 60,000 points you transfer\" to airline partners (an effective ~8.3% uplift on transfers out). Distinct from the Air + Car transfer program row, which covers the ratio mechanics. No fixed annual credit.",
+     "src": "https://www.americanexpress.com/us/credit-cards/card/marriott-bonvoy-business/",
+     "sk": "issuer",
+     "flag": "added 8/31/26"
     }
    ]
   },
@@ -2386,9 +2440,10 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "2x everything; 10x hotels/cars, 5x flights/vacation rentals via portal. Transfers to 15+ partners mostly 1:1. No FX fees; free employee + virtual cards. ⚠️ RE-VERIFIED 8/24/26 — American Airlines is still NOT a transfer partner, refuted a SIXTH consecutive time. Capital One's transfer-partner page is still stamped January 29, 2026 and still lists 18 airlines + 4 hotels, with no adds or removes. This pass added a byte-level negative check: \"American Airlines\", \"AAdvantage\" and \"transfer bonus\" return ZERO hits across four issuer pages, while a control term (\"Aeromexico\") returns 2 — proving the check works rather than silently failing.",
-     "src": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/",
-     "sk": "issuer"
+     "how": "2x everything; 10x hotels/cars, 5x flights/vacation rentals via Capital One Business Travel. Transfers to 15+ partners, most 1:1. No FX fees; free employee + virtual cards. ➕ ADDED 8/31/26 — no preset spending limit, which we never recorded: \"This card comes with no preset spend limit that adapts to your needs based on spending behavior, payment history and credit profile.\" Footnote 6 qualifies it: \"No preset spending limit does not mean unlimited spending.\" ✅ AMERICAN AIRLINES REFUTED A SEVENTH CONSECUTIVE TIME. Partner page still stamped \"January 29, 2026\", still 18 airlines + 4 hotels, no adds or removes. Byte-level negative check with control: \"American Airlines\" = 0 and \"AAdvantage\" = 0 across three issuer pages; control \"Aeromexico\" = 2 in the same raw HTML. FULL ENUMERATION recorded for next-pass diffing — 1:1 airlines (14): Aeromexico, Aeroplan, Avianca LifeMiles, British Airways Club, Cathay Asia Miles, Etihad Guest, Finnair Plus, Flying Blue, Qantas, Qatar Privilege Club, Singapore KrisFlyer, TAP Miles&Go, Turkish Miles&Smiles, Virgin Red. Other ratios (4): Emirates Skywards, EVA Air, JAL Mileage Bank (2:1.5); JetBlue (5:3). Hotels (4): Choice Privileges 1:1, Wyndham 1:1, I Prefer 1:2, Accor Live Limitless 2:1. ⚠️ Plaza Premium is NOT an issuer-published benefit on this card — \"Plaza Premium\" = 0 hits across all four issuer sources (control \"Priority Pass\" = 4/28). Do not let that framing propagate.",
+     "src": "https://www.capitalone.com/learn-grow/money-management/venture-miles-transfer-partnerships/",
+     "sk": "issuer",
+     "flag": "AA refuted 7× · partner list enumerated 8/31/26 · old transfer-partners URL is a 404"
     },
     {
      "n": "Cell phone protection",
