@@ -1,16 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-09-01T17:19:06+00:00",
-  "count": 9,
+  "lastUpdated": "2026-09-02T17:09:34+00:00",
+  "count": 8,
   "bonuses": [
-    {
-      "from": "Bilt",
-      "details": "Up to 100% transfer bonus from Bilt to Virgin Atlantic Flying Club",
-      "pct": "Up to 100%",
-      "url": "https://frequentmiler.com/bilt-rent-day-up-to-100-transfer-bonus-to-virgin/",
-      "start": "09/01/26",
-      "end": "09/01/26"
-    },
     {
       "from": "Citi ThankYou Rewards",
       "details": "25% transfer bonus from Citi ThankYou Rewards to Leading Hotels of the World",
@@ -71,7 +63,7 @@
       "from": "Amex Membership Rewards",
       "details": "30% transfer bonus from Amex Membership Rewards to Hilton",
       "pct": "30%",
-      "url": "",
+      "url": "https://frequentmiler.com/amex-membership-rewards-hilton-honors-30-percent-transfer-bonus/",
       "start": "09/01/26",
       "end": "10/14/26"
     }
