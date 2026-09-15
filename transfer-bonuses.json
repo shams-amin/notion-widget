@@ -1,7 +1,7 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-09-14T18:37:04+00:00",
-  "count": 8,
+  "lastUpdated": "2026-09-15T17:39:44+00:00",
+  "count": 9,
   "bonuses": [
     {
       "from": "Citi ThankYou Rewards",
@@ -66,6 +66,14 @@
       "url": "https://frequentmiler.com/amex-membership-rewards-hilton-honors-30-percent-transfer-bonus/",
       "start": "09/01/26",
       "end": "10/14/26"
+    },
+    {
+      "from": "Chase Ultimate Rewards",
+      "details": "70% transfer bonus from Chase Ultimate Rewards to Marriott Bonvoy",
+      "pct": "70%",
+      "url": "",
+      "start": "09/15/26",
+      "end": "10/15/26"
     }
   ]
 }
