@@ -1,16 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-09-19T16:28:25+00:00",
-  "count": 9,
+  "lastUpdated": "2026-09-20T16:47:07+00:00",
+  "count": 10,
   "bonuses": [
-    {
-      "from": "Citi ThankYou Rewards",
-      "details": "25% transfer bonus from Citi ThankYou Rewards to Leading Hotels of the World",
-      "pct": "25%",
-      "url": "https://frequentmiler.com/citi-thankyou-leading-hotels-of-the-world-lhw-25-percent-transfer-bonus/",
-      "start": "08/23/26",
-      "end": "09/19/26"
-    },
     {
       "from": "Amex Membership Rewards",
       "details": "30% transfer bonus from Amex Membership Rewards to British Airways Avios",
@@ -74,6 +66,22 @@
       "url": "https://frequentmiler.com/70-percent-transfer-bonus-chase-ultimate-rewards-marriott-bonvoy/",
       "start": "09/15/26",
       "end": "10/15/26"
+    },
+    {
+      "from": "Citi ThankYou Rewards",
+      "details": "30% transfer bonus from Citi ThankYou Rewards to JAL (Japan Airlines) Mileage Bank",
+      "pct": "30%",
+      "url": "https://frequentmiler.com/citi-adds-japan-airlines-as-a-11-partner-launches-30-transfer-bonus/",
+      "start": "09/20/26",
+      "end": "10/24/26"
+    },
+    {
+      "from": "Citi ThankYou Rewards",
+      "details": "25% transfer bonus from Citi ThankYou Rewards to Avianca LifeMiles",
+      "pct": "25%",
+      "url": "",
+      "start": "09/20/26",
+      "end": "10/24/26"
     }
   ]
 }
