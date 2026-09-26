@@ -1,7 +1,7 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-09-25T17:56:30+00:00",
-  "count": 10,
+  "lastUpdated": "2026-09-26T17:08:32+00:00",
+  "count": 12,
   "bonuses": [
     {
       "from": "Amex Membership Rewards",
@@ -50,6 +50,22 @@
       "url": "https://frequentmiler.com/capital-one-miles-jal-japan-airlines-30-percent-transfer-bonus/",
       "start": "09/01/26",
       "end": "09/30/26"
+    },
+    {
+      "from": "Bilt",
+      "details": "Up to 125% transfer bonus from Bilt to Amtrak Guest Rewards",
+      "pct": "Up to 125%",
+      "url": "https://frequentmiler.com/bilt-rent-day-for-october-2026-transfer-bonuses-for-amtrak-hilton-free-hilton-status-challenge/",
+      "start": "10/01/26",
+      "end": "10/01/26"
+    },
+    {
+      "from": "Bilt",
+      "details": "Up to 200% transfer bonus from Bilt to Hilton",
+      "pct": "Up to 200%",
+      "url": "https://frequentmiler.com/bilt-rent-day-for-october-2026-transfer-bonuses-for-amtrak-hilton-free-hilton-status-challenge/",
+      "start": "10/01/26",
+      "end": "10/01/26"
     },
     {
       "from": "Amex Membership Rewards",
