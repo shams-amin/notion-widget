@@ -1,32 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-09-30T18:26:00+00:00",
-  "count": 9,
+  "lastUpdated": "2026-10-01T18:52:10+00:00",
+  "count": 12,
   "bonuses": [
-    {
-      "from": "Chase Ultimate Rewards",
-      "details": "20% transfer bonus from Chase Ultimate Rewards to Air Canada Aeroplan",
-      "pct": "20%",
-      "url": "https://frequentmiler.com/get-20-bonus-when-transferring-chase-ultimate-rewards-to-air-canada-aeroplan-stack-with-10-cardholder-bonus/",
-      "start": "08/12/26",
-      "end": "09/30/26"
-    },
-    {
-      "from": "Rove Miles",
-      "details": "40% transfer bonus from Rove Miles to Copa Airlines ConnectMiles",
-      "pct": "40%",
-      "url": "https://frequentmiler.com/rove-copa-airlines-transfer-partner-bonus/",
-      "start": "09/01/26",
-      "end": "09/30/26"
-    },
-    {
-      "from": "Capital One Miles",
-      "details": "30% transfer bonus from Capital One Miles to JAL (Japan Airlines) Mileage Bank",
-      "pct": "30%",
-      "url": "https://frequentmiler.com/capital-one-miles-jal-japan-airlines-30-percent-transfer-bonus/",
-      "start": "09/01/26",
-      "end": "09/30/26"
-    },
     {
       "from": "Bilt",
       "details": "Up to 125% transfer bonus from Bilt to Amtrak Guest Rewards",
@@ -74,6 +50,54 @@
       "url": "https://frequentmiler.com/25-transfer-bonus-to-avianca-lifemiles-from-citi-thankyou-rewards-2/",
       "start": "09/20/26",
       "end": "10/24/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
+      "details": "20% transfer bonus from Amex Membership Rewards to AeroMexico ClubPremier",
+      "pct": "20%",
+      "url": "",
+      "start": "10/01/26",
+      "end": "10/30/26"
+    },
+    {
+      "from": "Rove Miles",
+      "details": "50% transfer bonus from Rove Miles to JAL (Japan Airlines) Mileage Bank",
+      "pct": "50%",
+      "url": "https://frequentmiler.com/rove-transfer-bonus-bonanza-50-to-japan-airlines-40-to-flying-blue-up-to-35-to-qatar-airways/",
+      "start": "10/01/26",
+      "end": "10/31/26"
+    },
+    {
+      "from": "Rove Miles",
+      "details": "40% transfer bonus from Rove Miles to Air France KLM Flying Blue",
+      "pct": "40%",
+      "url": "https://frequentmiler.com/rove-transfer-bonus-bonanza-50-to-japan-airlines-40-to-flying-blue-up-to-35-to-qatar-airways/",
+      "start": "10/01/26",
+      "end": "10/31/26"
+    },
+    {
+      "from": "Rove Miles",
+      "details": "Up to 35% transfer bonus from Rove Miles to Qatar Privilege Club Avios",
+      "pct": "Up to 35%",
+      "url": "https://frequentmiler.com/rove-transfer-bonus-bonanza-50-to-japan-airlines-40-to-flying-blue-up-to-35-to-qatar-airways/",
+      "start": "10/01/26",
+      "end": "10/31/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
+      "details": "25% transfer bonus from Amex Membership Rewards to Air France KLM Flying Blue",
+      "pct": "25%",
+      "url": "",
+      "start": "10/01/26",
+      "end": "10/31/26"
+    },
+    {
+      "from": "Capital One Miles",
+      "details": "20% transfer bonus from Capital One Miles to British Airways Avios",
+      "pct": "20%",
+      "url": "",
+      "start": "10/01/26",
+      "end": "10/31/26"
     }
   ]
 }
