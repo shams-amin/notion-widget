@@ -1,7 +1,7 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-10-02T18:23:46+00:00",
-  "count": 10,
+  "lastUpdated": "2026-10-03T17:15:18+00:00",
+  "count": 11,
   "bonuses": [
     {
       "from": "Amex Membership Rewards",
@@ -39,7 +39,7 @@
       "from": "Amex Membership Rewards",
       "details": "20% transfer bonus from Amex Membership Rewards to AeroMexico ClubPremier",
       "pct": "20%",
-      "url": "",
+      "url": "https://frequentmiler.com/american-express-membership-rewards-offering-20-transfer-bonus-to-aeromexico/",
       "start": "10/01/26",
       "end": "10/30/26"
     },
@@ -71,7 +71,7 @@
       "from": "Amex Membership Rewards",
       "details": "25% transfer bonus from Amex Membership Rewards to Air France KLM Flying Blue",
       "pct": "25%",
-      "url": "",
+      "url": "https://frequentmiler.com/get-a-25-bonus-when-transferring-amex-membership-rewards-to-air-france-klm-flying-blue/",
       "start": "10/01/26",
       "end": "10/31/26"
     },
@@ -79,7 +79,15 @@
       "from": "Capital One Miles",
       "details": "20% transfer bonus from Capital One Miles to British Airways Avios",
       "pct": "20%",
-      "url": "",
+      "url": "https://frequentmiler.com/20-transfer-bonus-from-capital-one-miles-to-british-airways-avios/",
+      "start": "10/01/26",
+      "end": "10/31/26"
+    },
+    {
+      "from": "Citi ThankYou Rewards",
+      "details": "Up to 35% transfer bonus from Citi ThankYou Rewards to Qatar Privilege Club Avios",
+      "pct": "Up to 35%",
+      "url": "https://frequentmiler.com/up-to-30-transfer-bonus-to-qatar-avios-from-citi-thankyou-rewards",
       "start": "10/01/26",
       "end": "10/31/26"
     }
