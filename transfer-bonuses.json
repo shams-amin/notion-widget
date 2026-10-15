@@ -1,18 +1,9 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-10-14T17:59:43+00:00",
+  "lastUpdated": "2026-10-15T17:45:41+00:00",
   "count": 11,
   "live": 11,
   "bonuses": [
-    {
-      "from": "Amex Membership Rewards",
-      "to": "Hilton",
-      "details": "30% transfer bonus from Amex Membership Rewards to Hilton",
-      "pct": "30%",
-      "url": "https://frequentmiler.com/amex-membership-rewards-hilton-honors-30-percent-transfer-bonus/",
-      "start": "09/01/26",
-      "end": "10/14/26"
-    },
     {
       "from": "Chase Ultimate Rewards",
       "to": "Marriott Bonvoy",
@@ -102,6 +93,15 @@
       "url": "https://frequentmiler.com/up-to-30-transfer-bonus-to-qatar-avios-from-citi-thankyou-rewards",
       "start": "10/01/26",
       "end": "10/31/26"
+    },
+    {
+      "from": "Rove Miles",
+      "to": "JetBlue",
+      "details": "20% transfer bonus from Rove Miles to JetBlue",
+      "pct": "20%",
+      "url": "https://frequentmiler.com/wp-admin/post.php?post=298584&amp;action=edit",
+      "start": "10/15/26",
+      "end": "11/14/26"
     }
   ]
 }
