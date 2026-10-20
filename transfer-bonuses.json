@@ -1,8 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-10-19T19:19:08+00:00",
-  "count": 10,
-  "live": 10,
+  "lastUpdated": "2026-10-20T17:57:35+00:00",
+  "count": 12,
+  "live": 12,
   "bonuses": [
     {
       "from": "Citi ThankYou Rewards",
@@ -29,6 +29,15 @@
       "pct": "20%",
       "url": "https://frequentmiler.com/american-express-membership-rewards-offering-20-transfer-bonus-to-aeromexico/",
       "start": "10/01/26",
+      "end": "10/30/26"
+    },
+    {
+      "from": "Wyndham",
+      "to": "United MileagePlus",
+      "details": "100% transfer bonus from Wyndham to United MileagePlus",
+      "pct": "100%",
+      "url": "https://frequentmiler.com/100-transfer-bonus-from-wyndham-rewards-to-united-mileageplus",
+      "start": "10/05/26",
       "end": "10/30/26"
     },
     {
@@ -93,6 +102,15 @@
       "url": "https://frequentmiler.com/wp-admin/post.php?post=298584&amp;action=edit",
       "start": "10/15/26",
       "end": "11/14/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
+      "to": "Marriott Bonvoy",
+      "details": "35% transfer bonus from Amex Membership Rewards to Marriott Bonvoy",
+      "pct": "35%",
+      "url": "",
+      "start": "10/20/26",
+      "end": "12/10/26"
     }
   ]
 }
