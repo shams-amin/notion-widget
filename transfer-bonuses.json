@@ -1,8 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-10-20T17:57:35+00:00",
-  "count": 12,
-  "live": 12,
+  "lastUpdated": "2026-10-21T18:01:11+00:00",
+  "count": 13,
+  "live": 13,
   "bonuses": [
     {
       "from": "Citi ThankYou Rewards",
@@ -104,11 +104,20 @@
       "end": "11/14/26"
     },
     {
+      "from": "Capital One Miles",
+      "to": "Virgin Atlantic Flying Club",
+      "details": "30% transfer bonus from Capital One Miles to Virgin Atlantic Flying Club",
+      "pct": "30%",
+      "url": "https://frequentmiler.com/30-percent-transfer-bonus-capital-one-virgin-atlantic/",
+      "start": "10/21/26",
+      "end": "11/20/26"
+    },
+    {
       "from": "Amex Membership Rewards",
       "to": "Marriott Bonvoy",
       "details": "35% transfer bonus from Amex Membership Rewards to Marriott Bonvoy",
       "pct": "35%",
-      "url": "",
+      "url": "https://frequentmiler.com/35-percent-transfer-bonus-american-express-membership-rewards-marriott-bonvoy/",
       "start": "10/20/26",
       "end": "12/10/26"
     }
