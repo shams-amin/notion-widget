@@ -1,27 +1,9 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-10-25T17:02:33+00:00",
-  "count": 13,
-  "live": 11,
+  "lastUpdated": "2026-10-26T19:16:40+00:00",
+  "count": 12,
+  "live": 12,
   "bonuses": [
-    {
-      "from": "Citi ThankYou Rewards",
-      "to": "JAL (Japan Airlines) Mileage Bank",
-      "details": "30% transfer bonus from Citi ThankYou Rewards to JAL (Japan Airlines) Mileage Bank",
-      "pct": "30%",
-      "url": "https://frequentmiler.com/citi-adds-japan-airlines-as-a-11-partner-launches-30-transfer-bonus/",
-      "start": "09/20/26",
-      "end": "10/24/26"
-    },
-    {
-      "from": "Citi ThankYou Rewards",
-      "to": "Avianca LifeMiles",
-      "details": "25% transfer bonus from Citi ThankYou Rewards to Avianca LifeMiles",
-      "pct": "25%",
-      "url": "https://frequentmiler.com/25-transfer-bonus-to-avianca-lifemiles-from-citi-thankyou-rewards-2/",
-      "start": "09/20/26",
-      "end": "10/24/26"
-    },
     {
       "from": "Amex Membership Rewards",
       "to": "AeroMexico ClubPremier",
@@ -101,6 +83,15 @@
       "pct": "20%",
       "url": "https://frequentmiler.com/wp-admin/post.php?post=298584&amp;action=edit",
       "start": "10/15/26",
+      "end": "11/14/26"
+    },
+    {
+      "from": "Citi ThankYou Rewards",
+      "to": "Cathay Pacific Asia Miles",
+      "details": "10% transfer bonus from Citi ThankYou Rewards to Cathay Pacific Asia Miles",
+      "pct": "10%",
+      "url": "",
+      "start": "10/25/26",
       "end": "11/14/26"
     },
     {
