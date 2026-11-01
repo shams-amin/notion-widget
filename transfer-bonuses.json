@@ -1,81 +1,9 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-10-31T17:42:24+00:00",
-  "count": 12,
+  "lastUpdated": "2026-11-01T18:24:44+00:00",
+  "count": 10,
   "live": 10,
   "bonuses": [
-    {
-      "from": "Amex Membership Rewards",
-      "to": "AeroMexico ClubPremier",
-      "details": "20% transfer bonus from Amex Membership Rewards to AeroMexico ClubPremier",
-      "pct": "20%",
-      "url": "https://frequentmiler.com/american-express-membership-rewards-offering-20-transfer-bonus-to-aeromexico/",
-      "start": "10/01/26",
-      "end": "10/30/26"
-    },
-    {
-      "from": "Wyndham",
-      "to": "United MileagePlus",
-      "details": "100% transfer bonus from Wyndham to United MileagePlus",
-      "pct": "100%",
-      "url": "https://frequentmiler.com/100-transfer-bonus-from-wyndham-rewards-to-united-mileageplus",
-      "start": "10/05/26",
-      "end": "10/30/26"
-    },
-    {
-      "from": "Rove Miles",
-      "to": "JAL (Japan Airlines) Mileage Bank",
-      "details": "50% transfer bonus from Rove Miles to JAL (Japan Airlines) Mileage Bank",
-      "pct": "50%",
-      "url": "https://frequentmiler.com/rove-transfer-bonus-bonanza-50-to-japan-airlines-40-to-flying-blue-up-to-35-to-qatar-airways/",
-      "start": "10/01/26",
-      "end": "10/31/26"
-    },
-    {
-      "from": "Rove Miles",
-      "to": "Air France KLM Flying Blue",
-      "details": "40% transfer bonus from Rove Miles to Air France KLM Flying Blue",
-      "pct": "40%",
-      "url": "https://frequentmiler.com/rove-transfer-bonus-bonanza-50-to-japan-airlines-40-to-flying-blue-up-to-35-to-qatar-airways/",
-      "start": "10/01/26",
-      "end": "10/31/26"
-    },
-    {
-      "from": "Rove Miles",
-      "to": "Qatar Privilege Club Avios",
-      "details": "Up to 35% transfer bonus from Rove Miles to Qatar Privilege Club Avios",
-      "pct": "Up to 35%",
-      "url": "https://frequentmiler.com/rove-transfer-bonus-bonanza-50-to-japan-airlines-40-to-flying-blue-up-to-35-to-qatar-airways/",
-      "start": "10/01/26",
-      "end": "10/31/26"
-    },
-    {
-      "from": "Amex Membership Rewards",
-      "to": "Air France KLM Flying Blue",
-      "details": "25% transfer bonus from Amex Membership Rewards to Air France KLM Flying Blue",
-      "pct": "25%",
-      "url": "https://frequentmiler.com/get-a-25-bonus-when-transferring-amex-membership-rewards-to-air-france-klm-flying-blue/",
-      "start": "10/01/26",
-      "end": "10/31/26"
-    },
-    {
-      "from": "Capital One Miles",
-      "to": "British Airways Avios",
-      "details": "20% transfer bonus from Capital One Miles to British Airways Avios",
-      "pct": "20%",
-      "url": "https://frequentmiler.com/20-transfer-bonus-from-capital-one-miles-to-british-airways-avios/",
-      "start": "10/01/26",
-      "end": "10/31/26"
-    },
-    {
-      "from": "Citi ThankYou Rewards",
-      "to": "Qatar Privilege Club Avios",
-      "details": "Up to 35% transfer bonus from Citi ThankYou Rewards to Qatar Privilege Club Avios",
-      "pct": "Up to 35%",
-      "url": "https://frequentmiler.com/up-to-30-transfer-bonus-to-qatar-avios-from-citi-thankyou-rewards",
-      "start": "10/01/26",
-      "end": "10/31/26"
-    },
     {
       "from": "Rove Miles",
       "to": "JetBlue",
@@ -102,6 +30,60 @@
       "url": "https://frequentmiler.com/30-percent-transfer-bonus-capital-one-virgin-atlantic/",
       "start": "10/21/26",
       "end": "11/20/26"
+    },
+    {
+      "from": "Capital One Miles",
+      "to": "Air France KLM Flying Blue",
+      "details": "20% transfer bonus from Capital One Miles to Air France KLM Flying Blue",
+      "pct": "20%",
+      "url": "",
+      "start": "11/01/26",
+      "end": "11/30/26"
+    },
+    {
+      "from": "Chase Ultimate Rewards",
+      "to": "British Airways Avios",
+      "details": "30% transfer bonus from Chase Ultimate Rewards to British Airways Avios",
+      "pct": "30%",
+      "url": "",
+      "start": "11/01/26",
+      "end": "12/01/26"
+    },
+    {
+      "from": "Chase Ultimate Rewards",
+      "to": "Iberia Avios",
+      "details": "30% transfer bonus from Chase Ultimate Rewards to Iberia Avios",
+      "pct": "30%",
+      "url": "",
+      "start": "11/01/26",
+      "end": "12/01/26"
+    },
+    {
+      "from": "Chase Ultimate Rewards",
+      "to": "Aer Lingus Avios",
+      "details": "30% transfer bonus from Chase Ultimate Rewards to Aer Lingus Avios",
+      "pct": "30%",
+      "url": "",
+      "start": "11/01/26",
+      "end": "12/01/26"
+    },
+    {
+      "from": "Chase Ultimate Rewards",
+      "to": "IHG",
+      "details": "80% transfer bonus from Chase Ultimate Rewards to IHG",
+      "pct": "80%",
+      "url": "",
+      "start": "11/01/26",
+      "end": "12/03/26"
+    },
+    {
+      "from": "Chase Ultimate Rewards",
+      "to": "Wyndham",
+      "details": "30% transfer bonus from Chase Ultimate Rewards to Wyndham",
+      "pct": "30%",
+      "url": "",
+      "start": "11/01/26",
+      "end": "12/03/26"
     },
     {
       "from": "Amex Membership Rewards",
