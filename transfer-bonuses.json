@@ -1,8 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-11-01T18:24:44+00:00",
-  "count": 10,
-  "live": 10,
+  "lastUpdated": "2026-11-02T22:18:04+00:00",
+  "count": 12,
+  "live": 12,
   "bonuses": [
     {
       "from": "Rove Miles",
@@ -36,8 +36,17 @@
       "to": "Air France KLM Flying Blue",
       "details": "20% transfer bonus from Capital One Miles to Air France KLM Flying Blue",
       "pct": "20%",
-      "url": "",
+      "url": "https://frequentmiler.com/20-transfer-bonus-to-air-france-klm-flying-blue-from-capital-one/",
       "start": "11/01/26",
+      "end": "11/30/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
+      "to": "Virgin Atlantic Flying Club",
+      "details": "30% transfer bonus from Amex Membership Rewards to Virgin Atlantic Flying Club",
+      "pct": "30%",
+      "url": "https://frequentmiler.com/30-percent-transfer-bonus-american-express-membership-rewards-virgin-atlantic/",
+      "start": "11/02/26",
       "end": "11/30/26"
     },
     {
@@ -45,7 +54,7 @@
       "to": "British Airways Avios",
       "details": "30% transfer bonus from Chase Ultimate Rewards to British Airways Avios",
       "pct": "30%",
-      "url": "",
+      "url": "https://frequentmiler.com/get-a-30-bonus-when-transferring-chase-ultimate-rewards-to-avios-programs-ba-iberia-aer-lingus/",
       "start": "11/01/26",
       "end": "12/01/26"
     },
@@ -54,7 +63,7 @@
       "to": "Iberia Avios",
       "details": "30% transfer bonus from Chase Ultimate Rewards to Iberia Avios",
       "pct": "30%",
-      "url": "",
+      "url": "https://frequentmiler.com/get-a-30-bonus-when-transferring-chase-ultimate-rewards-to-avios-programs-ba-iberia-aer-lingus/",
       "start": "11/01/26",
       "end": "12/01/26"
     },
@@ -63,8 +72,17 @@
       "to": "Aer Lingus Avios",
       "details": "30% transfer bonus from Chase Ultimate Rewards to Aer Lingus Avios",
       "pct": "30%",
-      "url": "",
+      "url": "https://frequentmiler.com/get-a-30-bonus-when-transferring-chase-ultimate-rewards-to-avios-programs-ba-iberia-aer-lingus/",
       "start": "11/01/26",
+      "end": "12/01/26"
+    },
+    {
+      "from": "Capital One Miles",
+      "to": "Copa Airlines ConnectMiles",
+      "details": "30% transfer bonus from Capital One Miles to Copa Airlines ConnectMiles",
+      "pct": "30%",
+      "url": "https://frequentmiler.com/copa-added-as-new-capital-one-transfer-partner-21-5-30-launch-transfer-bonus/",
+      "start": "11/02/26",
       "end": "12/01/26"
     },
     {
@@ -81,7 +99,7 @@
       "to": "Wyndham",
       "details": "30% transfer bonus from Chase Ultimate Rewards to Wyndham",
       "pct": "30%",
-      "url": "",
+      "url": "https://frequentmiler.com/30-transfer-bonus-from-chase-ultimate-rewards-to-wyndham-rewards/",
       "start": "11/01/26",
       "end": "12/03/26"
     },
