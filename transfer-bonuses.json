@@ -1,8 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-11-03T20:05:20+00:00",
-  "count": 12,
-  "live": 12,
+  "lastUpdated": "2026-11-04T20:24:40+00:00",
+  "count": 13,
+  "live": 13,
   "bonuses": [
     {
       "from": "Rove Miles",
@@ -50,6 +50,15 @@
       "end": "11/30/26"
     },
     {
+      "from": "Citi ThankYou Rewards",
+      "to": "Turkish Airlines Miles & Smiles",
+      "details": "40% transfer bonus from Citi ThankYou Rewards to Turkish Airlines Miles & Smiles",
+      "pct": "40%",
+      "url": "https://frequentmiler.com/40-percent-transfer-bonus-citi-thankyou-turkish-milesandsmiles/",
+      "start": "11/01/26",
+      "end": "11/30/26"
+    },
+    {
       "from": "Chase Ultimate Rewards",
       "to": "British Airways Avios",
       "details": "30% transfer bonus from Chase Ultimate Rewards to British Airways Avios",
@@ -90,7 +99,7 @@
       "to": "IHG",
       "details": "80% transfer bonus from Chase Ultimate Rewards to IHG",
       "pct": "80%",
-      "url": "",
+      "url": "https://frequentmiler.com/chase-offering-80-bonus-when-transferring-points-to-ihg-but-dont/",
       "start": "11/01/26",
       "end": "12/03/26"
     },
