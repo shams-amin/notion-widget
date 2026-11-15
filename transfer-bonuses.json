@@ -1,27 +1,9 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-11-14T18:43:33+00:00",
-  "count": 13,
-  "live": 13,
+  "lastUpdated": "2026-11-15T19:21:41+00:00",
+  "count": 11,
+  "live": 11,
   "bonuses": [
-    {
-      "from": "Rove Miles",
-      "to": "JetBlue",
-      "details": "20% transfer bonus from Rove Miles to JetBlue",
-      "pct": "20%",
-      "url": "https://frequentmiler.com/wp-admin/post.php?post=298584&amp;action=edit",
-      "start": "10/15/26",
-      "end": "11/14/26"
-    },
-    {
-      "from": "Citi ThankYou Rewards",
-      "to": "Cathay Pacific Asia Miles",
-      "details": "10% transfer bonus from Citi ThankYou Rewards to Cathay Pacific Asia Miles",
-      "pct": "10%",
-      "url": "https://frequentmiler.com/10-transfer-bonus-citi-thankyou-rewards-to-cathay-pacific-asia-miles/",
-      "start": "10/25/26",
-      "end": "11/14/26"
-    },
     {
       "from": "Capital One Miles",
       "to": "Virgin Atlantic Flying Club",
