@@ -1,8 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-11-15T19:21:41+00:00",
-  "count": 11,
-  "live": 11,
+  "lastUpdated": "2026-11-16T22:52:37+00:00",
+  "count": 13,
+  "live": 13,
   "bonuses": [
     {
       "from": "Capital One Miles",
@@ -102,6 +102,24 @@
       "url": "https://frequentmiler.com/35-percent-transfer-bonus-american-express-membership-rewards-marriott-bonvoy/",
       "start": "10/20/26",
       "end": "12/10/26"
+    },
+    {
+      "from": "Capital One Miles",
+      "to": "Qatar Privilege Club Avios",
+      "details": "15% transfer bonus from Capital One Miles to Qatar Privilege Club Avios",
+      "pct": "15%",
+      "url": "https://frequentmiler.com/15-transfer-bonus-to-qatar-privilege-club-from-capital-one-miles/",
+      "start": "11/15/26",
+      "end": "12/14/26"
+    },
+    {
+      "from": "Amex Membership Rewards",
+      "to": "Avianca LifeMiles",
+      "details": "10% transfer bonus from Amex Membership Rewards to Avianca LifeMiles",
+      "pct": "10%",
+      "url": "",
+      "start": "11/16/26",
+      "end": "12/16/26"
     }
   ]
 }
