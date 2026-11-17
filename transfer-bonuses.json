@@ -1,8 +1,8 @@
 {
   "source": "https://frequentmiler.com/current-point-transfer-bonuses/",
-  "lastUpdated": "2026-11-16T22:52:37+00:00",
-  "count": 13,
-  "live": 13,
+  "lastUpdated": "2026-11-17T21:45:02+00:00",
+  "count": 14,
+  "live": 14,
   "bonuses": [
     {
       "from": "Capital One Miles",
@@ -117,9 +117,18 @@
       "to": "Avianca LifeMiles",
       "details": "10% transfer bonus from Amex Membership Rewards to Avianca LifeMiles",
       "pct": "10%",
-      "url": "",
+      "url": "https://frequentmiler.com/10-transfer-bonus-to-avianca-lifemiles-from-amex-membership-rewards/",
       "start": "11/16/26",
       "end": "12/16/26"
+    },
+    {
+      "from": "Chase Ultimate Rewards",
+      "to": "Virgin Atlantic Flying Club",
+      "details": "40% transfer bonus from Chase Ultimate Rewards to Virgin Atlantic Flying Club",
+      "pct": "40%",
+      "url": "",
+      "start": "11/17/26",
+      "end": "12/30/26"
     }
   ]
 }
