@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-17",
- "verified": "2026-11-17",
- "method": "Quarterly re-audit 2026-11-17: full sweep of every row against issuer pages only (creditcards.chase.com, chase.com, media.chase.com, marriott.chase.com, southwest.com, ihg.com, help.doordash.com, americanexpress.com incl. Venue Collection enrollment page and governing terms, delta.com/resbizbenefitterms, hilton.com, marriott.com, capitalone.com incl. transfer-partner page, lounge terms and Guide to Benefits). Changes: Amex Venue Collection offer extended to 1/5/27 and becomes an ongoing per-card benefit from 1/6/27 (5 Amex cards); CSR Biz Google Workspace credit extended through 12/31/29; Hyatt + Hyatt Biz pages now print two-tier DoorDash wording; added record gaps Ritz Platinum Elite at $75k and SW Performance Business 25% inflight. Rows not re-confirmed keep their prior verified date. Prior: Quarterly re-audit 2026-11-10: full sweep of every row against issuer pages only (creditcards.chase.com, chase.com, media.chase.com, marriott.chase.com, southwest.com incl. /rapid-rewards/2027, ihg.com, hyatt.com, help.doordash.com, americanexpress.com incl. governing terms, delta.com/resbizbenefitterms, hilton.com, marriott.com, capitalone.com incl. transfer-partner page and Guide to Benefits). Changes: Capital One adds Copa (2:1.5); The Edit adds vacation homes from 1/1/27 (CSR, CSR Biz); CSR sweepstakes entry closed. Rows not re-confirmed keep their prior verified date. Prior: Quarterly re-audit 2026-11-03: full sweep of every row against issuer pages only (creditcards.chase.com, chase.com incl. Sapphire 10th-anniversary and DoorDash terms pages, media.chase.com, marriott.chase.com, southwest.com incl. /rapid-rewards/2027, ihg.com, newsroom.hyatt.com, help.doordash.com, americanexpress.com product/benefit/travel pages, delta.com, hilton.com, marriott.com, capitalone.com incl. Guide to Benefits) by four parallel per-issuer agents against the 10/27 build; changes spot-checked by the orchestrator. ISSUER CHANGES: Southwest retires Companion Pass qualifying points 12/31",
+ "updated": "2026-11-23",
+ "verified": "2026-11-23",
+ "method": "Quarterly re-audit 2026-11-23: full sweep of every row against issuer pages only (creditcards.chase.com, chase.com, media.chase.com, marriott.chase.com, static.chasecdn.com Guide to Benefits, southwest.com, help.doordash.com, americanexpress.com incl. newsroom, Venue Collection enrollment page and governing terms, delta.com/resbizbenefitterms, marriott.com, capitalone.com + Guide to Benefits). 226 of 227 rows re-verified 11/23; CSR Business $250 select hotels left at its 11/10 date (no Business-card terms published). Changes: none in value; filled in United Quest trip-protection figures; re-found Reserved by Sapphire terms; added Resy Rewards +4x (Biz Gold, Biz Plat); IHG source URLs updated to redirect targets; Delta Reserve Biz Resy src2 -> delta.com/resbizbenefitterms. Prior: Quarterly re-audit 2026-11-17: full sweep of every row against issuer pages only (creditcards.chase.com, chase.com, media.chase.com, marriott.chase.com, southwest.com, ihg.com, help.doordash.com, americanexpress.com incl. Venue Collection enrollment page and governing terms, delta.com/resbizbenefitterms, hilton.com, marriott.com, capitalone.com incl. transfer-partner page, lounge terms and Guide to Benefits). Changes: Amex Venue Collection offer extended to 1/5/27 and becomes an ongoing per-card benefit from 1/6/27 (5 Amex cards); CSR Biz Google Workspace credit extended through 12/31/29; Hyatt + Hyatt Biz pages now print two-tier DoorDash wording; added record gaps Ritz Platinum Elite at $75k and SW Performance Business 25% inflight. Rows not re-confirmed keep their prior verified date. Prior: Quarterly re-audit 2026-11-10: full sweep of every row against issuer pages only (creditcards.chase.com, chase.com, media.chase.com, marriott.chase.com, southwest.com incl. /rapid-rewards/2027, ihg.com, hyatt.com, help.doordash.com, americanexpress.com incl. governing terms, delta.com/resbizbenefitterms, hilton.com, marriott.com, capitalone.com incl. transfer-partner page and Guide to Benefits). Changes: Capital One adds Copa (2:1.5); The Edit adds vacation homes from 1/1/27 (CSR, CSR Biz); CSR sweepstakes entry closed. Rows not re-confirmed keep their prior verified date. Prior: Quarterly re-audit 2026-11-03: full sweep of every row against issuer pages only (creditcards.chase.com, chase.com incl. Sapphire 10th-anniversary and DoorDash terms pages, media.chase.com, marriott.chase.com, southwest.com incl. /rapid-rewards/2027, ihg.com, newsroom.hyatt.com, help.doordash.com, americanexpress.com product/benefit/travel pages, delta.com, hilton.com, marriott.com, capitalone.com incl. Guide to Benefits) by four parallel per-issuer agents against the 10/27 build; changes spot-checked by the orchestrator. ISSUER CHANGES: Southwest retires Companion Pass qualifying points 12/31",
  "cards": [
   {
    "id": "csr",
@@ -19,7 +19,7 @@
      "how": "Automatic on any travel purchase each account-anniversary year. Credited purchases earn no points.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "The Edit $500 hotel credit",
@@ -32,7 +32,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "changed 1/1/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$250 select Chase Travel hotels credit",
@@ -45,7 +45,7 @@
      "src": "https://www.chase.com/sapphire-cards/personal/reserve",
      "sk": "issuer",
      "flag": "stated end 12/31/26",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve"
     },
     {
@@ -60,7 +60,7 @@
      "sk": "issuer",
      "flag": "term thru 6/30/2030; Chase now says 400+ restaurants (was 275+, observed 11/3/26); 60-day grace unsupported",
      "src2": "https://www.chase.com/sapphire-cards/personal/reserve",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$300 StubHub / viagogo credit",
@@ -73,7 +73,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "ends 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "DoorDash $35/mo promos",
@@ -86,7 +86,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "\ud83d\udd3c enhanced 10/1/26: $25\u2192$35/mo, through 12/31/29",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://www.chase.com/digital/resources/terms-of-use/csr-doordash"
     },
     {
@@ -99,7 +99,7 @@
      "how": "Complimentary DashPass (Chase values at $120/yr). EXTENDED 10/1/26: ACTIVATE BY 12/31/29 (was 12/31/27). Terms: complimentary DashPass \"from activation until December 31, 2029 or for 12 months, whichever is longer.\" One DashPass per DoorDash account -- pick which card feeds each account.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://www.chase.com/digital/resources/terms-of-use/csr-doordash",
      "flag": "activate by 12/31/29"
     },
@@ -114,7 +114,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "ends 9/30/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Peloton $10/mo membership credit",
@@ -127,7 +127,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "ends 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Apple TV+ & Apple Music subscriptions",
@@ -140,7 +140,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "ACTIVATE by 6/22/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck / NEXUS",
@@ -152,7 +152,7 @@
      "how": "Up to $120 every 4 years for the application fee charged to the card. Automatic.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Sapphire Lounges + Priority Pass Select",
@@ -164,7 +164,7 @@
      "how": "Chase Sapphire Lounges + 1,300+ Priority Pass lounges (you + 2 guests) + Air Canada Maple Leaf Lounges and Caf\u00e9s. NO enrollment needed \u2014 Chase: \"Primary cardmembers and any authorized users will have their Priority Pass Select membership automatically activated.\" AUs ($195) get their own access. \u26a0\ufe0f CORRECTED 8/31/26 \u2014 Air Canada is 1 GUEST, not 2, and carries conditions we never recorded: \"Eligible cardmembers are granted complimentary access for themselves and 1 guest each to Air Canada's network of Maple Leaf Lounges and Air Canada Caf\u00e9s\u2026 Air Canada Signature Suites and all lounges located in Montr\u00e9al (YUL) are excluded.\" Additional guests cost $59 per guest per visit. Access also requires \"departing on a Star Alliance member airline flight.\" The 2-guest allowance applies to Priority Pass and Sapphire Lounges ONLY. Additional Priority Pass guests beyond 2: Chase: \"For any additional guests, your card will be charged $27 per guest, per visit.\" (added 11/3/26)",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "IHG Platinum Elite status",
@@ -177,7 +177,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "new",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$75k/yr spend tier",
@@ -189,7 +189,7 @@
      "how": "$75k calendar spend: IHG Diamond, Hyatt Explorist, Southwest A-List, $500 Southwest Chase Travel credit, $250 Shops at Chase credit.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -201,7 +201,7 @@
      "how": "8x Chase Travel (incl. Edit); 4x flights + hotels direct; 3x dining; 5x Lyft (thru 9/30/27); 1x other.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "UR transfers + Points Boost",
@@ -213,7 +213,7 @@
      "how": "1:1 to partners. CSR keeps Hyatt 1:1 -- the 4:3 cut (announced 6/15/26; immediate for accounts opened on/after that date, 10/1/26 for earlier accounts) hit Sapphire Preferred / Ink Business Preferred / Ink Plus / Corporate Flex only. Points Boost up to 2x on select Chase Travel; base 1c. \ud83c\udd95 NEW REDEMPTION CHANNEL ADDED 9/21/26 \u2014 \"Invest Your Points\", published by Chase 2026-09-16 (two days after the 9/14 baseline). Redeem Ultimate Rewards points for cash into a J.P. Morgan Self-Directed Investing account or a taxable advisory account, managed in-app. Found independently by two agents. Card scope, verbatim: \"Ultimate Rewards points-earning cards include the Chase Freedom, Chase Ink and Chase Sapphire card portfolios.\" \u26a0\ufe0f NOT PRICED AND NOT FULLY SCOPED \u2014 the release publishes no cents-per-point rate (\"cent\" = 0, \"per point\" = 0, \"minimum\" = 0) and enumerates no eligible-card list; it says \"eligible cardmembers\" and the portfolio sentence is about which cards EARN Ultimate Rewards. So treat Sapphire inclusion as likely-but-unconfirmed and the value as unknown. Recorded as a redemption note, deliberately NOT a dollar-valued benefit row and NOT in the dashboard credit total. Source: media.chase.com/news/chase-expands-ultimate-rewards-with-new-invest-your-points-feature. Almost certainly a worse use of points than transfers \u2014 do not let a cash-out channel anchor your valuation.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Primary rental CDW + trip protections",
@@ -225,7 +225,7 @@
      "how": "Primary CDW to $75k. Trip cancel/interrupt $10k/person, $20k/trip; delay 6+hrs $500; $1M travel accident; $100k evac.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Reserve Travel Designers",
@@ -237,7 +237,7 @@
      "how": "Chase builds and books a custom itinerary for you. Chase values the service at \"up to $300 per trip.\" Per-trip and uncapped, so deliberately NOT counted in the fixed-credit dashboard total. Pre-existing benefit that was missing from this dataset -- not a new August 2026 addition.",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "The Edit \u2014 on-property benefits",
@@ -248,7 +248,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "added 8/24/26 \u00b7 \ud83c\udd95 vacation homes join The Edit 1/1/27 ($150 in-stay credit, 4-night min)",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://media.chase.com/news/chase-travel-unveils-27-trips-to-take-in-2027"
     },
     {
@@ -260,7 +260,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "added 8/24/26; amount $7.50 \u2192 $8.00, observed 9/8/26 \u2014 CSP still $7.50",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Return Protection",
@@ -271,7 +271,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "added 8/24/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Events and experiences access",
@@ -282,7 +282,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "added 8/24/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Reserved by Sapphire",
@@ -291,11 +291,11 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "\u2795 ADDED 8/31/26 \u2014 a SECOND, distinct dining-access program we had conflated with Exclusive Tables. Exclusive Tables runs through OpenTable; this one runs through Chase Dining. Chase: \"The 'Reserved by Sapphire' program is a benefit available to Chase Sapphire Reserve and J.P. Morgan Reserve cardmembers. 'Reserved by Sapphire' provides cardmembers access to reservations held exclusively for Reserve cardmembers. 'Reserved by Sapphire' reservations are available through Chase Dining in Ultimate Rewards at dining.chase.com or in the Chase Mobile app. Reservations are based on a first-come, first-served basis\u2026 Generally, reservations that are not booked 72-96 hours prior to the reservation time are released back to restaurants.\" No fixed annual credit, so no dashboard-dollar impact. \u26a0\ufe0f 11/3/26: \"Reserved by Sapphire\" now returns 0 hits on both Reserve pages; chase.com/reservedbysapphire redirects to account.chase.com Sapphire Reserve Experiences (\"Your Table, Reserved\" ticketed dinners via OpenTable) with none of the Chase Dining / 72\u201396-hour wording. Not marked discontinued \u2014 no issuer text says it ended.",
+     "how": "\u2795 ADDED 8/31/26 \u2014 a SECOND, distinct dining-access program we had conflated with Exclusive Tables. Exclusive Tables runs through OpenTable; this one runs through Chase Dining. Chase: \"The 'Reserved by Sapphire' program is a benefit available to Chase Sapphire Reserve and J.P. Morgan Reserve cardmembers. 'Reserved by Sapphire' provides cardmembers access to reservations held exclusively for Reserve cardmembers. 'Reserved by Sapphire' reservations are available through Chase Dining in Ultimate Rewards at dining.chase.com or in the Chase Mobile app. Reservations are based on a first-come, first-served basis\u2026 Generally, reservations that are not booked 72-96 hours prior to the reservation time are released back to restaurants.\" No fixed annual credit, so no dashboard-dollar impact. \u26a0\ufe0f 11/3/26: \"Reserved by Sapphire\" now returns 0 hits on both Reserve pages; chase.com/reservedbysapphire redirects to account.chase.com Sapphire Reserve Experiences (\"Your Table, Reserved\" ticketed dinners via OpenTable) with none of the Chase Dining / 72\u201396-hour wording. Not marked discontinued \u2014 no issuer text says it ended. \u2705 RE-FOUND 11/23/26: the terms are still live as a disclosure footnote on chase.com/sapphire-cards/personal/reserve (fragment \u2026/disclosures/sapphire-cards/personal/reserve/reserved-by-sapphire), attached to the \"Sapphire Reserve Experiences\" block; text matches word for word. The 11/3\u201311/17 \"0 hits\" was a search miss on visible copy. No benefit tile of its own.",
      "src": "https://www.chase.com/sapphire-cards/personal/reserve",
      "sk": "issuer",
-     "flag": "UNVERIFIED 11/3/26 \u2014 quoted terms not found on any issuer page; may be rebranded as Sapphire Reserve Experiences",
-     "verified": "2026-10-27"
+     "flag": "re-verified 11/23/26 (disclosure footnote on chase.com Reserve page)",
+     "verified": "2026-11-23"
     },
     {
      "n": "10th-anniversary Chase Offers (one-time)",
@@ -308,7 +308,7 @@
      "src": "https://www.chase.com/sapphire-cards/reserve-tenth-anniversary",
      "sk": "issuer",
      "flag": "\u23f0 remaining offers by 12/14/26 (IHG leg expired 10/16)",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "10th-anniversary sweepstakes (10M points)",
@@ -322,7 +322,7 @@
      "sk": "issuer",
      "flag": "\u26d4 entry closed 11/6/26 5pm ET \u2014 now in judging; public vote 12/23/26\u20131/5/27",
      "ends": "2026-11-06",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://celebrating10yearsofsapphirereserve.chase.com/official-rules"
     }
    ]
@@ -343,7 +343,7 @@
      "how": "Automatic on travel purchases each account-anniversary year.",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "The Edit $500 hotel credit",
@@ -356,7 +356,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "\ud83c\udd95 doubles to $1,000/yr from 1/1/2027 (announced by 9/28/26)",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$250 select Chase Travel hotels credit",
@@ -365,10 +365,10 @@
      "pp": 250,
      "cad": "year",
      "enroll": false,
-     "how": "Prepaid Chase Travel bookings (2-night min) at IHG, Montage, Pendry, Omni, Virgin, Minor, Pan Pacific. Chase states an end date of 12/31/26. No successor announced -- but Chase has NOT said it won't be renewed, so \"final year\" is our inference, not issuer text.",
+     "how": "Prepaid Chase Travel bookings (2-night min) at IHG, Montage, Pendry, Omni, Virgin, Minor, Pan Pacific. Chase states an end date of 12/31/26. No successor announced -- but Chase has NOT said it won't be renewed, so \"final year\" is our inference, not issuer text. \u26a0\ufe0f 11/23/26: still NOT verifiable for the Business card \u2014 business pages show no terms, brand list or date (the 11/23 business-page build drops even the bare \"$250 credit for select Chase Travel Hotels\" label). The only terms are titled \"...for Sapphire Reserve and J.P. Morgan Reserve Personal Cards... from January 1, 2026 through December 31, 2026.\" Not marked discontinued \u2014 no issuer text says it ended.",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "flag": "stated end 12/31/26",
+     "flag": "UNVERIFIED for Business (11/23/26) \u00b7 personal terms end 12/31/26",
      "verified": "2026-11-10"
     },
     {
@@ -382,7 +382,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "ends 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$200 Google Workspace credit",
@@ -395,7 +395,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "ends 12/31/29 (extended from 12/31/27, observed 11/17/26)",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$100 GiftCards.com credit",
@@ -408,7 +408,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "ends 10/31/28",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "DoorDash $25/mo promos",
@@ -421,7 +421,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "ends 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Complimentary DashPass",
@@ -433,7 +433,7 @@
      "how": "Complimentary DashPass, minimum one year from activation; ACTIVATE BY 12/31/27. DoorDash's own FAQ says to create a second account (different email) to stack with a personal Sapphire card.",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Lyft $10/mo in-app credit",
@@ -446,7 +446,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "ends 9/30/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck / NEXUS",
@@ -458,7 +458,7 @@
      "how": "Up to $120 every 4 years for the application fee charged to the card.",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Sapphire Lounges + Priority Pass Select",
@@ -470,7 +470,7 @@
      "how": "Same lounge network as personal; you + 2 guests. \u26a0\ufe0f CORRECTED 8/24/26: auto-activated, no enrollment \u2014 Chase: \"The authorizing officer will have their Priority Pass Select membership automatically activated. Authorized users... such as employees, are not eligible for this benefit.\" Employee cardmembers are NOT covered (they enter as your guests). Additional Priority Pass guests beyond 2: Chase: \"For any additional guests, your card will be charged $27 per guest, per visit.\" (added 11/3/26)",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "IHG Platinum Elite status",
@@ -483,7 +483,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "new",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$120k/yr spend tier",
@@ -495,7 +495,7 @@
      "how": "$120k calendar spend: Hyatt Explorist, IHG Diamond, Southwest A-List, up to $500 Southwest credit + $500 Shops at Chase.",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -504,10 +504,10 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "8x Chase Travel; 4x flights + hotels direct; 3x social/search ads; 5x Lyft (thru 9/30/27); 1x other. No dining bonus. Free employee cards. \ud83c\udd95 NEW DATED ITEM 9/21/26 \u2014 THE 3x SOCIAL/SEARCH ADS CATEGORY GETS A $1,000,000 ANNUAL CAP ON 2026-11-15. Orchestrator-verified verbatim: \"Until November 14, 2026, you'll earn 3 points for each $1 spent on purchases made in the following rewards category: social media and search engine advertising. Starting November 15, 2026, you'll earn 3 points total for each $1 of the first $1,000,000 spent each account anniversary year on purchases made in the social media and search engine advertising rewards category... After $1,000,000 is spent on purchases made in this category each account anniversary year, you go back to earning 1 point for each $1 spent, with no maximum.\" Chase defines the clock: \"'Account anniversary year' means November 15, 2026 through the first statement date after your account open date anniversary, and the 12 monthly billing cycles after your account open date anniversary each year after that.\" Counts: \"$1,000,000\" = 3, \"November 15, 2026\" = 2, \"November 14, 2026\" = 1, \"social media and search engine advertising\" = 3. \u26a0\ufe0f We cannot date when Chase published this \u2014 the page carries no content-revision stamp, so \"new since 9/14\" is NOT established; it may be a long-standing clause we never captured. It is new to OUR record either way. Uncapped until 11/14/2026.",
+     "how": "8x Chase Travel; 4x flights + hotels direct; 3x social/search ads; 5x Lyft (thru 9/30/27); 1x other. No dining bonus. Free employee cards. \ud83c\udd95 NEW DATED ITEM 9/21/26 \u2014 THE 3x SOCIAL/SEARCH ADS CATEGORY GETS A $1,000,000 ANNUAL CAP ON 2026-11-15. Orchestrator-verified verbatim: \"Until November 14, 2026, you'll earn 3 points for each $1 spent on purchases made in the following rewards category: social media and search engine advertising. Starting November 15, 2026, you'll earn 3 points total for each $1 of the first $1,000,000 spent each account anniversary year on purchases made in the social media and search engine advertising rewards category... After $1,000,000 is spent on purchases made in this category each account anniversary year, you go back to earning 1 point for each $1 spent, with no maximum.\" Chase defines the clock: \"'Account anniversary year' means November 15, 2026 through the first statement date after your account open date anniversary, and the 12 monthly billing cycles after your account open date anniversary each year after that.\" Counts: \"$1,000,000\" = 3, \"November 15, 2026\" = 2, \"November 14, 2026\" = 1, \"social media and search engine advertising\" = 3. \u26a0\ufe0f We cannot date when Chase published this \u2014 the page carries no content-revision stamp, so \"new since 9/14\" is NOT established; it may be a long-standing clause we never captured. It is new to OUR record either way. $1M cap in effect since 11/15/26 (transition clause removed from terms 11/23/26: \"'Account anniversary year' means November 15, 2026 through the first statement date after your account open date anniversary\").",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "UR transfers + Points Boost",
@@ -519,7 +519,7 @@
      "how": "1:1 to UR partners incl. Hyatt -- the 6/15/26 Hyatt 4:3 cut excludes both Reserves (hit CSP/Ink only). Points Boost up to 2x. \ud83c\udd95 NEW REDEMPTION CHANNEL ADDED 9/21/26 \u2014 \"Invest Your Points\", published by Chase 2026-09-16 (two days after the 9/14 baseline). Redeem Ultimate Rewards points for cash into a J.P. Morgan Self-Directed Investing account or a taxable advisory account, managed in-app. Found independently by two agents. Card scope, verbatim: \"Ultimate Rewards points-earning cards include the Chase Freedom, Chase Ink and Chase Sapphire card portfolios.\" \u26a0\ufe0f NOT PRICED AND NOT FULLY SCOPED \u2014 the release publishes no cents-per-point rate (\"cent\" = 0, \"per point\" = 0, \"minimum\" = 0) and enumerates no eligible-card list; it says \"eligible cardmembers\" and the portfolio sentence is about which cards EARN Ultimate Rewards. So treat Sapphire inclusion as likely-but-unconfirmed and the value as unknown. Recorded as a redemption note, deliberately NOT a dollar-valued benefit row and NOT in the dashboard credit total. Source: media.chase.com/news/chase-expands-ultimate-rewards-with-new-invest-your-points-feature. Almost certainly a worse use of points than transfers \u2014 do not let a cash-out channel anchor your valuation.",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Primary CDW (business) + cell phone protection",
@@ -531,7 +531,7 @@
      "how": "Primary CDW on business rentals to $75k. Cell phone: $1,000/claim, 3 claims/12mo, $100 deductible, bill paid with card.",
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Reserve Travel Designers",
@@ -543,7 +543,7 @@
      "how": "Chase builds and books a custom itinerary for you, and \"No travel agency fees will be assessed for reservations made through Reserve Travel Designers.\" Covered on this card \u2014 Chase: \"The Reserve Travel Designer program is provided as exclusive benefit for Chase Sapphire Reserve primary cardmembers and Chase Sapphire Reserve for Business authorizing officers.\" \u26a0\ufe0f CORRECTED 8/24/26: the \"up to $300 per trip\" valuation appears on the PERSONAL page only \u2014 the business page carries the benefit without the valuation. Per-trip and uncapped either way, so deliberately NOT counted in the fixed-credit dashboard total. Caveat: bookings via FROSCH by Chase Travel, Valerie Wilson Travel by Chase Travel or Frosch International Travel LLC do not earn 8x.",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "The Edit \u2014 on-property benefits",
@@ -554,7 +554,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "added 8/24/26 \u00b7 \ud83c\udd95 vacation homes join The Edit 1/1/27 ($150 in-stay credit, 4-night min)",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://media.chase.com/news/chase-travel-unveils-27-trips-to-take-in-2027"
     },
     {
@@ -566,7 +566,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/reserve",
      "sk": "issuer",
      "flag": "src corrected 8/31/26 \u2014 eligibility text is on the PERSONAL page",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -587,7 +587,7 @@
      "src": "https://media.chase.com/news/Meet-the-New-Chase-Sapphire-Preferred",
      "sk": "issuer",
      "flag": "changed 6/15/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck / NEXUS",
@@ -600,7 +600,7 @@
      "src": "https://media.chase.com/news/Meet-the-New-Chase-Sapphire-Preferred",
      "sk": "issuer",
      "flag": "new 6/15/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Apple TV (1 year)",
@@ -613,7 +613,7 @@
      "src": "https://media.chase.com/news/Meet-the-New-Chase-Sapphire-Preferred",
      "sk": "issuer",
      "flag": "activate by 12/31/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "DoorDash $10/mo non-restaurant promo",
@@ -626,7 +626,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
      "sk": "issuer",
      "flag": "ends 12/31/29 (extended 10/1/26)",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://www.chase.com/digital/resources/terms-of-use/sapphire-doordash"
     },
     {
@@ -639,7 +639,7 @@
      "how": "Complimentary DashPass, minimum one year from activation; ACTIVATE BY 12/31/29 (extended from 12/31/27, 10/1/26). One DashPass per DoorDash account.",
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
      "sk": "issuer",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://www.chase.com/digital/resources/terms-of-use/sapphire-doordash",
      "flag": "activate by 12/31/29"
     },
@@ -654,7 +654,7 @@
      "src": "https://media.chase.com/news/Meet-the-New-Chase-Sapphire-Preferred",
      "sk": "issuer",
      "flag": "ended 10/1/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "UR transfers \u2014 Hyatt drops to 4:3",
@@ -668,7 +668,7 @@
      "sk": "issuer",
      "flag": "4:3 in effect since 10/1/26",
      "src2": "https://www.chase.com/sapphire-cards/personal/preferred",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -681,7 +681,7 @@
      "src": "https://media.chase.com/news/Meet-the-New-Chase-Sapphire-Preferred",
      "sk": "issuer",
      "flag": "changed 6/15/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Emergency evacuation coverage",
@@ -694,7 +694,7 @@
      "src": "https://media.chase.com/news/Meet-the-New-Chase-Sapphire-Preferred",
      "sk": "issuer",
      "flag": "new 6/15/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Points Boost (up to 1.5x)",
@@ -706,7 +706,7 @@
      "how": "Up to 1.5x redemption value on top-booked hotels and flights through Chase Travel. Lower than the Reserves' up-to-2x tier -- the tier difference is the main redemption gap between CSP and CSR.",
      "sk": "issuer",
      "src": "https://www.chase.com/sapphire-cards/personal/preferred",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Apple One $8.00/mo discount",
@@ -717,7 +717,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
      "sk": "issuer",
      "flag": "$7.50 \u2192 $8.00 (observed 10/13/26)",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "5x Peloton (equipment over $150)",
@@ -728,7 +728,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
      "sk": "issuer",
      "flag": "ends 12/31/27 \u00b7 capped at $5,000 of purchases (25,000 pts)",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "5x Lyft",
@@ -739,7 +739,7 @@
      "src": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
      "sk": "issuer",
      "flag": "ends 9/30/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -760,7 +760,7 @@
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
      "flag": "must call to claim",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "85k Free Night Award",
@@ -772,7 +772,7 @@
      "how": "Annual FNA up to 85k points, posts up to 8 weeks after anniversary, 12-month expiry. Top-up with up to 25k points allowed.",
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$100 Ritz/St. Regis stay credit",
@@ -784,7 +784,7 @@
      "how": "Per paid 2+ night stay at participating Ritz-Carlton/St. Regis on eligible rates, paid with card. Dining/spa/recreation; no annual cap stated.",
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "3 Club Level upgrades / yr",
@@ -796,7 +796,7 @@
      "how": "3 Club-Level upgrade certs per anniversary year on paid stays (max 7 nights); book via Ritz reservations line, pay with card.",
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Marriott Gold Elite + 15 elite nights",
@@ -808,7 +808,7 @@
      "how": "Gold Elite each year + 15 elite night credits (by Mar 1). Only one consumer Marriott card's ENCs count; Amex Bonvoy Biz can stack a second 15.",
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Priority Pass Select + Sapphire Lounges",
@@ -821,7 +821,7 @@
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
      "flag": "changed: 2-guest cap",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry credit",
@@ -830,10 +830,10 @@
      "pp": 120,
      "cad": "once",
      "enroll": false,
-     "how": "$120 statement credit for a Global Entry application fee paid with the card (GE includes TSA PreCheck). \u2705 UPGRADED 8/31/26 \u2014 the 8/24/26 downgrade was WRONG. Footnote 15 is NOT a cadence-free generic Visa block; it states the cadence explicitly: \"Holders of eligible cards are entitled to one (1) $120 statement credit per card every 4 years in connection with the Global Entry program application fee. Please allow 6 to 8 weeks after the Global Entry program application fee is charged to an eligible card for a statement credit to be posted.\" Caveat retained: footnote 17 on the same page still reads \"Benefits referenced on this page are current as of 08/2025\", but that stamp attaches to footnote 17 (Visa T&Cs), not footnote 15. Cadence restored to every 4 years, source upgraded inference \u2192 issuer.",
+     "how": "$120 statement credit for a Global Entry application fee paid with the card (GE includes TSA PreCheck). \u2705 UPGRADED 8/31/26 \u2014 the 8/24/26 downgrade was WRONG. Footnote 15 is NOT a cadence-free generic Visa block; it states the cadence explicitly: \"Holders of eligible cards are entitled to one (1) $120 statement credit per card every 4 years in connection with the Global Entry program application fee. Please allow 6 to 8 weeks after the Global Entry program application fee is charged to an eligible card for a statement credit to be posted.\" Caveat retained: footnote 17 on the same page still reads \"Benefits referenced on this page are current as of 08/2025\", but that stamp attaches to footnote 17 (Visa T&Cs), not footnote 15. Cadence restored to every 4 years, source upgraded inference \u2192 issuer. \ud83d\udd22 11/23/26: Chase renumbered the footnotes \u2014 Global Entry terms are now footnote 16, Visa T&Cs (with the \"current as of 08/2025\" stamp) footnote 18. Wording unchanged.",
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "DoorDash $10/mo or $10/quarter + DashPass",
@@ -846,7 +846,7 @@
      "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
      "sk": "issuer",
      "flag": "\ud83d\udea8 cadence depends on YOUR first DashPass activation date (tier boundary was 2026-09-01) \u2014 check Manage DashPass; ends 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Concierge + Marriott premium Wi-Fi",
@@ -858,7 +858,7 @@
      "how": "24/7 J.P. Morgan concierge; free premium in-room internet at Bonvoy hotels; Visa Infinite rental privileges; no FX fees.",
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -867,10 +867,10 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "6x Marriott; 3x dining, car rentals, airfare direct; 2x other (Bonvoy points).",
+     "how": "6x Marriott; 3x dining, car rentals, airfare direct; 2x other (Bonvoy points). Precision fix 11/23/26 \u2014 Chase wording: \"3X Points for every $1 spent on dining, car rentals and airline purchases\" (not limited to airfare booked direct).",
      "src": "https://marriott.chase.com/ritz-carlton",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Primary CDW + trip delay",
@@ -882,7 +882,7 @@
      "how": "Primary CDW to $75k; lost luggage $3k; $1M travel accident. \u26a0\ufe0f CORRECTED 8/31/26 \u2014 trip delay is 6 HOURS, not 12: \"If your common carrier travel is delayed more than 6 hours or requires an overnight stay, you are covered for unreimbursed expenses, such as meals and lodging, up to $500 per covered traveler.\" Control: \"6 hours\" = 4 hits on the page, \"12 hours\" = 0. (The CSP genuinely IS 12 hours \u2014 that record line is correct; we had cross-contaminated them.) ADDED same pass \u2014 trip cancellation/interruption, which we omitted entirely: \"you can be reimbursed up to $10,000 per covered traveler and $20,000 per trip for your pre-paid, non-refundable travel expenses.\"",
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Marriott Bonvoy Chase card events",
@@ -895,7 +895,7 @@
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
      "flag": "added 8/31/26 \u2014 parity fix",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Platinum Elite at $75k spend",
@@ -908,7 +908,7 @@
      "src": "https://marriott.chase.com/ritz-carlton/benefits",
      "sk": "issuer",
      "flag": "added 11/17/26: gap in our record",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ],
    "fee_note": "$450 is secondary-sourced. The card is closed to new applicants and no Chase-owned page publishes the fee; there is no acquisition page. Re-checked 8/17/26 -- still unpublished. A 2025 rumour of a hike to $695 was denied by Chase PR.",
@@ -930,7 +930,7 @@
      "how": "Auto-deposited as TravelBank cash within 4 weeks after each anniversary. Use on United/United Express flights.",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$150 Renowned Hotels credit",
@@ -943,7 +943,7 @@
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
      "flag": "new",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$150 JSX credit",
@@ -956,7 +956,7 @@
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
      "flag": "new",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Instacart credits ($15/mo)",
@@ -970,7 +970,7 @@
      "sk": "issuer",
      "flag": "\ud83d\udea8 NOT YET ENROLLED \u2014 $15/mo expiring \u00b7 enrollment URL now fixed",
      "src2": "https://www.instacart.com/p/chase-united",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Rideshare credits ($100/yr)",
@@ -983,7 +983,7 @@
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
      "flag": "yearly opt-in required \u2014 no month published",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$80 Avis/Budget TravelBank credit",
@@ -996,7 +996,7 @@
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
      "flag": "new",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "10k-mile award discount (anniversary)",
@@ -1008,7 +1008,7 @@
      "how": "10,000-mile discount on a United award flight every anniversary; second one after $20k calendar spend.",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "1,000 PQP + status boosts",
@@ -1020,7 +1020,7 @@
      "how": "1,000 PQP posts \"within 6-8 weeks after February 1 of each year\" \u2014 so expect it by late March, not in February; our \"each Feb\" was a compression (\u26a0\ufe0f precision fix 9/8/26; we cannot distinguish an issuer edit from our own earlier compression). Chase: \"Card Bonus PQP will post directly to your United MileagePlus account and will not appear on your credit card statement. The Card Bonus PQP do not count toward the calendar year maximum.\" 1 PQP per $20 spent (max 18k/yr); 2 Economy Plus upgrades at $40k calendar spend.",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Free 1st + 2nd checked bags",
@@ -1032,7 +1032,7 @@
      "how": "You + 1 companion, both bags free (up to $440/roundtrip) \u2014 MUST buy ticket with Quest and include MileagePlus #. Priority boarding too.",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck / NEXUS",
@@ -1044,7 +1044,7 @@
      "how": "Up to $120 every 4 years, fee charged to card (you or an AU).",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -1056,7 +1056,7 @@
      "how": "4x United (up to 6x on fares); 5x Renowned Hotels prepaid; 2x other travel, dining, select streaming; 1x other. Award prices 10%+ lower. PRECISION FIX 8/17/26: Chase's \"10x total miles on eligible United flights\" is 6x from United as a MileagePlus member plus 4x from the card. The 6x is airline-side earning, not a card multiplier -- only the 4x is attributable to this card.",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Trip protections",
@@ -1065,10 +1065,11 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "Trip cancellation/interruption + trip delay reimbursement on travel paid with card.",
+     "how": "Trip cancellation/interruption: \"up to $1,500 per covered traveler and $6,000 per trip for your pre-paid, non-refundable passenger fares\". Trip delay: \"If your common carrier travel is delayed more than 12 hours or requires an overnight stay\u2026 up to $500 per covered traveler.\" Guide to Benefits (BGC11386_v2) agrees and also lists primary auto rental CDW up to $60k, baggage delay $100/day \u00d7 3 days, lost luggage $3k. Filled in 11/23/26 (long-standing text, not a change).",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
      "sk": "issuer",
-     "verified": "2026-11-03"
+     "verified": "2026-11-23",
+     "src2": "https://static.chasecdn.com/content/services/structured-document/document.en.pdf/card/benefits-center/product-benefits-guide-pdf/BGC11386_v2.pdf"
     },
     {
      "n": "No foreign transaction fees",
@@ -1080,7 +1081,7 @@
      "how": "No foreign transaction fee on purchases made abroad. Issuer-confirmed on the card's own pricing-and-terms disclosure 8/10/26 (previously recorded only on Southwest Priority).",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/united/united-quest",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -1100,7 +1101,7 @@
      "how": "One Category 1\u20134 free night each cardmember anniversary; posts up to 10 weeks after the anniversary and is valid 12 months from issuance (check out before it expires). Standard room; not valid at Miraval, Hyatt Zilara or Hyatt Ziva, or for packages. Resort, destination and facility fees are waived on the award night (excl. Hyatt Residence Club). \u26a0\ufe0f CORRECTED 9/28/26: our old note said \"room taxes covered\" \u2014 Chase says nothing about taxes; the fee waiver is the stated perk.",
      "src": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "2nd Cat 1\u20134 night at $15k spend",
@@ -1112,7 +1113,7 @@
      "how": "Second Cat 1\u20134 night after $15,000 in a CALENDAR year (resets Dec 31, not card anniversary).",
      "src": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Discoverist status + elite nights",
@@ -1124,7 +1125,7 @@
      "how": "Automatic Discoverist + 5 qualifying night credits/yr + 2 more per $5k spent (uncapped).",
      "src": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "DoorDash $10/mo or $10/quarter + DashPass",
@@ -1137,7 +1138,7 @@
      "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
      "sk": "issuer",
      "flag": "\ud83d\udea8 cadence depends on YOUR first DashPass activation date (tier boundary was 2026-09-01) \u2014 check Manage DashPass; ends 12/31/27",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card"
     },
     {
@@ -1151,7 +1152,7 @@
      "src": "https://newsroom.hyatt.com/awardchartupdates",
      "sk": "secondary",
      "flag": "specifics UNSUPPORTED \u2014 source page deleted",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -1163,7 +1164,7 @@
      "how": "4x Hyatt (up to 9x with member base); 2x restaurants, airfare direct, transit, gyms; 1x other.",
      "src": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Trip + baggage protections",
@@ -1175,7 +1176,7 @@
      "how": "Trip cancel/interrupt $5k/traveler, $10k/trip; baggage delay $100/day \u00d75.",
      "src": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "No foreign transaction fees",
@@ -1187,7 +1188,7 @@
      "how": "No foreign transaction fee on purchases made abroad. Issuer-confirmed on the card's own pricing-and-terms disclosure 8/10/26 (previously recorded only on Southwest Priority).",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/world-of-hyatt-credit-card",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Instacart credit $10/mo",
@@ -1200,7 +1201,7 @@
      "how": "Up to $10 in statement credits each month on Instacart, no stated annual cap \u2014 $120/yr is simply 12 \u00d7 $10; co-brand program window 5/1/2025\u201312/31/2027. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. \u26a0\ufe0f SOURCE CONFLICT, RE-TESTED 8/24/26 AND THE FINDING HOLDS. Instacart's Chase co-brand enrollment page rendered for a SECOND consecutive week and now names this card as eligible in THREE independent places: the eligible-card grid, the FAQ enumeration, and a new hero line reading \"Enroll with your consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG.\" Chase's own product page for this card still markets zero Instacart (raw-HTML occurrence count: 4, all four being global hamburger-nav chrome pointing at the unrelated Instacart Mastercard). No Chase document anywhere EXCLUDES this card \u2014 unlike DoorDash, which publishes an explicit exclusion list. The enrollment page is the operative document: Chase's marketing describes the card, Instacart's page gates whether enrollment succeeds. Enrolling is free and reversible; leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it is rejected. Stacking is explicit: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Each credit needs one order of $10 or more; restaurant orders powered by Uber Eats are excluded. Instacart+ itself now bundles Peacock and New York Times Cooking (Instacart states a $50 annual value for NYT Cooking) \u2014 note that activating the NYT Cooking offer voids the 5-day Instacart+ refund window. \u2705 THIRD CONSECUTIVE RENDER 8/31/26 \u2014 this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") \u2014 but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. \ud83d\udea8 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands \u2014 the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass \u2014 that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.) Chase's own page for this card still shows ZERO Instacart content \u2014 4 raw hits, all four global hamburger-nav chrome pointing at the unrelated Instacart Mastercard (controls: \"annual fee\"=10/10/8, Hyatt=195/224, DoorDash=31/31/6). Addition still rests on Instacart's enumeration, which no Chase document contradicts. \u26a0\ufe0f CAP PHRASING CORRECTED 9/14/26: no issuer document states a $120 annual cap. \u201c$120\u201d = 0 inside the Instacart clause on every Chase page that has one, and 0 across the whole 464KB instacart.com/p/chase-cobrands page. $120 is our arithmetic, not a cap. The real mechanic is harsher: each month's $10 is use-it-or-lose-it (\u201cthe monthly credit will not roll over into a subsequent month\u201d), so a missed month is gone permanently rather than recoverable against an annual ceiling. \u26a0\ufe0f 9/14/26: Instacart's OWN terms body now cites the non-/p/ URL (instacart.com/chase-cobrands), which returns HTTP 404 (verified: /p/ form = HTTP 200, 464,837 bytes; bare form = 404, \u201cPage not found\u201d). Chase's card pages cite the correct /p/ form. Use ONLY https://www.instacart.com/p/chase-cobrands. \ud83d\udd01 CONTRADICTION RE-TESTED 9/14/26 WITH A STRICTER CONTROL \u2014 4th consecutive week, stable. Chase's page for this card has Instacart = 0 BODY occurrences (the 2 raw hits are identical hamburger-nav markup), while the same disclosure block on the IHG Premier / IHG Premier Business / Southwest Priority pages carries both Instacart headings. Meanwhile instacart.com/p/chase-cobrands names this card explicitly in its eligibility enumeration and in a brand card-grid tile. Not a rendering artifact; the two issuers genuinely disagree. Instacart also confirms stacking: \u201cIf you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\u201d \u2705 5TH CONSECUTIVE RENDER 9/21/26 \u2014 instacart.com/p/chase-cobrands HTTP 200, and the contradiction with Chase's own pages is stable across five weeks, not a rendering artifact. Page size moved 464,837 \u2192 469,376 bytes week-over-week, so Instacart IS editing the page \u2014 and is actively preserving a self-404ing canonical tag (<link rel=\"canonical\" href=\"instacart.com/chase-cobrands\">, which 404s). Only the /p/ form resolves. Do not let a future pass \"correct\" our URL to match Instacart's own canonical. \u26a0\ufe0f OUR OWN 9/14 CORRECTION WAS TOO STRONG, softened 9/21/26. We said the \"$120/calendar year\" figure was purely our arithmetic. Half right: \"$120\" is indeed 0 inside the governing clause and 0 across the entire 469KB instacart.com page \u2014 but Chase DOES print it in marketing copy on three pages (\"Receive a monthly $10 Instacart credit, up to $120 annually\" on both IHG Premier pages; \"Up to $120 in Instacart credits annually\" on Southwest Priority). Correct statement: $120/yr is issuer-published as a marketing maximum but appears nowhere in the governing clause, and the operative mechanic is monthly use-it-or-lose-it \u2014 \"the monthly credit will not roll over into a subsequent month\" and \"Any unused portion of a monthly credit will not be available for future use.\" A missed month is gone permanently rather than recoverable against a ceiling, so the practical effect of our correction stands even though the sourcing claim was overstated. Each credit needs one order of $10 or more.",
      "sk": "issuer",
      "src": "https://www.instacart.com/p/chase-cobrands",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -1221,7 +1222,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card",
      "sk": "issuer",
      "src2": "https://www.chase.com/personal/credit-cards/hyatt/world-hyatt-business/exclusive-benefits",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "10% points rebate after $50k",
@@ -1234,7 +1235,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card",
      "sk": "issuer",
      "src2": "https://www.chase.com/personal/credit-cards/hyatt/world-hyatt-business/exclusive-benefits",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Discoverist for you + 5 employees",
@@ -1247,7 +1248,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card",
      "sk": "issuer",
      "src2": "https://www.chase.com/personal/credit-cards/hyatt/world-hyatt-business/exclusive-benefits",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Hyatt Leverage (~15% off)",
@@ -1260,7 +1261,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card",
      "sk": "issuer",
      "flag": "src corrected 8/31/26 \u2014 \"hl-chase\" = 0 on the exclusive-benefits page, = 2 on the acquisition page",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "DoorDash $10/mo or $10/quarter + DashPass",
@@ -1273,7 +1274,7 @@
      "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
      "sk": "issuer",
      "flag": "\ud83d\udea8 cadence depends on YOUR first DashPass activation date (tier boundary was 2026-09-01) \u2014 check Manage DashPass; ends 12/31/27",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card"
     },
     {
@@ -1287,7 +1288,7 @@
      "src": "https://newsroom.hyatt.com/awardchartupdates",
      "sk": "secondary",
      "flag": "specifics UNSUPPORTED \u2014 source page deleted",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -1299,7 +1300,7 @@
      "how": "4x Hyatt (up to 9x); 2x your top-3 categories each quarter + gyms; 1x other. Free employee cards.",
      "src": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "No foreign transaction fees",
@@ -1311,7 +1312,7 @@
      "how": "No foreign transaction fee on purchases made abroad. Issuer-confirmed on the card's own pricing-and-terms disclosure 8/10/26 (previously recorded only on Southwest Priority).",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/business-credit-cards/world-of-hyatt/hyatt-business-card",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Instacart credit $10/mo",
@@ -1324,7 +1325,7 @@
      "how": "Up to $10 in statement credits each month on Instacart, no stated annual cap \u2014 $120/yr is simply 12 \u00d7 $10; co-brand program window 5/1/2025\u201312/31/2027. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. \u26a0\ufe0f SOURCE CONFLICT, RE-TESTED 8/24/26 AND THE FINDING HOLDS. Instacart's Chase co-brand enrollment page rendered for a SECOND consecutive week and now names this card as eligible in THREE independent places: the eligible-card grid, the FAQ enumeration, and a new hero line reading \"Enroll with your consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG.\" Chase's own product page for this card still markets zero Instacart (raw-HTML occurrence count: 4, all four being global hamburger-nav chrome pointing at the unrelated Instacart Mastercard). No Chase document anywhere EXCLUDES this card \u2014 unlike DoorDash, which publishes an explicit exclusion list. The enrollment page is the operative document: Chase's marketing describes the card, Instacart's page gates whether enrollment succeeds. Enrolling is free and reversible; leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it is rejected. Stacking is explicit: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Each credit needs one order of $10 or more; restaurant orders powered by Uber Eats are excluded. Instacart+ itself now bundles Peacock and New York Times Cooking (Instacart states a $50 annual value for NYT Cooking) \u2014 note that activating the NYT Cooking offer voids the 5-day Instacart+ refund window. \u2705 THIRD CONSECUTIVE RENDER 8/31/26 \u2014 this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") \u2014 but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. \ud83d\udea8 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands \u2014 the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass \u2014 that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.) Chase's own page for this card still shows ZERO Instacart content \u2014 4 raw hits, all four global hamburger-nav chrome pointing at the unrelated Instacart Mastercard (controls: \"annual fee\"=10/10/8, Hyatt=195/224, DoorDash=31/31/6). Addition still rests on Instacart's enumeration, which no Chase document contradicts. \u26a0\ufe0f CAP PHRASING CORRECTED 9/14/26: no issuer document states a $120 annual cap. \u201c$120\u201d = 0 inside the Instacart clause on every Chase page that has one, and 0 across the whole 464KB instacart.com/p/chase-cobrands page. $120 is our arithmetic, not a cap. The real mechanic is harsher: each month's $10 is use-it-or-lose-it (\u201cthe monthly credit will not roll over into a subsequent month\u201d), so a missed month is gone permanently rather than recoverable against an annual ceiling. \u26a0\ufe0f 9/14/26: Instacart's OWN terms body now cites the non-/p/ URL (instacart.com/chase-cobrands), which returns HTTP 404 (verified: /p/ form = HTTP 200, 464,837 bytes; bare form = 404, \u201cPage not found\u201d). Chase's card pages cite the correct /p/ form. Use ONLY https://www.instacart.com/p/chase-cobrands. \ud83d\udd01 CONTRADICTION RE-TESTED 9/14/26 WITH A STRICTER CONTROL \u2014 4th consecutive week, stable. Chase's page for this card has Instacart = 0 BODY occurrences (the 2 raw hits are identical hamburger-nav markup), while the same disclosure block on the IHG Premier / IHG Premier Business / Southwest Priority pages carries both Instacart headings. Meanwhile instacart.com/p/chase-cobrands names this card explicitly in its eligibility enumeration and in a brand card-grid tile. Not a rendering artifact; the two issuers genuinely disagree. Instacart also confirms stacking: \u201cIf you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\u201d \u2705 5TH CONSECUTIVE RENDER 9/21/26 \u2014 instacart.com/p/chase-cobrands HTTP 200, and the contradiction with Chase's own pages is stable across five weeks, not a rendering artifact. Page size moved 464,837 \u2192 469,376 bytes week-over-week, so Instacart IS editing the page \u2014 and is actively preserving a self-404ing canonical tag (<link rel=\"canonical\" href=\"instacart.com/chase-cobrands\">, which 404s). Only the /p/ form resolves. Do not let a future pass \"correct\" our URL to match Instacart's own canonical. \u26a0\ufe0f OUR OWN 9/14 CORRECTION WAS TOO STRONG, softened 9/21/26. We said the \"$120/calendar year\" figure was purely our arithmetic. Half right: \"$120\" is indeed 0 inside the governing clause and 0 across the entire 469KB instacart.com page \u2014 but Chase DOES print it in marketing copy on three pages (\"Receive a monthly $10 Instacart credit, up to $120 annually\" on both IHG Premier pages; \"Up to $120 in Instacart credits annually\" on Southwest Priority). Correct statement: $120/yr is issuer-published as a marketing maximum but appears nowhere in the governing clause, and the operative mechanic is monthly use-it-or-lose-it \u2014 \"the monthly credit will not roll over into a subsequent month\" and \"Any unused portion of a monthly credit will not be available for future use.\" A missed month is gone permanently rather than recoverable against a ceiling, so the practical effect of our correction stands even though the sourcing claim was overstated. Each credit needs one order of $10 or more.",
      "sk": "issuer",
      "src": "https://www.instacart.com/p/chase-cobrands",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -1341,11 +1342,11 @@
      "pp": null,
      "cad": "anniversary",
      "enroll": false,
-     "how": "Posts on anniversary; up to 40k points, top-off with points allowed. Redeem AND stay within 12 months. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms: cap rises to 50,000 points (top-off allowed). \u2705 DATED 10/13/26 on the cardmember page: \"Anniversary Free Nights awarded through December 31, 2026 will be valid at IHG Hotels with a point redemption value of 40,000 points or less ... Beginning in 2027, Anniversary Free Nights awarded will have a point redemption value of up to 50,000 points or less\".",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premier/premier-perks",
+     "how": "Posts on anniversary; up to 40k points, top-off with points allowed. Redeem AND stay within 12 months. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms: cap rises to 50,000 points (top-off allowed). \u2705 DATED 10/13/26 on the cardmember page: \"Anniversary Free Nights awarded through December 31, 2026 will be valid at IHG Hotels with a point redemption value of 40,000 points or less ... Beginning in 2027, Anniversary Free Nights awarded will have a point redemption value of up to 50,000 points or less\". \u26a0\ufe0f 11/23/26: the dated cardmember clause (\"through December 31, 2026 \u2026 40,000 points \u2026 Beginning in 2027 \u2026 up to 50,000\") is no longer printed on any Chase IHG page (\"Beginning in 2027\" = 0). Only the new-account \"50,000 points or less\" remains. Treat the 40k-through-2026 cap as last issuer-published 10/13/26.",
+     "src": "https://www.chase.com/personal/credit-cards/ihg/premier",
      "sk": "issuer",
      "flag": "40k through 12/31/26 \u2192 50k from 2027",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "United TravelBank $50/yr ($25 \u00d7 2)",
@@ -1358,7 +1359,7 @@
      "src": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
      "sk": "issuer",
      "flag": "expires fast",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$15k spend tier: Platinum + 5 ENC + 15k pts",
@@ -1368,10 +1369,10 @@
      "cad": "year",
      "enroll": false,
      "how": "Spend $20k per calendar year \u2192 $100 statement credit + 10,000 points. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms replace this with Platinum + 5 Elite Night Credits + 15,000 points at $15k calendar-year spend. \ud83d\udd04 10/13/26: Chase's CARDMEMBER perks page (existing accounts) now shows the new benefit set; no effective date is printed except where stated. Cardmember page: \"Earn 15,000 bonus points after you spend $15,000 on purchases each calendar year\" plus Platinum Elite and 5 Elite Night Credits. The $100 credit + 10k at $20k is gone from the page.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premier/premier-perks",
+     "src": "https://www.chase.com/personal/credit-cards/ihg/premier",
      "sk": "issuer",
      "flag": "replaced $20k tier (10/13/26)",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Gold Elite (Platinum at $15k, Diamond at $40k)",
@@ -1381,10 +1382,10 @@
      "cad": "ongoing",
      "enroll": false,
      "how": "Automatic Platinum Elite; Diamond Elite with $40k calendar spend (through Dec 31 next year). \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms: automatic GOLD (not Platinum); Platinum via the $15k tier; Diamond still $40k. \ud83d\udd04 10/13/26: Chase's CARDMEMBER perks page (existing accounts) now shows the new benefit set; no effective date is printed except where stated. Cardmember page: \"you've automatically earned IHG One Rewards Gold Elite status\"; \"Spend $15,000 and earn Platinum Elite status\"; Diamond still after $40,000. Your current Platinum likely runs to its normal expiry \u2014 check your IHG account.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premier/premier-perks",
+     "src": "https://www.chase.com/personal/credit-cards/ihg/premier",
      "sk": "issuer",
      "flag": "\u2b07\ufe0f cardmember page now says Gold (10/13/26)",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "4th reward night free",
@@ -1394,10 +1395,10 @@
      "cad": "ongoing",
      "enroll": false,
      "how": "4th night free on point stays of 4+ nights, unlimited. Plus 20% off points purchases + early access to reward night sales. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms: points purchases 30% off (was 20%). \ud83d\udd04 10/13/26: Chase's CARDMEMBER perks page (existing accounts) now shows the new benefit set; no effective date is printed except where stated. Cardmember page: \"Save 30% on points purchases\" (was 20%). \"Early access to reward night sales\" is not on the Premier cardmember page.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premier/premier-perks",
+     "src": "https://www.chase.com/personal/credit-cards/ihg/premier",
      "sk": "issuer",
      "flag": "IHG overhaul announced 10/1/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck / NEXUS",
@@ -1409,7 +1410,7 @@
      "how": "Up to $120 every 4 years, fee charged to card.",
      "src": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "DoorDash $10/mo or $10/quarter + DashPass",
@@ -1422,7 +1423,7 @@
      "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
      "sk": "issuer",
      "flag": "\ud83d\udea8 cadence depends on YOUR first DashPass activation date (tier boundary was 2026-09-01) \u2014 check Manage DashPass; ends 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -1432,10 +1433,10 @@
      "cad": "ongoing",
      "enroll": false,
      "how": "Up to 26x total at IHG; 5x travel, gas, dining; 3x other. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms: 5x on all travel only through 12/31/26, then 5x only airline-direct + car rental. New perks for new accounts: $25/quarter IHG Food & Beverage reward, $100 airline credit after $250 airline-direct spend, 15 ENC/yr + 2 per $5k. \ud83d\udd04 10/13/26: Chase's CARDMEMBER perks page (existing accounts) now shows the new benefit set; no effective date is printed except where stated. Cardmember page: \"Earn up to 24X total\" (Gold: up to 4X from status); 5X \"On flights when purchased directly with the airline and car rental agencies / On dining, at grocery stores, and gas stations\"; 3X other. Broad 5x travel ends 12/31/26.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premier/premier-perks",
+     "src": "https://www.chase.com/personal/credit-cards/ihg/premier",
      "sk": "issuer",
      "flag": "IHG overhaul announced 10/1/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Baggage protections",
@@ -1447,7 +1448,7 @@
      "how": "Baggage delay $100/day \u00d73; lost luggage up to $3k. (10/6/26: product page also lists Trip Cancellation/Interruption up to $5k/traveler, $10k/trip, and Purchase Protection 120 days / $500 per item.)",
      "src": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Instacart credit $10/mo",
@@ -1460,7 +1461,7 @@
      "how": "Up to $10 in statement credits each month on Instacart, no stated annual cap \u2014 $120/yr is simply 12 \u00d7 $10, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26. \u26a0\ufe0f ADDED 8/24/26: the co-brand program window has a stated START date \u2014 \"between 5/1/2025 and 12/31/2027\" \u2014 confirmed on both Instacart's page and Chase's product pages. Instacart+ now bundles Peacock and New York Times Cooking ($50 stated annual value). \u2705 THIRD CONSECUTIVE RENDER 8/31/26 \u2014 this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") \u2014 but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. \ud83d\udea8 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands \u2014 the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass \u2014 that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.) \u26a0\ufe0f CAP PHRASING CORRECTED 9/14/26: no issuer document states a $120 annual cap. \u201c$120\u201d = 0 inside the Instacart clause on every Chase page that has one, and 0 across the whole 464KB instacart.com/p/chase-cobrands page. $120 is our arithmetic, not a cap. The real mechanic is harsher: each month's $10 is use-it-or-lose-it (\u201cthe monthly credit will not roll over into a subsequent month\u201d), so a missed month is gone permanently rather than recoverable against an annual ceiling. \u26a0\ufe0f 9/14/26: Instacart's OWN terms body now cites the non-/p/ URL (instacart.com/chase-cobrands), which returns HTTP 404 (verified: /p/ form = HTTP 200, 464,837 bytes; bare form = 404, \u201cPage not found\u201d). Chase's card pages cite the correct /p/ form. Use ONLY https://www.instacart.com/p/chase-cobrands. \u2705 5TH CONSECUTIVE RENDER 9/21/26 \u2014 instacart.com/p/chase-cobrands HTTP 200, and the contradiction with Chase's own pages is stable across five weeks, not a rendering artifact. Page size moved 464,837 \u2192 469,376 bytes week-over-week, so Instacart IS editing the page \u2014 and is actively preserving a self-404ing canonical tag (<link rel=\"canonical\" href=\"instacart.com/chase-cobrands\">, which 404s). Only the /p/ form resolves. Do not let a future pass \"correct\" our URL to match Instacart's own canonical. \u26a0\ufe0f OUR OWN 9/14 CORRECTION WAS TOO STRONG, softened 9/21/26. We said the \"$120/calendar year\" figure was purely our arithmetic. Half right: \"$120\" is indeed 0 inside the governing clause and 0 across the entire 469KB instacart.com page \u2014 but Chase DOES print it in marketing copy on three pages (\"Receive a monthly $10 Instacart credit, up to $120 annually\" on both IHG Premier pages; \"Up to $120 in Instacart credits annually\" on Southwest Priority). Correct statement: $120/yr is issuer-published as a marketing maximum but appears nowhere in the governing clause, and the operative mechanic is monthly use-it-or-lose-it \u2014 \"the monthly credit will not roll over into a subsequent month\" and \"Any unused portion of a monthly credit will not be available for future use.\" A missed month is gone permanently rather than recoverable against a ceiling, so the practical effect of our correction stands even though the sourcing claim was overstated. Each credit needs one order of $10 or more.",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "No foreign transaction fees",
@@ -1472,7 +1473,7 @@
      "how": "No foreign transaction fee on purchases made abroad. Issuer-confirmed on the card's own pricing-and-terms disclosure 8/10/26 (previously recorded only on Southwest Priority).",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$25/quarter IHG Food & Beverage voucher",
@@ -1482,10 +1483,10 @@
      "cad": "quarter",
      "enroll": false,
      "how": "NEW on the cardmember page 10/13/26: \"Enjoy a $25 Food & Beverage Rewards voucher quarterly\" \u2014 \"Up to $100 in annual Food & Beverage Rewards at IHG hotels\". Voucher, issued each calendar quarter. Chase prints no start date for existing cardmembers \u2014 check your IHG account / the October letter for when the first voucher lands. \ud83d\udd0e 10/20/26 terms detail: \"Each voucher is valid for the quarter in which it was issued, with an expiration date at the end of the issuing quarter\u2026 Each voucher can only be used once, even if your applicable charges total less than $25. If the full $25 value is not used, the remaining value\" is forfeited. Use-it-or-lose-it each quarter, one charge, on the primary cardmember's room bill.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premier/premier-perks",
+     "src": "https://www.chase.com/personal/credit-cards/ihg/premier",
      "sk": "issuer",
      "flag": "NEW \u00b7 start date unconfirmed \u00b7 expires end of each quarter, single use",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$100 airline credit ($250 airline-direct spend)",
@@ -1495,10 +1496,10 @@
      "cad": "year",
      "enroll": false,
      "how": "NEW on the cardmember page 10/13/26: \"$100 Annual Statement Credit on flights booked with the airline through 12/31/27: A one-time statement credit of $100 per calendar year will automatically be applied to your account when you make a purchase of at least $250\" on airline tickets booked directly with the airline. Automatic. Start date for existing cardmembers not printed.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premier/premier-perks",
+     "src": "https://www.chase.com/personal/credit-cards/ihg/premier",
      "sk": "issuer",
      "flag": "NEW \u00b7 through 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "15 Elite Night Credits/yr + 2 per $5k",
@@ -1508,10 +1509,10 @@
      "cad": "year",
      "enroll": false,
      "how": "NEW on the cardmember page 10/13/26: 15 ENCs \"deposited into your IHG One Rewards account by February 1 each calendar year\" (only 15 total regardless of number of IHG cards), plus 2 Elite Night Credits for each $5,000 spent.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premier/premier-perks",
+     "src": "https://www.chase.com/personal/credit-cards/ihg/premier",
      "sk": "issuer",
      "flag": "NEW",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ],
    "fee_note": "$99 today. New accounts pay $150 since 10/1/26; Chase: \"Annual Fees will be adjusted in 2027\" for existing cardmembers (date to come in the October notice)."
@@ -1530,11 +1531,11 @@
      "cad": "anniversary",
      "enroll": false,
      "how": "Posts on anniversary; up to 40k points with top-off; redeem + stay within 12 months. \u2705 SOURCING UPGRADED 9/14/26 from the one-sentence perks page to the terms-level clause on the card's own Chase acquisition page (prior URL kept as src2). \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms: cap rises to 50,000 points. \ud83d\udd04 10/13/26: Chase's Business CARDMEMBER perks page (now titled \"IHG One Rewards Business Credit Card\") shows the new benefit set. \"Beginning in 2027, Anniversary Free Nights awarded will have a point redemption value of up to 50,000 points or less\".",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "src": "https://www.chase.com/business/credit-cards/ihg/business",
      "sk": "issuer",
-     "src2": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "src2": "https://www.chase.com/business/credit-cards/ihg/business",
      "flag": "40k through 12/31/26 \u2192 50k from 2027",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "United TravelBank $50/yr ($25 \u00d7 2)",
@@ -1547,8 +1548,8 @@
      "src": "https://creditcards.chase.com/travel-credit-cards/ihg-rewards-club/premier",
      "sk": "issuer",
      "flag": "\ud83d\udeab being removed for Business (date TBD)",
-     "src2": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
-     "verified": "2026-11-17"
+     "src2": "https://www.chase.com/business/credit-cards/ihg/business",
+     "verified": "2026-11-23"
     },
     {
      "n": "$25k spend tier: 5 ENC + 20k pts",
@@ -1558,10 +1559,10 @@
      "cad": "year",
      "enroll": false,
      "how": "$20k calendar spend \u2192 $100 credit + 10k points. Employee-card spend counts. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms replace this with 5 ENC + 20,000 points at $25k. \ud83d\udd04 10/13/26: Chase's Business CARDMEMBER perks page (now titled \"IHG One Rewards Business Credit Card\") shows the new benefit set. Now \"5 Elite Night credits and 20,000 bonus points after spending $25,000\". The $100 credit + 10k at $20k is gone from the page.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "src": "https://www.chase.com/business/credit-cards/ihg/business",
      "sk": "issuer",
      "flag": "replaced $20k tier (10/13/26)",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Extra free night at $60k spend",
@@ -1571,10 +1572,10 @@
      "cad": "year",
      "enroll": false,
      "how": "Business exclusive: one additional reward night after $60k calendar spend. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms: same trigger, night capped at 50k with top-off. \ud83d\udd04 10/13/26: Chase's Business CARDMEMBER perks page (now titled \"IHG One Rewards Business Credit Card\") shows the new benefit set. Now \"point redemption value of 50,000 points or less\".",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "src": "https://www.chase.com/business/credit-cards/ihg/business",
      "sk": "issuer",
      "flag": "IHG overhaul announced 10/1/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Platinum Elite (Diamond at $40k in 2026, $50k from 2027)",
@@ -1583,11 +1584,11 @@
      "pp": null,
      "cad": "ongoing",
      "enroll": false,
-     "how": "Automatic Platinum; Diamond at $40k calendar spend. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" Diamond threshold rises to $50k \"Starting January 1, 2027\" \u2014 2026 is the last year at $40k. \ud83d\udd04 10/13/26: Chase's Business CARDMEMBER perks page (now titled \"IHG One Rewards Business Credit Card\") shows the new benefit set. Automatic Platinum unchanged. Terms: \"After spending $40,000 ... in 2026 calendar year ... Diamond Elite Status through December 31, 2027. Starting January 1, 2027, you will have to spend $50,000.\" 10/20/26: the perks page headline now reads \"Spend $50,000 and earn Diamond Elite status\"; the fine print still gives $40,000 for the 2026 calendar year. 2026 spend still qualifies at $40k.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "how": "Automatic Platinum; Diamond at $40k calendar spend. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" Diamond threshold rises to $50k \"Starting January 1, 2027\" \u2014 2026 is the last year at $40k. \ud83d\udd04 10/13/26: Chase's Business CARDMEMBER perks page (now titled \"IHG One Rewards Business Credit Card\") shows the new benefit set. Automatic Platinum unchanged. Terms: \"After spending $40,000 ... in 2026 calendar year ... Diamond Elite Status through December 31, 2027. Starting January 1, 2027, you will have to spend $50,000.\" 10/20/26: the perks page headline now reads \"Spend $50,000 and earn Diamond Elite status\"; the fine print still gives $40,000 for the 2026 calendar year. 2026 spend still qualifies at $40k. \u26a0\ufe0f 11/23/26: \"$40,000\" no longer appears on Chase's Business pages; they now say only \"Starting January 1, 2027, after spending $50,000\u2026\" and \"Spend $50,000 and earn Diamond Elite status\". The 2026-at-$40k half was last issuer-published 10/13/26.",
+     "src": "https://www.chase.com/business/credit-cards/ihg/business",
      "sk": "issuer",
      "flag": "Diamond $50k from 1/1/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "4th reward night free + points discount",
@@ -1597,10 +1598,10 @@
      "cad": "ongoing",
      "enroll": false,
      "how": "4th award night free; 20% off points purchases; free employee cards. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" New-account terms: 30% off points purchases. \ud83d\udd04 10/13/26: Chase's Business CARDMEMBER perks page (now titled \"IHG One Rewards Business Credit Card\") shows the new benefit set. Points purchases now 30% off.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "src": "https://www.chase.com/business/credit-cards/ihg/business",
      "sk": "issuer",
      "flag": "IHG overhaul announced 10/1/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck / NEXUS",
@@ -1610,10 +1611,10 @@
      "cad": "once",
      "enroll": false,
      "how": "Up to $120 every 4 years, fee charged to card. \u2705 SOURCING UPGRADED 9/14/26 from the one-sentence perks page to the terms-level clause on the card's own Chase acquisition page (prior URL kept as src2).",
-     "src": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
+     "src": "https://creditcards.chase.com/business-credit-cards/IHG/business",
      "sk": "issuer",
-     "src2": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
-     "verified": "2026-11-17"
+     "src2": "https://www.chase.com/business/credit-cards/ihg/business",
+     "verified": "2026-11-23"
     },
     {
      "n": "DoorDash $10/mo or $10/quarter + DashPass",
@@ -1626,7 +1627,7 @@
      "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
      "sk": "issuer",
      "flag": "\ud83d\udea8 cadence depends on YOUR first DashPass activation date (tier boundary was 2026-09-01) \u2014 check Manage DashPass; ends 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -1636,10 +1637,10 @@
      "cad": "ongoing",
      "enroll": false,
      "how": "Up to 26x at IHG; 5x travel, dining, gas, select business; 3x other. \ud83d\udce2 ANNOUNCED 10/1/26 (media.chase.com 'Chase Introduces New IHG One Rewards Premier Select Credit Card'): \"Existing IHG One Rewards Credit Cardmembers will be notified in October with details about the new and enhanced benefits available to them and the effective date for each update. Annual Fees will be adjusted in 2027.\" Card renamed \"IHG One Rewards Business Credit Card\". New-account terms: 5x travel + office supply only through 12/31/26, then 5x only airline-direct + car rental. New perks for new accounts: $25/quarter F&B reward, $100 airline credit, $100/yr Expensify credit, 15 ENC/yr + 2 per $5k. \ud83d\udd04 10/13/26: Chase's Business CARDMEMBER perks page (now titled \"IHG One Rewards Business Credit Card\") shows the new benefit set. \"up to 26X\"; 5X on airline-direct flights + car rental, dining, search-engine advertising, gas. Broad 5x travel and office supply end 12/31/26. Expensify $100/yr appears only on the new-account page, not the cardmember page.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "src": "https://www.chase.com/business/credit-cards/ihg/business",
      "sk": "issuer",
      "flag": "IHG overhaul announced 10/1/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Instacart credit $10/mo",
@@ -1651,8 +1652,8 @@
      "flag": "\ud83d\udea8 NOT YET ENROLLED \u2014 $10/mo forfeited each month not used \u00b7 use the /p/ URL only \u00b7 6th render 2026-09-28",
      "how": "Up to $10 in statement credits each month on Instacart, no stated annual cap \u2014 $120/yr is simply 12 \u00d7 $10, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26. \u26a0\ufe0f ADDED 8/24/26: the co-brand program window has a stated START date \u2014 \"between 5/1/2025 and 12/31/2027\" \u2014 confirmed on both Instacart's page and Chase's product pages. Instacart+ now bundles Peacock and New York Times Cooking ($50 stated annual value). \u2705 THIRD CONSECUTIVE RENDER 8/31/26 \u2014 this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") \u2014 but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. \ud83d\udea8 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands \u2014 the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass \u2014 that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.) \u26a0\ufe0f CAP PHRASING CORRECTED 9/14/26: no issuer document states a $120 annual cap. \u201c$120\u201d = 0 inside the Instacart clause on every Chase page that has one, and 0 across the whole 464KB instacart.com/p/chase-cobrands page. $120 is our arithmetic, not a cap. The real mechanic is harsher: each month's $10 is use-it-or-lose-it (\u201cthe monthly credit will not roll over into a subsequent month\u201d), so a missed month is gone permanently rather than recoverable against an annual ceiling. \u26a0\ufe0f 9/14/26: Instacart's OWN terms body now cites the non-/p/ URL (instacart.com/chase-cobrands), which returns HTTP 404 (verified: /p/ form = HTTP 200, 464,837 bytes; bare form = 404, \u201cPage not found\u201d). Chase's card pages cite the correct /p/ form. Use ONLY https://www.instacart.com/p/chase-cobrands. \u2705 5TH CONSECUTIVE RENDER 9/21/26 \u2014 instacart.com/p/chase-cobrands HTTP 200, and the contradiction with Chase's own pages is stable across five weeks, not a rendering artifact. Page size moved 464,837 \u2192 469,376 bytes week-over-week, so Instacart IS editing the page \u2014 and is actively preserving a self-404ing canonical tag (<link rel=\"canonical\" href=\"instacart.com/chase-cobrands\">, which 404s). Only the /p/ form resolves. Do not let a future pass \"correct\" our URL to match Instacart's own canonical. \u26a0\ufe0f OUR OWN 9/14 CORRECTION WAS TOO STRONG, softened 9/21/26. We said the \"$120/calendar year\" figure was purely our arithmetic. Half right: \"$120\" is indeed 0 inside the governing clause and 0 across the entire 469KB instacart.com page \u2014 but Chase DOES print it in marketing copy on three pages (\"Receive a monthly $10 Instacart credit, up to $120 annually\" on both IHG Premier pages; \"Up to $120 in Instacart credits annually\" on Southwest Priority). Correct statement: $120/yr is issuer-published as a marketing maximum but appears nowhere in the governing clause, and the operative mechanic is monthly use-it-or-lose-it \u2014 \"the monthly credit will not roll over into a subsequent month\" and \"Any unused portion of a monthly credit will not be available for future use.\" A missed month is gone permanently rather than recoverable against a ceiling, so the practical effect of our correction stands even though the sourcing claim was overstated. Each credit needs one order of $10 or more.",
      "sk": "issuer",
-     "src": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
-     "verified": "2026-11-17"
+     "src": "https://creditcards.chase.com/business-credit-cards/IHG/business",
+     "verified": "2026-11-23"
     },
     {
      "n": "No foreign transaction fees",
@@ -1663,8 +1664,8 @@
      "flag": "added 8/10/26",
      "how": "No foreign transaction fee on purchases made abroad. Issuer-confirmed on the card's own pricing-and-terms disclosure 8/10/26 (previously recorded only on Southwest Priority).",
      "sk": "issuer",
-     "src": "https://creditcards.chase.com/business-credit-cards/IHG/business-premier",
-     "verified": "2026-11-17"
+     "src": "https://creditcards.chase.com/business-credit-cards/IHG/business",
+     "verified": "2026-11-23"
     },
     {
      "n": "$25/quarter IHG Food & Beverage voucher",
@@ -1674,10 +1675,10 @@
      "cad": "quarter",
      "enroll": false,
      "how": "NEW on the cardmember page 10/13/26: \"Enjoy a $25 Food & Beverage Rewards voucher quarterly\" \u2014 \"Up to $100 in annual Food & Beverage Rewards at IHG hotels\". Voucher, issued each calendar quarter. Chase prints no start date for existing cardmembers \u2014 check your IHG account / the October letter for when the first voucher lands. \ud83d\udd0e 10/20/26 terms detail: \"Each voucher is valid for the quarter in which it was issued, with an expiration date at the end of the issuing quarter\u2026 Each voucher can only be used once, even if your applicable charges total less than $25. If the full $25 value is not used, the remaining value\" is forfeited. Use-it-or-lose-it each quarter, one charge, on the primary cardmember's room bill.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "src": "https://www.chase.com/business/credit-cards/ihg/business",
      "sk": "issuer",
      "flag": "NEW \u00b7 start date unconfirmed \u00b7 expires end of each quarter, single use",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$100 airline credit ($250 airline-direct spend)",
@@ -1687,10 +1688,10 @@
      "cad": "year",
      "enroll": false,
      "how": "NEW on the cardmember page 10/13/26: \"$100 Annual Statement Credit on flights booked with the airline through 12/31/27: A one-time statement credit of $100 per calendar year will automatically be applied to your account when you make a purchase of at least $250\" on airline tickets booked directly with the airline. Automatic. Start date for existing cardmembers not printed.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "src": "https://www.chase.com/business/credit-cards/ihg/business",
      "sk": "issuer",
      "flag": "NEW \u00b7 through 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "15 Elite Night Credits/yr + 2 per $5k",
@@ -1700,10 +1701,10 @@
      "cad": "year",
      "enroll": false,
      "how": "NEW on the cardmember page 10/13/26: 15 ENCs \"deposited into your IHG One Rewards account by February 1 each calendar year\" (only 15 total regardless of number of IHG cards), plus 2 Elite Night Credits for each $5,000 spent.",
-     "src": "https://www.chase.com/personal/credit-cards/ihg/premierbusiness/premier-business-perks",
+     "src": "https://www.chase.com/business/credit-cards/ihg/business",
      "sk": "issuer",
      "flag": "NEW",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ],
    "fee_note": "$99 today. New accounts pay $200 since 10/1/26; Chase: \"Annual Fees will be adjusted in 2027\" for existing cardmembers (date to come in the October notice)."
@@ -1724,7 +1725,7 @@
      "how": "Automatic each anniversary. (Note: AF rose $149\u2192$229 with the 2026 refresh.)",
      "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Seat + boarding benefits (2026 refresh)",
@@ -1737,7 +1738,7 @@
      "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority",
      "sk": "issuer",
      "flag": "replaced $75 credit + boardings",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "25% back on inflight purchases",
@@ -1749,7 +1750,7 @@
      "how": "25% statement credit on inflight buys (drinks \u2014 WiFi is now free for Rapid Rewards members). (10/6/26: Chase's terms still say the 25% covers \"drinks and WiFi\"; our \"WiFi is now free\" wording is not issuer-sourced.)",
      "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "10,000 Companion Pass qualifying points",
@@ -1758,10 +1759,10 @@
      "pp": null,
      "cad": "year",
      "enroll": false,
-     "how": "10k Companion Pass qualifying points each Jan (one boost per member/yr across all Southwest cards). \ud83d\udea8 ENDING \u2014 Southwest: \"Companion Pass qualifying points are being retired December 31, 2026.\" From 2027, \"new Cardmember welcome bonuses, referral bonuses, anniversary points, and bonus points from spend\" no longer earn qualifying credit. Tier credit from spend: 2,500 TQP per $5k through 12/31/26; from 1/1/27, 1 TQP per $1 spent, uncapped (\"Beginning January 1, 2027, all Rapid Rewards Credit Cards, including Plus cards and Business cards\" earn \"One TQP for every eligible $1 spent\"). A-List \u2192 Silver and A-List Preferred \u2192 Gold from 1/1/27.",
+     "how": "10k Companion Pass qualifying points each Jan (one boost per member/yr across all Southwest cards). \ud83d\udea8 ENDING \u2014 Southwest: \"Companion Pass qualifying points are being retired December 31, 2026.\" From 2027, \"new Cardmember welcome bonuses, referral bonuses, anniversary points, and bonus points from spend\" no longer earn qualifying credit. Tier credit from spend: 2,500 TQP per $5k through 12/31/26; from 1/1/27, 1 TQP per $1 spent, uncapped (\"Beginning January 1, 2027, all Rapid Rewards Credit Cards, including Plus cards and Business cards\" earn \"One TQP for every eligible $1 spent\"). A-List \u2192 Silver from 1/1/27. A-List Preferred: \"have less than 140,000 TQPs or less than 100 qualifying one-way flights will automatically transition to Gold status\"; those who \"earn 140,000 Tier Qualifying Points or complete 100 qualifying one-way flights by December 31, 2026, will receive Platinum status on January 1, 2027\". Note: southwest.com/cardmember-benefits still advertises the annual 10k CP-points boost; the more specific 2027 page governs.",
      "src": "https://www.southwest.com/rapid-rewards/2027/",
      "sk": "issuer",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "flag": "ENDS: CPQPs retired 12/31/26 \u2014 no Jan-2027 boost",
      "src2": "https://creditcards.chase.com/travel-credit-cards/southwest/priority",
      "ends": "2026-12-31"
@@ -1777,7 +1778,7 @@
      "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
      "sk": "issuer",
      "flag": "\ud83d\udea8 cadence depends on YOUR first DashPass activation date (tier boundary was 2026-09-01) \u2014 check Manage DashPass; ends 12/31/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -1789,7 +1790,7 @@
      "how": "4x Southwest; 2x gas + restaurants; 1x other. No FX fees.",
      "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Baggage protections",
@@ -1801,7 +1802,7 @@
      "how": "Lost luggage $3k; baggage delay $100/day \u00d73.",
      "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Instacart credit $10/mo",
@@ -1814,7 +1815,7 @@
      "how": "Up to $10 in statement credits each month on Instacart, no stated annual cap \u2014 $120/yr is simply 12 \u00d7 $10, through 12/31/27. Requires an active Instacart+ membership -- the card includes 3 months complimentary Instacart+, then $99/yr. Enroll once at instacart.com/p/chase-cobrands. Issuer-confirmed on the Chase product page 8/10/26. \u26a0\ufe0f ADDED 8/24/26: the co-brand program window has a stated START date \u2014 \"between 5/1/2025 and 12/31/2027\" \u2014 confirmed on both Instacart's page and Chase's product pages. Instacart+ now bundles Peacock and New York Times Cooking ($50 stated annual value). \u2705 THIRD CONSECUTIVE RENDER 8/31/26 \u2014 this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") \u2014 but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. \ud83d\udea8 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands \u2014 the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass \u2014 that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.) \u26a0\ufe0f CAP PHRASING CORRECTED 9/14/26: no issuer document states a $120 annual cap. \u201c$120\u201d = 0 inside the Instacart clause on every Chase page that has one, and 0 across the whole 464KB instacart.com/p/chase-cobrands page. $120 is our arithmetic, not a cap. The real mechanic is harsher: each month's $10 is use-it-or-lose-it (\u201cthe monthly credit will not roll over into a subsequent month\u201d), so a missed month is gone permanently rather than recoverable against an annual ceiling. \u26a0\ufe0f 9/14/26: Instacart's OWN terms body now cites the non-/p/ URL (instacart.com/chase-cobrands), which returns HTTP 404 (verified: /p/ form = HTTP 200, 464,837 bytes; bare form = 404, \u201cPage not found\u201d). Chase's card pages cite the correct /p/ form. Use ONLY https://www.instacart.com/p/chase-cobrands. \u2705 5TH CONSECUTIVE RENDER 9/21/26 \u2014 instacart.com/p/chase-cobrands HTTP 200, and the contradiction with Chase's own pages is stable across five weeks, not a rendering artifact. Page size moved 464,837 \u2192 469,376 bytes week-over-week, so Instacart IS editing the page \u2014 and is actively preserving a self-404ing canonical tag (<link rel=\"canonical\" href=\"instacart.com/chase-cobrands\">, which 404s). Only the /p/ form resolves. Do not let a future pass \"correct\" our URL to match Instacart's own canonical. \u26a0\ufe0f OUR OWN 9/14 CORRECTION WAS TOO STRONG, softened 9/21/26. We said the \"$120/calendar year\" figure was purely our arithmetic. Half right: \"$120\" is indeed 0 inside the governing clause and 0 across the entire 469KB instacart.com page \u2014 but Chase DOES print it in marketing copy on three pages (\"Receive a monthly $10 Instacart credit, up to $120 annually\" on both IHG Premier pages; \"Up to $120 in Instacart credits annually\" on Southwest Priority). Correct statement: $120/yr is issuer-published as a marketing maximum but appears nowhere in the governing clause, and the operative mechanic is monthly use-it-or-lose-it \u2014 \"the monthly credit will not roll over into a subsequent month\" and \"Any unused portion of a monthly credit will not be available for future use.\" A missed month is gone permanently rather than recoverable against a ceiling, so the practical effect of our correction stands even though the sourcing claim was overstated. Each credit needs one order of $10 or more.",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "5X Rapid Rewards on Lyft",
@@ -1826,7 +1827,7 @@
      "how": "5X points on qualifying Lyft products bought in the Lyft app through 12/31/2027 -- 4 additional points on top of the base 1x. Covers rideshare, bike/scooter rides, and subscription/membership products including Lyft Cash. Southwest also publishes a 5X Lyft offer for Performance Business (see that card).",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/travel-credit-cards/southwest/priority",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "10,000-TQP boost at 130k TQP (2027 only)",
@@ -1835,11 +1836,11 @@
      "pp": null,
      "cad": "once",
      "enroll": false,
-     "how": "Southwest: \"In 2027, Rapid Rewards Cardmembers will receive 10,000 Tier Qualifying Points (TQPs) as a one-time bonus\" after reaching 130,000 TQPs by 12/31/2027. \"Only one credit card account per Southwest Rapid Rewards Member is eligible for one boost of 10,000 TQPs in the year 2027.\" Deposited within 30 days of hitting 130k; account must be open and not in default. Aimed at Platinum. One per member across both Southwest cards.",
+     "how": "Southwest: \"In 2027, Rapid Rewards Cardmembers will receive 10,000 Tier Qualifying Points (TQPs) as a one-time bonus\" after reaching 130,000 TQPs by 12/31/2027. \"Only one credit card account per Southwest Rapid Rewards Member is eligible for one boost of 10,000 TQPs in the year 2027.\" Deposited within 30 days of hitting 130k; account must be open and not in default. Aimed at Platinum. One per member across both Southwest cards. Footnote 16: \"The TQP boost will count towards Rapid Rewards tier qualification in 2027 for the remainder of 2027 and through 2028.\"",
      "src": "https://www.southwest.com/rapid-rewards/2027/",
      "sk": "issuer",
      "flag": "NEW \u00b7 2027 only \u00b7 one per member",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -1859,7 +1860,7 @@
      "how": "Automatic each anniversary. (AF rose $199\u2192$299 with the 2026 refresh.)",
      "src": "https://creditcards.chase.com/business-credit-cards/southwest/performance-business",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Seat + boarding benefits (2026 refresh)",
@@ -1872,7 +1873,7 @@
      "src": "https://creditcards.chase.com/business-credit-cards/southwest/performance-business",
      "sk": "issuer",
      "flag": "365 WiFi credits removed",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck / NEXUS",
@@ -1884,7 +1885,7 @@
      "how": "Up to $120 every 4 years, fee charged to card.",
      "src": "https://creditcards.chase.com/business-credit-cards/southwest/performance-business",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "10,000 Companion Pass qualifying points",
@@ -1896,7 +1897,7 @@
      "how": "10k Companion Pass qualifying points each Jan (one boost per member/yr across all Southwest cards). \ud83d\udea8 ENDING \u2014 Southwest: \"Companion Pass qualifying points are being retired December 31, 2026.\" From 2027, \"new Cardmember welcome bonuses, referral bonuses, anniversary points, and bonus points from spend\" no longer earn qualifying credit. Tier credit from spend: 2,500 TQP per $5k through 12/31/26; from 1/1/27, 1 TQP per $1 spent, uncapped (\"Beginning January 1, 2027, all Rapid Rewards Credit Cards, including Plus cards and Business cards\" earn \"One TQP for every eligible $1 spent\"). A-List \u2192 Silver and A-List Preferred \u2192 Gold from 1/1/27.",
      "src": "https://www.southwest.com/rapid-rewards/2027/",
      "sk": "issuer",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "flag": "ENDS: CPQPs retired 12/31/26 \u2014 no Jan-2027 boost",
      "src2": "https://creditcards.chase.com/business-credit-cards/southwest/performance-business",
      "ends": "2026-12-31"
@@ -1912,7 +1913,7 @@
      "src": "https://www.chase.com/digital/resources/terms-of-use/cobrand-doordash",
      "sk": "issuer (southwest.com)",
      "flag": "southwest.com lists DashPass for this card; Chase page silent \u2014 confirm activation in-app",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -1924,7 +1925,7 @@
      "how": "4x Southwest (flight, inflight, gift cards, Vacations/Getaways); 2x gas stations, dining, hotels booked direct; 2x local transit and commuting; 1x other. Free employee cards. \u26a0\ufe0f CORRECTED 9/21/26 \u2014 THREE TIERS CARRY AN EXPIRED LIMITER AND TWO OF THEM WERE MISSING FROM OUR RECORD ENTIRELY. Chase still publishes, on a page rebuilt 2026-09-21: \"Until December 31, 2025, you'll earn 4 points for each $1 spent on Southwest Cruises purchases.\" / \"3 points: Until December 31, 2025, you'll earn 3 points for each $1 spent on purchases at participating Rapid Rewards hotel and rental car partners.\" / \"2 points: Until December 31, 2025, you'll earn 2 points for each $1 spent on purchases in the following rewards categories: social media and search engine advertising; internet, cable, and phone services.\" Orchestrator-verified: \"Until December 31, 2025\" = 3 (visible text), \"Southwest Cruises\" = 1. Control: the sibling sw-priority page carries ZERO such limiters (\"Until December 31, 2025\" = 0) and simply lists Southwest Cruises as excluded. As published all three tiers EXPIRED 2025-12-31 and no longer earn \u2014 we never carried the 3x partner tier or the 2x advertising/telecom tier at all, so this is a record gap, not an issuer change. Chase leaving expired dates live is a content-maintenance defect, not a benefit.",
      "src": "https://creditcards.chase.com/business-credit-cards/southwest/performance-business",
      "sk": "issuer",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "flag": "Chase page cleaned (11/10/26): expired 'Until December 31, 2025' tiers no longer printed"
     },
     {
@@ -1937,7 +1938,7 @@
      "how": "No foreign transaction fee on purchases made abroad. Issuer-confirmed on the card's own pricing-and-terms disclosure 8/10/26 (previously recorded only on Southwest Priority).",
      "sk": "issuer",
      "src": "https://creditcards.chase.com/business-credit-cards/southwest/performance-business",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Instacart credit $10/mo",
@@ -1950,7 +1951,7 @@
      "how": "Up to $10 in statement credits each month on Instacart, no stated annual cap \u2014 $120/yr is simply 12 \u00d7 $10; co-brand program window 5/1/2025\u201312/31/2027. Requires an active Instacart+ membership (3 months complimentary with the card, then $99/yr). One-time enrollment at instacart.com/p/chase-cobrands. \u26a0\ufe0f SOURCE CONFLICT, RE-TESTED 8/24/26 AND THE FINDING HOLDS. Instacart's Chase co-brand enrollment page rendered for a SECOND consecutive week and now names this card as eligible in THREE independent places: the eligible-card grid, the FAQ enumeration, and a new hero line reading \"Enroll with your consumer and business credit cards for Marriott Bonvoy, Hyatt, Southwest, and IHG.\" Chase's own product page for this card still markets zero Instacart (raw-HTML occurrence count: 4, all four being global hamburger-nav chrome pointing at the unrelated Instacart Mastercard). No Chase document anywhere EXCLUDES this card \u2014 unlike DoorDash, which publishes an explicit exclusion list. The enrollment page is the operative document: Chase's marketing describes the card, Instacart's page gates whether enrollment succeeds. Enrolling is free and reversible; leaving it unrecorded forfeits $10/month. VERIFY AT ENROLLMENT and tell me if it is rejected. Stacking is explicit: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Each credit needs one order of $10 or more; restaurant orders powered by Uber Eats are excluded. Instacart+ itself now bundles Peacock and New York Times Cooking (Instacart states a $50 annual value for NYT Cooking) \u2014 note that activating the NYT Cooking offer voids the 5-day Instacart+ refund window. \u2705 THIRD CONSECUTIVE RENDER 8/31/26 \u2014 this card is named verbatim in Instacart's eligibility enumeration plus its own card-grid tile. Program window \"between 5/1/2025 and 12/31/2027\". Stacking confirmed: \"If you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\" Exclusion: \"Excludes restaurant orders powered by Uber Eats.\" Instacart+ now also bundles Peacock and NYT Cooking (\"$50 annual value\") \u2014 but activating the NYT Cooking offer voids the 5-day Instacart+ refund window. \ud83d\udea8 ENROLL ONLY VIA https://www.instacart.com/p/chase-cobrands \u2014 the enrollment anchor on Instacart's OWN page has href \"http://www.instacart.com/chase-co-brands\" (hyphenated) while its display text reads \".../chase-cobrands\"; BOTH return HTTP 404, as do the page's canonical and og:url tags. Only the /p/ form resolves. (Same defect class we saw on the United page last pass \u2014 that one is now FIXED: all 20 URL occurrences on /p/chase-united use the /p/ form and the bare form 301-redirects correctly.) Chase's own page for this card still shows ZERO Instacart content \u2014 4 raw hits, all four global hamburger-nav chrome pointing at the unrelated Instacart Mastercard (controls: \"annual fee\"=10/10/8, Hyatt=195/224, DoorDash=31/31/6). Addition still rests on Instacart's enumeration, which no Chase document contradicts. \u26a0\ufe0f CAP PHRASING CORRECTED 9/14/26: no issuer document states a $120 annual cap. \u201c$120\u201d = 0 inside the Instacart clause on every Chase page that has one, and 0 across the whole 464KB instacart.com/p/chase-cobrands page. $120 is our arithmetic, not a cap. The real mechanic is harsher: each month's $10 is use-it-or-lose-it (\u201cthe monthly credit will not roll over into a subsequent month\u201d), so a missed month is gone permanently rather than recoverable against an annual ceiling. \u26a0\ufe0f 9/14/26: Instacart's OWN terms body now cites the non-/p/ URL (instacart.com/chase-cobrands), which returns HTTP 404 (verified: /p/ form = HTTP 200, 464,837 bytes; bare form = 404, \u201cPage not found\u201d). Chase's card pages cite the correct /p/ form. Use ONLY https://www.instacart.com/p/chase-cobrands. \ud83d\udd01 CONTRADICTION RE-TESTED 9/14/26 WITH A STRICTER CONTROL \u2014 4th consecutive week, stable. Chase's page for this card has Instacart = 0 BODY occurrences (the 2 raw hits are identical hamburger-nav markup), while the same disclosure block on the IHG Premier / IHG Premier Business / Southwest Priority pages carries both Instacart headings. Meanwhile instacart.com/p/chase-cobrands names this card explicitly in its eligibility enumeration and in a brand card-grid tile. Not a rendering artifact; the two issuers genuinely disagree. Instacart also confirms stacking: \u201cIf you have more than one eligible Chase Co-branded Card, you may redeem the benefit on each eligible card.\u201d \u2705 5TH CONSECUTIVE RENDER 9/21/26 \u2014 instacart.com/p/chase-cobrands HTTP 200, and the contradiction with Chase's own pages is stable across five weeks, not a rendering artifact. Page size moved 464,837 \u2192 469,376 bytes week-over-week, so Instacart IS editing the page \u2014 and is actively preserving a self-404ing canonical tag (<link rel=\"canonical\" href=\"instacart.com/chase-cobrands\">, which 404s). Only the /p/ form resolves. Do not let a future pass \"correct\" our URL to match Instacart's own canonical. \u26a0\ufe0f OUR OWN 9/14 CORRECTION WAS TOO STRONG, softened 9/21/26. We said the \"$120/calendar year\" figure was purely our arithmetic. Half right: \"$120\" is indeed 0 inside the governing clause and 0 across the entire 469KB instacart.com page \u2014 but Chase DOES print it in marketing copy on three pages (\"Receive a monthly $10 Instacart credit, up to $120 annually\" on both IHG Premier pages; \"Up to $120 in Instacart credits annually\" on Southwest Priority). Correct statement: $120/yr is issuer-published as a marketing maximum but appears nowhere in the governing clause, and the operative mechanic is monthly use-it-or-lose-it \u2014 \"the monthly credit will not roll over into a subsequent month\" and \"Any unused portion of a monthly credit will not be available for future use.\" A missed month is gone permanently rather than recoverable against a ceiling, so the practical effect of our correction stands even though the sourcing claim was overstated. Each credit needs one order of $10 or more.",
      "sk": "issuer",
      "src": "https://www.instacart.com/p/chase-cobrands",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "src2": "https://www.southwest.com/customer-enhancements/cardmember-benefits/"
     },
     {
@@ -1960,11 +1961,11 @@
      "pp": null,
      "cad": "once",
      "enroll": false,
-     "how": "Southwest: \"In 2027, Rapid Rewards Cardmembers will receive 10,000 Tier Qualifying Points (TQPs) as a one-time bonus\" after reaching 130,000 TQPs by 12/31/2027. \"Only one credit card account per Southwest Rapid Rewards Member is eligible for one boost of 10,000 TQPs in the year 2027.\" Deposited within 30 days of hitting 130k; account must be open and not in default. Aimed at Platinum. One per member across both Southwest cards.",
+     "how": "Southwest: \"In 2027, Rapid Rewards Cardmembers will receive 10,000 Tier Qualifying Points (TQPs) as a one-time bonus\" after reaching 130,000 TQPs by 12/31/2027. \"Only one credit card account per Southwest Rapid Rewards Member is eligible for one boost of 10,000 TQPs in the year 2027.\" Deposited within 30 days of hitting 130k; account must be open and not in default. Aimed at Platinum. One per member across both Southwest cards. Footnote 16: \"The TQP boost will count towards Rapid Rewards tier qualification in 2027 for the remainder of 2027 and through 2028.\"",
      "src": "https://www.southwest.com/rapid-rewards/2027/",
      "sk": "issuer",
      "flag": "NEW \u00b7 2027 only \u00b7 one per member",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "5X Rapid Rewards on Lyft",
@@ -1977,7 +1978,7 @@
      "src": "https://www.southwest.com/customer-enhancements/cardmember-benefits/",
      "sk": "issuer",
      "flag": "ends 12/31/27 \u00b7 southwest.com only",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "25% back on inflight purchases",
@@ -1991,7 +1992,7 @@
      "src2": "https://www.southwest.com/customer-enhancements/cardmember-benefits/",
      "sk": "issuer",
      "flag": "added 11/17/26: parity with Priority",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -2013,7 +2014,7 @@
      "sk": "issuer",
      "flag": "Airbnb Luxe eligible (10/22/26) \u00b7 FHR 2-night min from 1/1/27",
      "src2": "https://www.americanexpress.com/en-us/travel/benefits/lodging-credit/",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Dell credit \u2014 $150 + $1,000",
@@ -2027,7 +2028,7 @@
      "sk": "issuer",
      "flag": "changed 7/1/25",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Indeed credit $90/quarter",
@@ -2040,7 +2041,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "ChatGPT Business credit $300",
@@ -2054,7 +2055,7 @@
      "sk": "issuer",
      "flag": "new ~5/26",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Adobe credit $250",
@@ -2068,7 +2069,7 @@
      "sk": "issuer",
      "flag": "new in refresh",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Hilton credit $50/quarter",
@@ -2082,7 +2083,7 @@
      "sk": "issuer",
      "flag": "new in refresh",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Wireless credit $10/mo",
@@ -2095,7 +2096,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17",
+     "verified": "2026-11-23",
      "flag": "select carriers only from 2/17/27"
     },
     {
@@ -2109,7 +2110,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "CLEAR+ credit $219",
@@ -2123,7 +2124,7 @@
      "sk": "issuer",
      "flag": "raised to $219 (7/1/26)",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck",
@@ -2136,7 +2137,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Lounge Collection",
@@ -2150,7 +2151,7 @@
      "sk": "issuer",
      "flag": "Lufthansa ended 10/1/26",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Marriott Gold + Hilton Gold + LHW Sterling",
@@ -2164,7 +2165,7 @@
      "sk": "issuer",
      "flag": null,
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "35% Pay-with-Points airline bonus",
@@ -2178,7 +2179,7 @@
      "sk": "issuer",
      "flag": "changed 9/18/25",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$250k spend unlocks",
@@ -2192,7 +2193,7 @@
      "sk": "issuer",
      "flag": "new in refresh",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -2206,7 +2207,7 @@
      "sk": "issuer",
      "flag": "Airbnb 5x (10/22/26) \u00b7 2x shipping narrows 2/17/27",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Trip protections",
@@ -2219,7 +2220,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Cell phone protection",
@@ -2232,7 +2233,7 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-platinum-credit-card-amex/",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "The Hotel Collection $100 credit",
@@ -2245,7 +2246,7 @@
      "sk": "issuer",
      "flag": "added 8/24/26 \u2014 per stay, not annual",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Platinum Nights + Global Dining Access by Resy",
@@ -2259,7 +2260,7 @@
      "sk": "issuer",
      "flag": "added 8/31/26 \u2014 Amex labels it NEW",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Amex Venue Collection 10% back",
@@ -2272,7 +2273,7 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/en-us/benefits/membership/experiences/venues/concessions-enrollment/",
      "pp": 0,
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$250 Airbnb Experiences credit",
@@ -2286,7 +2287,7 @@
      "src2": "https://www.americanexpress.com/en-us/travel/airbnb/",
      "sk": "issuer",
      "flag": "new 10/22/26 \u2014 unlocks after an Airbnb Luxe booking",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "ZO Membership (Tishman Speyer) + $500 event / Dining Club credit",
@@ -2300,7 +2301,19 @@
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/business-platinum-charge-card/45094-9-0?key=tncBody&rwdFlag=rwd",
      "sk": "issuer",
      "flag": "NEW (Amex label) \u2014 found 10/27/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
+    },
+    {
+     "n": "Resy Rewards +4x (NYC)",
+     "t": "earn",
+     "v": 0,
+     "cad": "ongoing",
+     "enroll": true,
+     "how": "NEW 11/17/26 (Amex newsroom): enroll the card in Resy Rewards, book a Resy Rewards reservation via the Rewards tab in the Resy iOS app, and \"earn four additional Membership Rewards points per eligible dollar spent after booking through Resy Rewards and dining at participating restaurants.\" New York City only for now; \"In 2027, Resy Rewards plans to expand to additional U.S. cities.\" Not named in the release, but eligibility is any \"Membership Rewards program-eligible, U.S.-issued American Express Card\", which includes Business Platinum. Earn bonus, not a credit \u2014 excluded from the dashboard total.",
+     "src": "https://www.americanexpress.com/en-us/newsroom/products-services/resy-rewards-earn-membership-rewards-points/",
+     "sk": "issuer",
+     "flag": "NEW 11/17/26 \u00b7 NYC only",
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -2322,7 +2335,7 @@
      "sk": "issuer",
      "flag": "FedEx \u2192 UPS.com (UPDATED)",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/businessgold-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Walmart+ credit $12.95/mo",
@@ -2335,7 +2348,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-gold-card-amex/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/businessgold-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "ChatGPT Business credit $300",
@@ -2349,7 +2362,7 @@
      "sk": "issuer",
      "flag": "new 5/12/26",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/businessgold-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Squarespace credit $150",
@@ -2363,7 +2376,7 @@
      "sk": "issuer",
      "flag": "new 10/23/25",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/businessgold-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -2377,7 +2390,7 @@
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/businessgold-card/45094-9-0?key=tncBody&rwdFlag=rwd",
      "flag": "4x narrows 2/17/27",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "The Hotel Collection $100 credit",
@@ -2390,7 +2403,7 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-gold-card-amex/",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/businessgold-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Cell phone protection",
@@ -2403,7 +2416,7 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/us/credit-cards/business/business-credit-cards/american-express-business-gold-card-amex/",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/businessgold-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Amex Venue Collection 10% back",
@@ -2416,7 +2429,19 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/en-us/benefits/membership/experiences/venues/concessions-enrollment/",
      "pp": 0,
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
+    },
+    {
+     "n": "Resy Rewards +4x (NYC)",
+     "t": "earn",
+     "v": 0,
+     "cad": "ongoing",
+     "enroll": true,
+     "how": "NEW 11/17/26 (Amex newsroom): enroll the card in Resy Rewards, book a Resy Rewards reservation via the Rewards tab in the Resy iOS app, and \"earn four additional Membership Rewards points per eligible dollar spent after booking through Resy Rewards and dining at participating restaurants.\" New York City only for now; \"In 2027, Resy Rewards plans to expand to additional U.S. cities.\" Amex names this card: \"Enrolled U.S. Business Gold Card Members can also earn four additional points through Resy Rewards, on top of the 4X\u2026\" Earn bonus, not a credit \u2014 excluded from the dashboard total.",
+     "src": "https://www.americanexpress.com/en-us/newsroom/products-services/resy-rewards-earn-membership-rewards-points/",
+     "sk": "issuer",
+     "flag": "NEW 11/17/26 \u00b7 NYC only",
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -2437,7 +2462,7 @@
      "src": "https://www.delta.com/resbizbenefitterms",
      "sk": "issuer",
      "flag": "\u2705 resolved 8/31/26 \u2014 calendar year, book with margin",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Resy credit $20/mo",
@@ -2450,8 +2475,8 @@
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
      "sk": "issuer",
      "flag": "\u2795 Tock added 9/15/26 \u00b7 eligibility narrowed 8/1/26",
-     "verified": "2026-11-17",
-     "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/business-card/dal/delta-reserve-for-business-credit-card/ep-dal-47225"
+     "verified": "2026-11-23",
+     "src2": "https://www.delta.com/resbizbenefitterms"
     },
     {
      "n": "Rideshare credit $10/mo",
@@ -2463,7 +2488,7 @@
      "how": "Enroll; up to $10/mo on US rideshare with select providers.",
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Companion Certificate",
@@ -2476,7 +2501,7 @@
      "src": "https://www.delta.com/resbizbenefitterms",
      "sk": "issuer",
      "flag": "\u2705 Premium Select eligible \u2014 Delta One excluded; taxes capped $80 domestic / $250 international",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Delta Sky Club \u2014 15 visits/yr",
@@ -2488,7 +2513,7 @@
      "how": "15 visits per Medallion year flying Delta; unlimited after $75k calendar spend; 4 guest passes/yr; Centurion access when flying Delta on ticket bought with card. \u26a0\ufe0f SOURCING CORRECTED 8/24/26: \"Sidecar\" appears ZERO times on delta.com \u2014 it is on americanexpress.com: \"complimentary access to The Centurion Lounge including Sidecar by The Centurion Lounge and Escape Lounges.\" Entry windows differ: \"Card Members must arrive within 90 minutes of their departing flight to access Sidecar by The Centurion Lounge and within 3 hours of their departing flight to access The Centurion Lounge.\"",
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "MQD Headstart + Boost",
@@ -2501,7 +2526,7 @@
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
      "sk": "issuer",
      "src2": "https://www.delta.com/resbizbenefitterms",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck",
@@ -2513,7 +2538,7 @@
      "how": "$120 GE or up to $85 TSA PreCheck every 4 years. (No CLEAR credit on Delta cards; the '$200 airline fee credit' in the old tracker never existed.)",
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Delta flight perks",
@@ -2527,7 +2552,7 @@
      "sk": "issuer",
      "flag": "corrected 8/10/26",
      "src2": "https://www.delta.com/resbizbenefitterms",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -2539,7 +2564,7 @@
      "how": "3x Delta; 1.5x transit, US shipping, US office supplies (+all purchases after $150k/yr); 1x other. No FX fees.",
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Dining Access by Resy",
@@ -2551,7 +2576,7 @@
      "how": "Access to reservations at Resy's Global Dining Access restaurants. Among the three Delta business cards this is Reserve-only.",
      "sk": "issuer",
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "4 Sky Club guest passes",
@@ -2563,7 +2588,7 @@
      "how": "Four one-time guest passes each Medallion Year (Amex), usable \"when traveling together on a Delta flight\" (delta.com), on top of the 15 Sky Club visits.",
      "sk": "issuer",
      "src": "https://www.delta.com/us/en/skymiles/airline-credit-cards/american-express-business-cards",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Cell phone protection",
@@ -2574,7 +2599,7 @@
      "src": "https://www.americanexpress.com/en-us/business/credit-cards/delta-skymiles-reserve/",
      "sk": "issuer",
      "flag": "added 8/24/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Amex Venue Collection 10% back",
@@ -2587,7 +2612,7 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/en-us/benefits/membership/experiences/venues/concessions-enrollment/",
      "pp": 0,
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -2608,7 +2633,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Flight credit $50/quarter",
@@ -2621,7 +2646,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "CLEAR+ credit $219",
@@ -2635,7 +2660,7 @@
      "sk": "issuer",
      "flag": "sourcing upgraded 8/10/26",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Annual Free Night Reward",
@@ -2648,7 +2673,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Hilton Diamond status",
@@ -2661,7 +2686,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "$100 Waldorf/Conrad property credit",
@@ -2675,7 +2700,7 @@
      "sk": "issuer",
      "flag": "\ud83d\udea8 must quote ZZAAP1 when booking by phone",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "National Emerald Club Executive",
@@ -2688,7 +2713,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -2701,7 +2726,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Cell phone protection",
@@ -2715,7 +2740,7 @@
      "sk": "issuer",
      "flag": "newly tracked",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Amex Venue Collection 10% back",
@@ -2728,7 +2753,7 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/en-us/benefits/membership/experiences/venues/concessions-enrollment/",
      "src2": "https://www.americanexpress.com/en-us/benefits/membership/experiences/venues/concessions-enrollment/",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Return Protection",
@@ -2741,7 +2766,7 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Dining Access by Resy",
@@ -2754,7 +2779,7 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/us/credit-cards/card/hilton-honors-aspire/",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/supplementary/terms/hilton-honors-aspire-credit-card/36182-9-0",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -2776,7 +2801,7 @@
      "sk": "issuer",
      "flag": "sourcing upgraded 8/10/26",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/marriott-bonvoy-business-american-express-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Marriott Gold Elite + 15 elite nights",
@@ -2789,7 +2814,7 @@
      "src": "https://www.marriott.com/credit-cards/marriott-bonvoy-business-american-express-card.mi",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/marriott-bonvoy-business-american-express-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "7% room-rate discount",
@@ -2802,7 +2827,7 @@
      "src": "https://www.marriott.com/credit-cards/marriott-bonvoy-business-american-express-card.mi",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/marriott-bonvoy-business-american-express-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates",
@@ -2815,7 +2840,7 @@
      "src": "https://www.marriott.com/credit-cards/marriott-bonvoy-business-american-express-card.mi",
      "sk": "issuer",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/marriott-bonvoy-business-american-express-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Air+Car Transfer Program",
@@ -2827,7 +2852,7 @@
      "sk": "issuer",
      "flag": "added 8/24/26",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/marriott-bonvoy-business-american-express-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Premium on-property Internet Access",
@@ -2839,7 +2864,7 @@
      "sk": "issuer",
      "flag": "added 8/24/26",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/marriott-bonvoy-business-american-express-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "No foreign transaction fees",
@@ -2851,7 +2876,7 @@
      "sk": "issuer",
      "flag": "added 8/24/26",
      "src2": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/marriott-bonvoy-business-american-express-card/45094-9-0?key=tncBody&rwdFlag=rwd",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Airline transfer bonus (5k per 60k)",
@@ -2864,7 +2889,7 @@
      "src": "https://www.americanexpress.com/us/credit-cards/card-application/apply/prospect/terms/marriott-bonvoy-business-american-express-card/45094-9-0?key=tncBody&rwdFlag=rwd",
      "sk": "issuer",
      "flag": "added 8/31/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Amex Venue Collection 10% back",
@@ -2877,7 +2902,7 @@
      "sk": "issuer",
      "src": "https://www.americanexpress.com/en-us/benefits/membership/experiences/venues/concessions-enrollment/",
      "pp": 0,
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   },
@@ -2897,7 +2922,7 @@
      "how": "Auto-loads in Capital One Business Travel; apply at checkout, splittable. Expires at next account anniversary.",
      "src": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "10,000 anniversary miles",
@@ -2909,7 +2934,7 @@
      "how": "Posts automatically each anniversary (~$100 toward travel).",
      "src": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Capital One Lounges + Priority Pass",
@@ -2922,7 +2947,7 @@
      "src": "https://www.capitalone.com/credit-cards/disclosures/airport-lounge-terms/",
      "sk": "issuer",
      "flag": "re-verified 8/10/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Global Entry / TSA PreCheck credit",
@@ -2934,7 +2959,7 @@
      "how": "Up to $120 every 4 years; pay the fee with the card, credit posts within 2 cycles.",
      "src": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Hertz President's Circle",
@@ -2946,7 +2971,7 @@
      "how": "Enroll ONLY via the Hertz tile in Capital One's app/site Benefits tab \u2014 enrolling at hertz.com won't link. Active in 24\u201372h.",
      "src": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Premier Collection",
@@ -2958,7 +2983,7 @@
      "how": "$100 experience credit per Premier Collection booking + daily breakfast for 2 + upgrades when available, via Capital One Travel.",
      "src": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/",
      "sk": "issuer",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Earn rates + transfers",
@@ -2971,7 +2996,7 @@
      "src": "https://www.capitalone.com/learn-grow/money-management/venture-miles-transfer-partnerships/",
      "sk": "issuer",
      "flag": "Copa added (2:1.5) per page stamped November 2, 2026 \u00b7 19 airlines + 4 hotels \u00b7 AA refuted 10\u00d7",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Cell phone protection",
@@ -2984,7 +3009,7 @@
      "src": "https://ecm.capitalone.com/WCM/card/world-elite-business-mastercard.pdf",
      "sk": "issuer",
      "flag": "sourcing upgraded 8/10/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Lifestyle Collection $50 experience credit",
@@ -2996,7 +3021,7 @@
      "how": "Up to $50 experience credit applied at checkout by the hotel on qualifying charges, per Lifestyle Collection HOTEL booking made through Capital One Business Travel in the cardholder's name. Also includes complimentary Wi-Fi and, when available, room upgrade / early check-in / late check-out. NO daily breakfast -- footnote 6 restricts breakfast-for-two to Premier Collection bookings. Per booking, no annual cap stated, so it is not counted in the dashboard's fixed-credit total. \u26a0\ufe0f CORRECTED 9/14/26 \u2014 the \u201cor vacation-rental\u201d we carried was wrong. The $50 experience credit is HOTEL-ONLY. Capital One's page has \u201cLifestyle Collection hotel experience credit\u201d = 2 and \u201cLifestyle Collection vacation rental experience credit\u201d = 0 (controls: Lifestyle Collection = 8, Premier Collection = 20, \u201cvacation rental\u201d = 16). Lifestyle Collection VACATION RENTALS get only complimentary Wi-Fi and, when available, early check-in / late checkout \u2014 no experience credit. Premier Collection vacation rentals do get a $100 experience credit, which is a different row.",
      "sk": "issuer",
      "src": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Auto rental collision damage waiver",
@@ -3008,7 +3033,7 @@
      "how": "Auto rental collision damage waiver via Mastercard's MasterRental, max 31 consecutive days. \u26a0\ufe0f \"PRIMARY\" IS CONDITIONAL \u2014 recording it as unconditionally primary would be wrong. The Guide to Benefits pays primary only where \"the vehicle is rented primarily for business purposes or outside the cardholder's domiciled country\" (that clause sits at the end of the Coordination of Benefits section, NOT in the coverage section, which reads flatly \"We will pay for the following on a primary basis\"). \u26a0\ufe0f REFINED 8/24/26: business purpose is not merely the primary-vs-secondary trigger \u2014 it is a gate on coverage existing at all. Section A, \"To get coverage\": \"The rental vehicle must be rented primarily for business purposes, and You must initiate and then pay for the entire rental agreement... with your covered card.\" When coverage is secondary you must also decline the rental company's own waiver. \u26a0\ufe0f Excluded countries, verbatim: \"Republic of Ireland, Northern Ireland, Israel, Jamaica, Australia, Italy, and New Zealand\" \u2014 note it is REPUBLIC of Ireland (we had just \"Ireland\"), which is what makes the separate Northern Ireland entry non-redundant.",
      "sk": "issuer",
      "src": "https://ecm.capitalone.com/WCM/card/world-elite-business-mastercard.pdf",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     },
     {
      "n": "Extended warranty",
@@ -3020,7 +3045,7 @@
      "src": "https://www.capitalone.com/small-business/credit-cards/venture-x-business/",
      "sk": "issuer",
      "flag": "added 10/20/26",
-     "verified": "2026-11-17"
+     "verified": "2026-11-23"
     }
    ]
   }
